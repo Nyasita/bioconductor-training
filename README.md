@@ -14,6 +14,10 @@ There’s no formal joining process or minimum commitment required — simply at
 This meta-repository is used for general discussions. The respective
 lessons are developed as modules in their own repositories.
 
+## Publications
+
+- Learning and teaching biological data science in the Bioconductor community by Drnevich, Tan et al. ([2024 preprint](https://arxiv.org/abs/2410.01351))
+
 ## Modules
 
 - [bioc-intro](https://carpentries-incubator.github.io/bioc-intro/)
