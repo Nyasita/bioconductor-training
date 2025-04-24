@@ -16,7 +16,11 @@ lessons are developed as modules in their own repositories.
 
 ## Publications
 
-- Learning and teaching biological data science in the Bioconductor community by Drnevich, Tan et al. ([2024 preprint](https://arxiv.org/abs/2410.01351))
+**Learning and teaching biological data science in the Bioconductor community**  
+Drnevich, Tan et al. (2025)  
+Published in *PLOS Computational Biology*
+
+👉 [Read the full paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925)
 
 ## Modules
 
