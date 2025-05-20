@@ -131,7 +131,7 @@ This workshop is part of Bioconductor’s expanded global training program, supp
 
 ## Organisers
 
-Trushar Shah (International Institute of Tropical Agriculture, Local Host), Maria Doyle (University of Limerick, Lead Organiser), Aedin Culhane (University of Limerick), Charlotte Soneson (Friedrich Miescher Institute for Biomedical Research), Laurent Gatto (Institut de Duve), Umar Ahmad (Bauchi State University), Zedias Chikwambi (African Institute of Biomedical Sciences and Technology).
+Trushar Shah (International Institute of Tropical Agriculture, Local Host), Maria Doyle (University of Limerick, Lead Organiser), Aedin Culhane (University of Limerick), Charlotte Soneson (Friedrich Miescher Institute for Biomedical Research), Laurent Gatto (Institut de Duve, UCLouvain), Umar Ahmad (Bauchi State University / Africa CDC), Zedias Chikwambi (African Institute of Biomedical Sciences and Technology).
 
 ## Contact
 
