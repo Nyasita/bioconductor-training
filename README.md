@@ -58,7 +58,7 @@ Published in *PLOS Computational Biology*
 ### New lessons
 
 If you are interested in contributing new lessons or Carpentry modules,
-feel free to get in touch with the teaching committee via slack of the
+feel free to get in touch with the teaching committee via Zulip or the
 google group (see below). We would be happy to discuss and/or contribute
 to anything related to the lesson design, general help with the long-term
 maintenance, dissemination of the lesson, or any help/topic you can think of.
@@ -116,7 +116,7 @@ welcome to join the discussion.
 ## Discussions
 
 - The `education-and-training` channel on the [Bioconductor community
-  slack](https://slack.bioconductor.org/).
+  chat](https://chat.bioconductor.org/).
 - The [Google group](https://groups.google.com/g/bioconductor-teaching/) (low-traffic, mainly used to send a reminder for the monthly meeting).  
 
 ## Events
