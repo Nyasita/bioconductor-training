@@ -4,7 +4,9 @@ on:
   pull_request:
     branches: [devel]
   push:
-    branches: [devel]
+    branches: 
+    - devel
+    - add-physalia-collab # allow while sharing preview
 
 env:
   cache-version: v1

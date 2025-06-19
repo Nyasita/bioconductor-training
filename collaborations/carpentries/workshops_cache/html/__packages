@@ -1,0 +1,10 @@
+readr
+dplyr
+tidyr
+reactable
+ggplot2
+maps
+htmltools
+tidygeocoder
+plotly
+countrycode

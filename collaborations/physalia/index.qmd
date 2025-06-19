@@ -1,0 +1,31 @@
+---
+title: ""
+format: html
+editor: visual
+---
+
+# Bioconductor & Physalia Courses
+
+## About the Collaboration
+
+Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.org/) to offer co-branded training in bioinformatics and computational biology. These courses are taught by experienced instructors from the Bioconductor community and hosted by Physalia. \[Only courses displaying the Bioconductor-Physalia label?, are part of this collaboration.\]<!-- TODO: update with how the courses are defined -->
+
+## Upcoming Courses
+
+**Single-cell RNA-seq analysis with R/Bioconductor**\
+17–19 June 2025\
+Instructors: XX, YY\
+[View course on Physalia's site](#)
+
+**\[Course Title\]**\
+\[TBD\]\
+Instructors: \[TBD\]\
+[View course on Physalia's site](#)
+
+More details and registration links are available via Physalia’s [course listings](https://www.physalia-courses.org/courses-workshops/).
+
+## Free Seats for Underrepresented Countries
+
+Two free seats are available for each Bioconductor–Physalia course for participants based in low- or middle-income countries, as defined by the [World Bank's income classification](https://datatopics.worldbank.org/world-development-indicators/the-world-by-income-and-region.html).
+
+[Apply here to be considered](https://forms.gle/w4UEBu3VrJXemtTN9)
