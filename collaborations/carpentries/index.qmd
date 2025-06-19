@@ -6,13 +6,18 @@ editor: visual
 
 # Bioconductor Carpentry
 
-Bioconductor is a member of [The Carpentries](https://carpentries.org/), a global community focused on teaching foundational coding and data science skills. Our membership supports community members in earning Carpentries instructor certification, developing Bioconductor-specific training materials, and enabling our certified instructors to teach Carpentry workshops at Bioconductor events and beyond. While not an official Carpentries program like Software, Data, or Library Carpentry, Bioconductor Carpentry is aligned in spirit with The Carpentries and benefits from a close association.
+![](/images/collaborations/carpentries.svg){fig-alt="The Carpentries logo"}
 
-Coordinated through the University of Limerick (UL) by Dr. Maria Doyle, Bioconductor Community Manager and [ELIXIR Ireland](https://elixir-ireland.ie/) Training Coordinator, this program organises workshops — including upcoming initiatives planned for Africa and Latin America — supports instructors, and manages logistics to foster essential data science skills and collaborative learning opportunities across the life sciences community.
+Bioconductor is a member of [The Carpentries](https://carpentries.org/), a global community focused on teaching foundational coding and data science skills. Our membership supports community members in earning Carpentries instructor certification, developing Bioconductor-specific training materials, and delivering Carpentry workshops at Bioconductor events and beyond. While not an official Carpentries program like Software, Data, or Library Carpentry, Bioconductor Carpentry is aligned in spirit with The Carpentries and benefits from a close association.
 
-For more information, you can:
+Coordinated through the University of Limerick (UL) by Dr Maria Doyle, Bioconductor Community Manager and [ELIXIR Ireland](https://elixir-ireland.ie/) Training Coordinator, this initiative supports instructors and helps build capacity across the life sciences community, with ongoing projects planned for Africa and Latin America.
 
--   [Express interest](https://forms.gle/MBULoxQGn9fMTK4v8) in becoming a certified Carpentries instructor through our Train-the-Trainer program (when places are available).\
--   [Request a Bioconductor workshop](https://forms.gle/PGGRqFbmLrzTQmTY7) at your institute; please note that instructor expenses will typically be required unless local instructors are available and willing to volunteer.\
+## Opportunities
+
+-   [Express interest](https://forms.gle/MBULoxQGn9fMTK4v8) in becoming a certified Carpentries instructor through our Train-the-Trainer programme (when places are available).\
+-   [Request a Bioconductor workshop](https://forms.gle/PGGRqFbmLrzTQmTY7) at your institution. Please note that instructor expenses will typically be required unless local instructors are available and willing to volunteer.\
 -   Visit our [Instructors](instructors.qmd) and [Workshops](workshops.qmd) pages for current details.
--   Explore the [blog post](https://blog.bioconductor.org/posts/2022-07-12-carpentries-membership/) that outlines Bioconductor’s Carpentries membership or browse other [Carpentries-related posts](https://blog.bioconductor.org/index.html#category=Carpentries).
+
+## Learn More
+
+Read the [blog post](https://blog.bioconductor.org/posts/2022-07-12-carpentries-membership/) that outlines Bioconductor’s Carpentries membership or browse other [Carpentries-related posts](https://blog.bioconductor.org/index.html#category=Carpentries).
