@@ -22,7 +22,7 @@ Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.
 
 -   **R/Bioconductor for Mass Spectrometry and Proteomics**\
     *Early 2026 — Instructor: Prof. Laurent Gatto*\
-    [View 2025 course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course18/)
+    [View 2025 course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course58/)
 
 -   **Single-cell proteomics with R and Bioconductor**\
     *TBD — Instructor: Prof. Laurent Gatto*
