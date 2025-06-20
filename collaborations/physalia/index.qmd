@@ -6,19 +6,26 @@ editor: visual
 
 # Bioconductor-Physalia Courses
 
-![](/images/collaborations/Physalia-Logo-1000x358.png){width=35% fig-alt="Physalia Courses logo"}
+![](/images/collaborations/Physalia-Logo-1000x358.png){width="35%" fig-alt="Physalia Courses logo"}
 
 Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.org/) to offer co-branded training in bioinformatics and computational biology. These courses are taught by experienced instructors from the Bioconductor community and hosted by Physalia. Only the courses listed below are part of the Bioconductor–Physalia collaboration and eligible for free seats.
 
 ## Upcoming Courses
 
-- **RNA-seq data analysis with R/Bioconductor**  
-  *3-14 November 2025 — Instructors: Dr. Ludwig Geistlinger*  
-  [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course19/)
+-   **RNA-seq data analysis with R/Bioconductor**\
+    *3-14 November 2025 — Instructor: Dr. Ludwig Geistlinger*\
+    [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course19/)
 
-- **Single-cell RNA-seq analysis with R/Bioconductor**  
-  *17-21 November 2025 — Instructors: Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg*  
-  [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course18/)
+-   **Single-cell RNA-seq analysis with R/Bioconductor**\
+    *17-21 November 2025 — Instructors: Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg*\
+    [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course18/)
+
+-   **R/Bioconductor for Mass Spectrometry and Proteomics**\
+    *Early 2026 — Instructor: Prof. Laurent Gatto*\
+    [View 2025 course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course18/)
+
+-   **Single-cell proteomics with R and Bioconductor**\
+    *TBD — Instructor: Prof. Laurent Gatto*
 
 More courses will be added as we confirm dates and work with Bioconductor instructors to expand the programme. Stay tuned!
 
