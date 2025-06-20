@@ -1,0 +1,22 @@
+# RStudio project files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Quarto build cache
+/.quarto/
+**/_freeze/
+**/*_cache/
+docs/
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Build artefacts
+*.html
+*.knit.md
+
+# Others
+README_files/

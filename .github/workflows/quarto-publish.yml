@@ -4,7 +4,9 @@ on:
   pull_request:
     branches: [devel]
   push:
-    branches: [devel]
+    branches: 
+    - devel
+    - add-physalia-collab # allow while sharing preview
 
 env:
   cache-version: v1
@@ -51,7 +53,7 @@ jobs:
 
   # Job to deploy only when merging to devel
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/devel'
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/devel' || github.repository == 'mblue9/bioconductor-training' && github.ref == 'refs/heads/add-physalia-collab')
     runs-on: ubuntu-latest
     permissions:
       contents: write

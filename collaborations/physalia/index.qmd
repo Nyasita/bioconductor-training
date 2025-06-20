@@ -1,0 +1,33 @@
+---
+title: ""
+format: html
+editor: visual
+---
+
+# Bioconductor-Physalia Courses
+
+![](/images/collaborations/Physalia-Logo-1000x358.png){width=35% fig-alt="Physalia Courses logo"}
+
+Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.org/) to offer co-branded training in bioinformatics and computational biology. These courses are taught by experienced instructors from the Bioconductor community and hosted by Physalia. Only the courses listed below are part of the Bioconductor–Physalia collaboration and eligible for free seats.
+
+## Upcoming Courses
+
+- **RNA-seq data analysis with R/Bioconductor**  
+  *3-14 November 2025 — Instructors: Dr. Ludwig Geistlinger*  
+  [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course19/)
+
+- **Single-cell RNA-seq analysis with R/Bioconductor**  
+  *17-21 November 2025 — Instructors: Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg*  
+  [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course18/)
+
+More courses will be added as we confirm dates and work with Bioconductor instructors to expand the programme. Stay tuned!
+
+## Free Seats for Underrepresented Countries
+
+Two free seats are available for each of the Bioconductor–Physalia courses listed above for participants based in low- or middle-income countries, as defined by the [World Bank's income classification](https://datatopics.worldbank.org/world-development-indicators/the-world-by-income-and-region.html).
+
+[Apply here to be considered](https://forms.gle/w4UEBu3VrJXemtTN9)
+
+## Learn More
+
+Read the [blog post](https://blog.bioconductor.org/posts/2025-06-20-physalia-collaboration/) announcing the collaboration to learn more about how it came together and what it aims to achieve.
