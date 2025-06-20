@@ -127,4 +127,4 @@ Explore upcoming opportunities and past Bioconductor workshops and training sess
 
 If you are interested in this project and want to get in touch or
 participate, please contact the group via the Google group or
-individual members on slack or by email.
+individual members on [Bioconductor Chat](https://chat.bioconductor.org) or by email.
