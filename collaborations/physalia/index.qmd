@@ -22,10 +22,15 @@ Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.
 
 -   **R/Bioconductor for Mass Spectrometry and Proteomics**\
     *Early 2026 — Instructor: Prof. Laurent Gatto*\
-    [View 2025 course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course58/)
+    [View 2025 edition on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course58/)
+    
+-   **Network Analysis in Systems Biology with R/Bioconductor**\
+    *May/June 2026 — Instructor: Fabricio Almeida-Silva*\
+    [View 2025 edition  on Physalia’s site](https://www.physalia-courses.org/courses-workshops/network-in-systems-biology/)
 
 -   **Single-cell proteomics with R and Bioconductor**\
     *TBD — Instructor: Prof. Laurent Gatto*
+    
 
 More courses will be added as we confirm dates and work with Bioconductor instructors to expand the programme. Stay tuned!
 
