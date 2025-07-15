@@ -3,6 +3,8 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+
+execute:
   freeze: auto
     
 format:
