@@ -6,6 +6,10 @@ description: |
 
 # Bioconductor Course | Nairobi, Kenya | March 2025
 
+::: {.callout-note}
+This workshop has now concluded. Thank you to all participants, instructors, and organisers for a successful event. Read the [blog post recap](https://blog.bioconductor.org/posts/2025-05-21-kenya-course/).
+:::
+
 ![](images/nairobi.jpg){style="width:100%; max-height:500px; object-fit:cover; object-position:50% 40%; display:block; margin:0 auto;"}
 
 

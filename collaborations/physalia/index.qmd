@@ -1,10 +1,9 @@
 ---
-title: ""
-format: html
-editor: visual
+title: "Bioconductor-Physalia Courses"
+execute:
+  message: false
+  warning: false
 ---
-
-# Bioconductor-Physalia Courses
 
 ![](/images/collaborations/Physalia-Logo-1000x358.png){width="35%" fig-alt="Physalia Courses logo"}
 
@@ -12,27 +11,33 @@ Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.
 
 ## Upcoming Courses
 
--   **RNA-seq data analysis with R/Bioconductor**\
-    *3-14 November 2025 — Instructor: Dr. Ludwig Geistlinger*\
-    [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course19/)
-
--   **Single-cell RNA-seq analysis with R/Bioconductor**\
-    *17-21 November 2025 — Instructors: Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg*\
-    [View course on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course18/)
-
--   **R/Bioconductor for Mass Spectrometry and Proteomics**\
-    *Early 2026 — Instructor: Prof. Laurent Gatto*\
-    [View 2025 edition on Physalia’s site](https://www.physalia-courses.org/courses-workshops/course58/)
-    
--   **Network Analysis in Systems Biology with R/Bioconductor**\
-    *May/June 2026 — Instructor: Fabricio Almeida-Silva*\
-    [View 2025 edition  on Physalia’s site](https://www.physalia-courses.org/courses-workshops/network-in-systems-biology/)
-
--   **Single-cell proteomics with R and Bioconductor**\
-    *TBD — Instructor: Prof. Laurent Gatto*
-    
-
-More courses will be added as we confirm dates and work with Bioconductor instructors to expand the programme. Stay tuned!
+```{r}
+#| echo: false
+library(tidyverse)
+library(reactable)
+library(htmltools)
+workshops <- read_tsv("../../data/workshops.tsv")
+workshops %>%
+  filter(initiative == "Physalia") %>%
+  mutate(
+    link_html = case_when(
+      !is.na(workshop_url) & workshop_url != "" ~
+        sprintf('<a href="%s" target="_blank">View Course</a>', workshop_url),
+      !is.na(previous_edition_url) & previous_edition_url != "" ~
+        sprintf('<a href="%s" target="_blank">View Previous Edition</a>', previous_edition_url),
+      TRUE ~ "New Course"
+    )
+  ) %>%
+  select(date, title, instructors, link_html) %>%
+  reactable(
+    compact = TRUE,
+    striped = TRUE,
+    bordered = TRUE,
+    columns = list(
+      link_html = colDef(name = "Workshop Link", html = TRUE)
+    )
+  )
+```
 
 ## Free Seats for Underrepresented Countries
 
