@@ -45,9 +45,7 @@ jobs:
 
       # Install R dependencies from DESCRIPTION
       - name: Install R dependencies
-        run: |
-          install.packages("remotes")
-          remotes::install_deps(dependencies = TRUE)
+        run: Rscript -e 'install.packages("remotes"); remotes::install_deps(dependencies = TRUE)'
 
       # Run Quarto render to check for PRs
       - name: Render Quarto Project
@@ -79,9 +77,7 @@ jobs:
 
       # Install R dependencies from DESCRIPTION
       - name: Install R dependencies
-        run: |
-          install.packages("remotes")
-          remotes::install_deps(dependencies = TRUE)
+        run: Rscript -e 'install.packages("remotes"); remotes::install_deps(dependencies = TRUE)'
         
       # Add the CNAME file for the custom domain
       - name: Add CNAME for custom domain
