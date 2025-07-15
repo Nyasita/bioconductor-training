@@ -1,0 +1,36 @@
+category	initiative	title	date	location_name	location_url	city	country	workshop_url	instructors	previous_edition_url
+community-run	Carpentries	bioc-intro,bioc-rnaseq	24-28 March 2025	International Institute of Tropical Agriculture	https://www.iita.org/iita-countries/kenya/	Nairobi	Kenya	https://training.bioconductor.org/workshops/2025-03-Nairobi/index.html	"Fabricio Almeida-Silva, Laurah Ondari, Laurent Gatto, Michael Landi, Zedias Chikwambi"	
+community-run	Carpentries	bioc-rnaseq	21 March 2025	Universidade Federal de Minas Gerais	https://ufmg.br/international-visitors	Belo Horizonte	Brazil	https://iza-mcac.github.io/2025-04-21-biocrnaseq-cfbioinfo/	"Izabela Mamede, João Paulo P. de Almeida"	
+community-run	Carpentries	bioc-intro	30-31 October 2024	INRAT	https://www.inrat.agrinet.tn/index.php/fr/	Tunis	Tunisia	https://tunisrusergroup.github.io/2024-10-30-INRAT/	"Amal Boukteb, Hédia Tnani, Malek Chaouch"	
+community-run	Carpentries	bioc-intro	2-3 September 2024	EuroBioC2024	https://eurobioc2024.bioconductor.org/	Oxford	United Kingdom	https://bioconductor.github.io/2024-09-02-BiocIntro-EuroBioc/	"Oliver Crook, Marcel Ramos-Perez"	
+community-run	Carpentries	bioc-rnaseq	2-3 September 2024	EuroBioC2024	https://eurobioc2024.bioconductor.org/	Oxford	United Kingdom	https://bioconductor.github.io/2024-09-02-RNASeq-EuroBioc/	"Fabricio Almeida-Silva, Robert Ivanek"	
+community-run	Carpentries	bioc-rnaseq	22-23 July 2024	BioC2024	https://www.bioc2024.bioconductor.org/	Grand Rapids	United States	https://bioconductor.github.io/2024-07-22-BiocRnaseq-Bioc2024/	"Jenny Drnevich, Tim Triche, Charlotte Hutchings"	
+community-run	Carpentries	bioc-rnaseq	11-12 July 2024	Karolinska Institute	https://ki.se/en	Stockholm	Sweden	https://rodrigarc.github.io/2024-07-11-bioconductor-rnaseq/	Rodrigo Arcoverde Cerveira da Silva	
+community-run	Carpentries	bioc-intro	March 2024	University of Illinois	https://illinois.edu/	Champaign	United States		"Jenny Drnevich, Negin Valizadegan, Yifei Kang"	
+community-run	Carpentries	bioc-rnaseq	1-2 February 2024	Carnegie Institution	https://carnegiescience.edu/bse	Baltimore	United States		"Javier Carpinteyro-Ponce, Frederick Tan, Xiaobin Zheng"	
+community-run	Carpentries	bioc-rnaseq	November 2023	Instituto Evandro Chagas	https://www.gov.br/iec/pt-br	Belém	Brazil		Rodrigo Arcoverde Cerveira da Silva	
+community-run	Carpentries	bioc-intro	30-31 October 2023	Practical Genomics	https://sites.google.com/view/practicalgenomics 	Baltimore	United States		"Javier Carpinteyro-Ponce, Lucio Queiroz"	
+community-run	Carpentries	bioc-rnaseq	15 October 2023	BioCAsia2023	https://biocasia2023.bioconductor.org	Hong Kong	China		David Shih	
+community-run	Carpentries	bioc-intro	12-13 October 2023	Carnegie Institution	https://carnegiescience.edu/bse	Baltimore	United States		"Javier Carpinteyro-Ponce, Frederick Tan, Xiaobin Zheng"	
+community-run	Carpentries	bioc-intro	9-12 October 2023	University of Bergen	https://www.uib.no/en	Bergen	Norway		Leo Lahti	
+community-run	Carpentries	bioc-intro	October 2023	University of Illinois	https://illinois.edu/	Champaign	United States		"Jenny Drnevich, Jessica Holmes, Yifei Kang"	
+community-run	Carpentries	bioc-rnaseq	18-19 September 2023	EuroBioC2023	https://eurobioc2023.bioconductor.org/	Ghent	Belgium	https://bioconductor.github.io/2023-09-18-RNASeq-EuroBioc/	"Soneson Charlotte, Almut Lütge, Fabricio Almeida-Silva"	
+community-run	Carpentries	bioc-intro	18-19 September 2023	EuroBioC2023	https://eurobioc2023.bioconductor.org/	Ghent	Belgium	https://bioconductor.github.io/2023-09-18-BiocIntro-EuroBioc/	"Laurent Gatto, Charlotte Hutchings, Olly Crook, Givanna Putri, Marcel Ramos Pérez"	
+community-run	Carpentries	bioc-intro	31 July-1 August 2023	BioC2023	https://bioc2023.bioconductor.org/	Boston	United States	https://bioconductor.github.io/2023-07-31-BiocRnaseq-Bioc2023/	"Jenny Drnevich, Sehyun Oh"	
+community-run	Carpentries	bioc-intro	2-14 July 2023	Ukrainian Biological Data Science Summer School	https://www.bds3.org/	Uzhhorod	Ukraine		Laurent Gatto	
+community-run	Carpentries	bioc-intro	19-21 June 2023	University of Oulu	https://www.oulu.fi/en	Oulu	Finland		Leo Lahti	
+community-run	Carpentries	bioc-intro	22-26 May 2023	Galaxy Smörgåsbord 2023	https://gallantries.github.io/video-library/events/smorgasbord3/	Online		https://gallantries.github.io/video-library/modules/bioconductor	Laurent Gatto	
+community-run	Carpentries	bioc-project	22-26 May 2023	Galaxy Smörgåsbord 2023	https://gallantries.github.io/video-library/events/smorgasbord3/	Online		https://gallantries.github.io/video-library/modules/bioconductor	Kevin Rue-Albrecht	
+community-run	Carpentries	bioc-intro	March 2023	University of Illinois	https://illinois.edu/	Champaign	United States		"Jenny Drnevich, Jessica Holmes, Negin Valizadegan"	
+community-run	Carpentries	bioc-intro	March 2023	UCLouvain	https://uclouvain.be	Brussels	Belgium		Laurent Gatto	
+community-run	Carpentries	bioc-intro	21-24 Feb 2023	Savitribai Phule Pune University	https://www.unipune.ac.in/	Pune	India		Leo Lahti	
+community-run	Carpentries	bioc-intro	5-6 December 2022	Practical Genomics	https://sites.google.com/view/practicalgenomics	Baltimore	United States		"Javier Carpinteyro-Ponce, Claudio Zanettini"	
+community-run	Carpentries	bioc-intro	3-4 November 2022	Carnegie Institution	https://carnegiescience.edu/bse	Baltimore	United States		"Javier Carpinteyro-Ponce, Frederick Tan, Rick Veader, Xiaobin Zheng"	
+community-run	Carpentries	bioc-intro	12-13 September 2022	EuroBioC2022	https://eurobioc2022.bioconductor.org/	Heidelberg	Germany	https://bioconductor.github.io/2022-09-12-BiocIntro-Heidelberg/	"Charlotte Soneson, Laurent Gatto"	
+community-run	Carpentries	bioc-intro	"1, 8, 15, 22 June 2022"	Australian BioCommons	https://www.biocommons.org.au/	Online		https://zenodo.org/records/6766951	"Saskia Freytag, Adele Barugahare, Maria Doyle, Brendan Ansell"	
+community-run	Carpentries	bioc-intro	2022	UCLouvain	https://uclouvain.be/	Brussels	Belgium		Laurent Gatto	
+external-opportunity	Physalia	RNA-seq data analysis with R/Bioconductor	3-14 November 2025	Online				https://www.physalia-courses.org/courses-workshops/course19/	Dr. Ludwig Geistlinger	
+external-opportunity	Physalia	Single-cell RNA-seq analysis with R/Bioconductor	17-21 November 2025	Online				https://www.physalia-courses.org/courses-workshops/course18/	"Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg"	
+external-opportunity	Physalia	R/Bioconductor for Mass Spectrometry and Proteomics	TBD (Early 2026)	Online					Prof. Laurent Gatto	https://www.physalia-courses.org/courses-workshops/course58/
+external-opportunity	Physalia	Network Analysis in Systems Biology with R/Bioconductor	TBD (May/June 2026)	Online					Fabricio Almeida-Silva	https://www.physalia-courses.org/courses-workshops/network-in-systems-biology/
+external-opportunity	Physalia	Single-cell proteomics with R and Bioconductor	TBD	Online					Prof. Laurent Gatto	

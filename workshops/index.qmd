@@ -1,0 +1,140 @@
+---
+title: "Workshops"
+execute:
+  message: false
+  warning: false
+---
+
+This page lists Bioconductor workshops, including community-run workshops and external training opportunities.
+
+For more information on our Carpentry workshops, see [this page](/collaborations/carpentries/workshops.qmd). For more information on Physalia workshops and how to apply for free places, see [this page](/collaborations/physalia/index.qmd).
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(reactable)
+library(htmltools)
+library(lubridate)
+library(stringr)
+
+workshops <- read_tsv("../data/workshops.tsv")
+
+# Function to determine workshop status
+determine_status <- function(date_str, initiative) {
+  # Handle TBD/Early/Late dates first, always returning "upcoming" initially
+  if (grepl("TBD|Early|Late", date_str, ignore.case = TRUE)) {
+    base_status <- "upcoming"
+  } else {
+    # Attempt to parse the date
+    parsed_date <- NA
+    
+    # Try to parse as a date range (e.g., "24-28 March 2025")
+    if (grepl("-\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
+      end_date_str <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
+      parsed_date <- dmy(end_date_str, quiet = TRUE)
+    } 
+    # Handle comma-separated dates (e.g., "1, 8, 15, 22 June 2022")
+    else if (grepl("\\d{1,2},\\s*\\d{1,2},\\s*\\d{1,2},\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
+      last_date_part <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
+      parsed_date <- dmy(last_date_part, quiet = TRUE)
+    } 
+    # Handle year-only dates (e.g., "2022")
+    else if (grepl("^[0-9]{4}$", date_str)) {
+      parsed_date <- ymd(paste0(date_str, "-12-31"), quiet = TRUE)
+    } 
+    # Handle single dates or month-year (e.g., "24 March 2025", "March 2024")
+    else {
+      parsed_date <- dmy(date_str, quiet = TRUE)
+      if (is.na(parsed_date)) {
+        parsed_date <- my(date_str, quiet = TRUE)
+      }
+    }
+
+    # If date parsing still failed, default to upcoming
+    if (is.na(parsed_date)) {
+      base_status <- "upcoming" 
+    } else {
+      # Determine base status (upcoming or past)
+      base_status <- if (parsed_date >= today()) {
+        "upcoming"
+      } else {
+        "past"
+      }
+    }
+  }
+
+  # Apply Physalia-specific status if applicable and still upcoming
+  if (base_status == "upcoming" && initiative == "Physalia") {
+    return("applications-open")
+  } else {
+    return(base_status)
+  }
+}
+
+workshops <- workshops %>%
+  mutate(status = mapply(determine_status, date, initiative)) %>%
+  mutate(display_status = case_when(
+    status == "applications-open" ~ "Upcoming",
+    status == "upcoming" ~ "Upcoming",
+    TRUE ~ "Past"
+  )) %>%
+  mutate(
+    # Create a clickable title link based on conditions
+    title_html = case_when(
+      # Physalia with previous edition link
+      initiative == "Physalia" & !is.na(previous_edition_url) & previous_edition_url != "" ~
+        paste0(title, ' (<a href="', previous_edition_url, '" target="_blank">View Previous Edition</a>)'),
+      # All other cases with a workshop URL
+      !is.na(workshop_url) & workshop_url != "" ~
+        sprintf('<a href="%s" target="_blank">%s</a>', workshop_url, title),
+      # All other cases without a workshop URL
+      TRUE ~ title
+    )
+  )
+
+# Define common columns for both tables
+common_columns <- list(
+  date = colDef(name = "Date"),
+  title_html = colDef(name = "Title", html = TRUE),
+  initiative = colDef(name = "Initiative"),
+  location_name = colDef(name = "Location"),
+  instructors = colDef(name = "Instructors")
+)
+
+# Filter data for Upcoming and Past workshops
+upcoming_workshops_data <- workshops %>%
+  filter(display_status == "Upcoming") %>%
+  select(date, title_html, initiative, location_name, instructors)
+
+past_workshops_data <- workshops %>%
+  filter(display_status == "Past") %>%
+  select(date, title_html, initiative, location_name, instructors)
+
+# Create Upcoming Workshops table
+upcoming_table <- reactable(
+  upcoming_workshops_data,
+  compact = TRUE,
+  striped = TRUE,
+  bordered = TRUE,
+  columns = common_columns,
+  defaultExpanded = TRUE # Expanded by default
+)
+
+# Create Past Workshops table
+past_table <- reactable(
+  past_workshops_data,
+  compact = TRUE,
+  striped = TRUE,
+  bordered = TRUE,
+  columns = common_columns,
+  defaultExpanded = FALSE # Collapsed by default
+)
+
+# Combine tables with headings
+htmltools::tagList(
+  htmltools::h2("Upcoming Workshops"),
+  upcoming_table,
+  htmltools::h2("Past Workshops"),
+  past_table
+)
+```
