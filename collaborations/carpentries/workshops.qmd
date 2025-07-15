@@ -28,7 +28,7 @@ library(lubridate)
 library(stringr)
 ```
 
-Workshops using the [Bioconductor Carpentry training material](https://www.bioconductor.org/help/education-training/) are listed below. If you have taught a workshop using the Bioconductor Carpentry material, please submit a pull request to update the [workshops TSV here](https://github.com/Bioconductor/bioconductor-training/edit/devel/data/workshops.tsv).
+Workshops using the [Bioconductor Carpentry training material](https://www.bioconductor.org/help/education-training/) are listed below. If you have taught a workshop using the Bioconductor Carpentry material, please submit a pull request to update the [workshops TSV here](https://github.com/Bioconductor/bioconductor-training/blob/devel/data/workshops.tsv).
 
 If you would like to request a Bioconductor Carpentry workshop at your institution, please fill out our [workshop request form](https://forms.gle/PGGRqFbmLrzTQmTY7).
 
