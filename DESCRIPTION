@@ -8,13 +8,10 @@ Encoding: UTF-8
 Imports:
     rmarkdown,
     knitr,
-    readr,
-    tidyr,
-    lubridate,
     reactable,
     maps,
     plotly,
-    ggplot2,
     tidygeocoder,
     countrycode,
+    tidyverse,
     remotes
