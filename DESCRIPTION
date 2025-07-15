@@ -1,0 +1,20 @@
+Package: bioconductor-training
+Title: Bioconductor Training Website
+Version: 1.0.0
+Authors@R: person("Maria", "Doyle", email = "maria.doyle@ul.ie", role = c("aut", "cre"))
+Description: The source code for the Bioconductor Training website.
+License: MIT
+Encoding: UTF-8
+Imports:
+    rmarkdown,
+    knitr,
+    readr,
+    tidyr,
+    lubridate,
+    reactable,
+    maps,
+    plotly,
+    ggplot2,
+    tidygeocoder,
+    countrycode,
+    remotes
