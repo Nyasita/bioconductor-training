@@ -19,29 +19,30 @@ library(stringr)
 
 workshops <- read_tsv("../data/workshops.tsv")
 
-# Function to determine workshop status
-determine_status <- function(date_str, initiative) {
-  # Handle TBD/Early/Late dates first, always returning "upcoming" initially
+# Function to determine workshop status and return parsed date
+determine_status_and_date <- function(date_str, initiative) {
+  parsed_date <- NA_real_ # Initialize as numeric for date
+  base_status <- "upcoming"
+
   if (grepl("TBD|Early|Late", date_str, ignore.case = TRUE)) {
     base_status <- "upcoming"
+    parsed_date <- as.Date("2099-12-31") # Assign a very late date for TBD to push them to the end
   } else {
     # Attempt to parse the date
-    parsed_date <- NA
-    
     # Try to parse as a date range (e.g., "24-28 March 2025")
     if (grepl("-\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
       end_date_str <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
       parsed_date <- dmy(end_date_str, quiet = TRUE)
-    } 
+    }
     # Handle comma-separated dates (e.g., "1, 8, 15, 22 June 2022")
     else if (grepl("\\d{1,2},\\s*\\d{1,2},\\s*\\d{1,2},\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
       last_date_part <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
       parsed_date <- dmy(last_date_part, quiet = TRUE)
-    } 
+    }
     # Handle year-only dates (e.g., "2022")
     else if (grepl("^[0-9]{4}$", date_str)) {
       parsed_date <- ymd(paste0(date_str, "-12-31"), quiet = TRUE)
-    } 
+    }
     # Handle single dates or month-year (e.g., "24 March 2025", "March 2024")
     else {
       parsed_date <- dmy(date_str, quiet = TRUE)
@@ -50,9 +51,10 @@ determine_status <- function(date_str, initiative) {
       }
     }
 
-    # If date parsing still failed, default to upcoming
+    # If date parsing still failed, default to upcoming and a very late date
     if (is.na(parsed_date)) {
-      base_status <- "upcoming" 
+      base_status <- "upcoming"
+      parsed_date <- as.Date("2099-12-31")
     } else {
       # Determine base status (upcoming or past)
       base_status <- if (parsed_date >= today()) {
@@ -65,14 +67,22 @@ determine_status <- function(date_str, initiative) {
 
   # Apply Physalia-specific status if applicable and still upcoming
   if (base_status == "upcoming" && initiative == "Physalia") {
-    return("applications-open")
+    status_out <- "applications-open"
   } else {
-    return(base_status)
+    status_out <- base_status
   }
+
+  return(list(status = status_out, parsed_date = parsed_date))
 }
 
+# Apply the function and extract results
+status_and_date_results <- mapply(determine_status_and_date, workshops$date, workshops$initiative, SIMPLIFY = FALSE)
+
 workshops <- workshops %>%
-  mutate(status = mapply(determine_status, date, initiative)) %>%
+  mutate(
+    status = map_chr(status_and_date_results, "status"),
+    sort_date = map(status_and_date_results, "parsed_date") %>% unlist() %>% as.Date()
+  ) %>%
   mutate(display_status = case_when(
     status == "applications-open" ~ "Upcoming",
     status == "upcoming" ~ "Upcoming",
@@ -104,6 +114,7 @@ common_columns <- list(
 # Filter data for Upcoming and Past workshops
 upcoming_workshops_data <- workshops %>%
   filter(display_status == "Upcoming") %>%
+  arrange(sort_date) %>%
   select(date, title_html, initiative, location_name, instructors)
 
 past_workshops_data <- workshops %>%

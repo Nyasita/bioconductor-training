@@ -7,7 +7,7 @@ execute:
   message: false
   warning: false
   echo: false
-  cache: true
+  cache: false
 ---
 
 # Workshops
@@ -26,6 +26,7 @@ library(plotly)
 library(countrycode)
 library(lubridate)
 library(stringr)
+library(purrr)
 ```
 
 Workshops using the [Bioconductor Carpentry training material](https://www.bioconductor.org/help/education-training/) are listed below. If you have taught a workshop using the Bioconductor Carpentry material, please submit a pull request to update the [workshops TSV here](https://github.com/Bioconductor/bioconductor-training/blob/devel/data/workshops.tsv).
@@ -35,55 +36,63 @@ If you would like to request a Bioconductor Carpentry workshop at your instituti
 See [this page](instructors.qmd) for Carpentry instructors in the Bioconductor community.
 
 ```{r}
-# Function to determine workshop status
-determine_status <- function(date_str) {
-  # Handle TBD/Early/Late dates first, always returning "upcoming" initially
+# Function to determine workshop status and return parsed date
+determine_status_and_date <- function(date_str) {
+  parsed_date <- NA
+  base_status <- "upcoming"
+
   if (grepl("TBD|Early|Late", date_str, ignore.case = TRUE)) {
     base_status <- "upcoming"
+    # Use a future date for sorting, but one that reflects the year if present
+    year_match <- str_extract(date_str, "\\d{4}")
+    if (!is.na(year_match)) {
+        parsed_date <- as.Date(paste0(year_match, "-12-31"))
+    } else {
+        parsed_date <- as.Date("2099-12-31") # Far future for TBD without year
+    }
   } else {
-    # Determine the effective end date for comparison
-    parsed_date <- NA
+    # Attempt to parse the date
     if (grepl("-\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
-      # Date range: extract the end date
       end_date_str <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
       parsed_date <- dmy(end_date_str, quiet = TRUE)
     } else if (grepl("\\d{1,2},\\s*\\d{1,2},\\s*\\d{1,2},\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
-      # Comma-separated dates: use the last date
       last_date_part <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
       parsed_date <- dmy(last_date_part, quiet = TRUE)
     } else if (grepl("^[0-9]{4}$", date_str)) {
-      # Year-only: treat as end of year
       parsed_date <- ymd(paste0(date_str, "-12-31"), quiet = TRUE)
     } else {
-      # Single date or month-year
       parsed_date <- dmy(date_str, quiet = TRUE)
       if (is.na(parsed_date)) {
         parsed_date <- my(date_str, quiet = TRUE)
       }
     }
 
-    # If date parsing still failed, default to upcoming
     if (is.na(parsed_date)) {
-      base_status <- "upcoming" 
+      base_status <- "upcoming"
+      parsed_date <- as.Date("2099-12-31")
     } else {
-      # Determine base status (upcoming or past)
-      base_status <- if (parsed_date >= today()) {
-        "upcoming"
-      } else {
-        "past"
-      }
+      base_status <- if (parsed_date >= today()) "upcoming" else "past"
     }
   }
-
-  return(base_status)
+  
+  return(list(status = base_status, parsed_date = as.Date(parsed_date)))
 }
 
 # Add 'region' using countrycode for World Bank regions
-workshops <- read_tsv("../../data/workshops.tsv") %>%
-  filter(initiative == "Carpentries") %>%
+workshops_raw <- read_tsv("../../data/workshops.tsv") %>%
+  filter(initiative == "Carpentries")
+
+# Apply the function and extract results
+status_and_date_results <- mapply(determine_status_and_date, workshops_raw$date, SIMPLIFY = FALSE)
+
+workshops <- workshops_raw %>%
+  mutate(
+    status = map_chr(status_and_date_results, "status"),
+    sort_date = map(status_and_date_results, "parsed_date") %>% unlist() %>% as.Date()
+  ) %>%
   mutate(Location = paste(city, country, sep = ", ")) %>%
   mutate(region = countrycode(country, origin = "country.name", destination = "region")) %>%
-  mutate(status = mapply(determine_status, date))
+  arrange(desc(status), desc(sort_date))
 
 # Filter out workshops that are "Online" for mapping purposes only
 workshops_for_map <- workshops %>%
@@ -201,37 +210,32 @@ interactive_map
 The table below lists all workshops, including the date, host institution, city, country, and region. The region column has been added to make it easier to find workshops in the same geographical area. These regions are based on the World Bank's classification system. The table is fully searchable and filterable, allowing you to quickly locate workshops by various criteria, such as location or instructors.
 
 ```{r}
+# Create a separate data frame for the table with HTML links
+workshops_for_table <- workshops %>% 
+  mutate(
+    location_name_html = if_else(
+      !is.na(location_url) & location_url != "",
+      sprintf("<a href='%s' target='_blank'>%s</a>", location_url, location_name),
+      location_name
+    ),
+    title_html = if_else(
+      !is.na(workshop_url) & workshop_url != "",
+      sprintf("<a href='%s' target='_blank'>%s</a>", workshop_url, title),
+      title
+    )
+  )
+
 # Create the reactable table
-workshops %>%
-  select(date, location_name, title, city, country, region, instructors) %>%
+workshops_for_table %>% 
+  select(date, location_name_html, title_html, city, country, region, instructors) %>% 
   reactable(
     filterable = TRUE,
     searchable = TRUE,
     compact = TRUE,
     columns = list(
       date = colDef(name = "Date"),
-      location_name = colDef(
-        name = "Hosted By",
-        cell = function(value, index) {
-          # Check if the 'location_url' column exists and is not NA
-          if ("location_url" %in% names(workshops) && !is.na(workshops$location_url[index])) {
-            htmltools::tags$a(href = workshops$location_url[index], target = "_blank", as.character(value))
-          } else {
-            as.character(value)
-          }
-        }
-      ),
-      title = colDef(
-        name = "Workshop",
-        cell = function(value, index) {
-          # Check if the 'workshop_url' column exists and is not NA
-          if ("workshop_url" %in% names(workshops) && !is.na(workshops$workshop_url[index])) {
-            htmltools::tags$a(href = workshops$workshop_url[index], target = "_blank", as.character(value))
-          } else {
-            as.character(value)
-          }
-        }
-      ),
+      location_name_html = colDef(name = "Hosted By", html = TRUE),
+      title_html = colDef(name = "Workshop", html = TRUE),
       city = colDef(name = "City"),
       country = colDef(name = "Country"),
       region = colDef(name = "Region"),
