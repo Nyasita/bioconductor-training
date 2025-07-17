@@ -18,6 +18,7 @@ library(reactable)
 library(htmltools)
 library(lubridate)
 library(stringr)
+library(countrycode)
 
 workshops <- read_tsv("../data/workshops.tsv")
 
@@ -101,15 +102,31 @@ workshops <- workshops %>%
         sprintf('<a href="%s" target="_blank">%s</a>', workshop_url, title),
       # All other cases without a workshop URL
       TRUE ~ title
+    ),
+    location_name_html = case_when(
+      initiative == "Physalia" ~ '<a href="https://www.physalia-courses.org/" target="_blank">Physalia-courses</a>',
+      !is.na(location_url) & location_url != "" ~ sprintf('<a href="%s" target="_blank">%s</a>', location_url, location_name),
+      TRUE ~ location_name
+    ),
+    city = if_else(initiative == "Physalia", "Online", city),
+    country = if_else(initiative == "Physalia", "Online", country),
+    region = if_else(initiative == "Physalia", "Online", countrycode(country, origin = "country.name", destination = "region")),
+    initiative_html = case_when(
+      initiative == "Carpentries" ~ '<a href="/collaborations/carpentries/index.html">Carpentries</a>',
+      initiative == "Physalia" ~ '<a href="/collaborations/physalia/index.html">Physalia</a>',
+      TRUE ~ initiative
     )
   )
 
 # Define common columns for both tables
 common_columns <- list(
   date = colDef(name = "Date"),
-  title_html = colDef(name = "Title", html = TRUE),
-  initiative = colDef(name = "Initiative"),
-  location_name = colDef(name = "Location"),
+  title_html = colDef(name = "Workshop", html = TRUE),
+  initiative_html = colDef(name = "Initiative", html = TRUE),
+  location_name_html = colDef(name = "Hosted By", html = TRUE),
+  city = colDef(name = "City"),
+  country = colDef(name = "Country"),
+  region = colDef(name = "Region"),
   instructors = colDef(name = "Instructors")
 )
 
@@ -117,11 +134,11 @@ common_columns <- list(
 upcoming_workshops_data <- workshops %>%
   filter(display_status == "Upcoming") %>%
   arrange(sort_date) %>%
-  select(date, title_html, initiative, location_name, instructors)
+  select(date, title_html, initiative_html, location_name_html, city, country, region, instructors)
 
 past_workshops_data <- workshops %>%
   filter(display_status == "Past") %>%
-  select(date, title_html, initiative, location_name, instructors)
+  select(date, title_html, initiative_html, location_name_html, city, country, region, instructors)
 
 # Create Upcoming Workshops table
 upcoming_table <- reactable(
@@ -129,6 +146,8 @@ upcoming_table <- reactable(
   compact = TRUE,
   striped = TRUE,
   bordered = TRUE,
+  filterable = TRUE,
+  searchable = TRUE,
   columns = common_columns,
   defaultExpanded = TRUE # Expanded by default
 )
@@ -139,6 +158,8 @@ past_table <- reactable(
   compact = TRUE,
   striped = TRUE,
   bordered = TRUE,
+  filterable = TRUE,
+  searchable = TRUE,
   columns = common_columns,
   defaultExpanded = FALSE # Collapsed by default
 )
