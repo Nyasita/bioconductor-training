@@ -9,6 +9,8 @@ This page lists Bioconductor workshops, including community-run workshops and ex
 
 For more information on our Carpentry workshops, see [this page](/collaborations/carpentries/workshops.qmd). For more information on Physalia workshops and how to apply for free places, see [this page](/collaborations/physalia/index.qmd).
 
+New workshops can be added by submitting a pull request to update the [workshops TSV here](https://github.com/Bioconductor/bioconductor-training/blob/devel/data/workshops.tsv).
+
 ```{r}
 #| echo: false
 library(tidyverse)
