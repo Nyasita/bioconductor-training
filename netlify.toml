@@ -1,2 +1,5 @@
 [[plugins]]
 package = "@quarto/netlify-plugin-quarto"
+
+[build.environment]
+NODE_VERSION = "18"
