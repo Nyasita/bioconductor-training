@@ -1,0 +1,154 @@
+---
+title: ""
+description: | 
+  Join us for a comprehensive week-long Bioconductor in-person course covering genomic data analysis and RNA-seq using R and Bioconductor.
+---
+
+# Bioconductor Course | Addis Ababa, Ethiopia | August 2025
+
+![](images/pexels-christian-alemu-127251395-30177512.jpg){style="width:100%; max-height:700px; object-fit:cover; object-position:50% 0%; display:block; margin:0 auto;"}
+
+## Event Details
+
+- 📅 **Dates:** August 25 - 29, 2025
+- 📍 **Location:** [Bio & Emerging Technology Institute (BETin)](https://www.betin.gov.et/), Addis Ababa, Ethiopia
+- 📘 **Format:** Week-long course (single registration covering all sessions)
+
+## Overview
+
+This intensive week-long Bioconductor course is designed to build bioinformatics capacity in Africa, focusing on practical skills in genomic data analysis and RNA-seq. Participants will gain hands-on experience with R and Bioconductor, guided by expert instructors from both local and international bioinformatics communities.
+
+## Course Structure
+
+- **August 25-26:** Introduction to R/Bioconductor for Genomic Data Analysis  
+  Develop foundational skills in R and Bioconductor, including data handling, visualisation, and reproducible research practices tailored for genomic data analysis.
+
+- **August 27-29:** RNA-seq Data Analysis and Interpretation  
+  Dive into RNA-seq workflows, from preprocessing to differential expression analysis, and gain practical experience with real-world datasets.
+
+
+## 🎓 Instructors
+
+The workshop will be led by a team of instructors from the Bioconductor community, including both local bioinformatics experts and experienced international instructors. This blend ensures a diversity of perspectives and expertise, fostering a strong collaborative learning environment.  
+
+
+::: {.grid style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: auto;"}
+
+::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
+![](images/instructors/YohannesGedamuGebre.jpeg){width=120 height=120 style="border-radius:50%;"} 
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
+  **Yohannes Gedamu**  
+  <em style="font-size: 14px; color: #555;">BETin, Ethiopia</em>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <a href="https://www.linkedin.com/in/yohannesgg/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+  </a>
+</div>
+:::
+
+::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
+![](images/instructors/NiguseKelileLema.jpeg){width=120 height=120 style="border-radius:50%;"} 
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
+  **Niguse Kelile**  
+  <em style="font-size: 14px; color: #555;">BETin, Ethiopia</em>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <a href="https://www.linkedin.com/in/niguse-kelile-lema/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+  </a>
+</div>
+:::
+
+::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
+![](images/instructors/TrusharShah.jpg){width=120 height=120 style="border-radius:50%;"} 
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
+  **Trushar Shah**  
+  <em style="font-size: 14px; color: #555;">IITA, Kenya</em>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <a href="https://www.linkedin.com/in/trushar-shah-55416a1/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+  </a>
+</div>
+:::
+
+::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
+![](images/instructors/MariaDoyle.jpeg){width=120 height=120 style="border-radius:50%;"} 
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
+  **Maria Doyle**  
+  <em style="font-size: 14px; color: #555;">UL, Ireland</em>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; ">
+  <a href="https://www.linkedin.com/in/maria-doyle-11220739/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+  </a>
+</div>
+:::
+
+
+:::
+
+
+## Registration
+
+A single registration covers the full week of sessions.  
+
+➡️ [**Register in the application form**](https://forms.gle/hUa1xpA38Ajahsrs8).    
+
+[Download the workshop flyer (PDF)](Bioconductor Poster - Addis.pdf).
+
+
+We welcome participants who are keen to develop their bioinformatics skills with a focus on genomic data analysis.
+
+## Funding and Support
+
+This workshop is primarily funded by BETin, with additional support from Erasmus+ through UL Global, and from Bioconductor via a [Chan Zuckerberg Initiative (CZI) EOSS Cycle 6 grant](https://blog.bioconductor.org/posts/2024-07-12-czi-eoss6-grants/).
+
+## Organisers
+
+Zewdu Edea (Bio & Emerging Technology Institute), Yohannes Gedamu (Bio & Emerging Technology Institute), Niguse Kelile (Bio & Emerging Technology Institute), Trushar Shah (International Institute of Tropical Agriculture), Maria Doyle (University of Limerick).
+
+## Contact
+
+For questions, please contact the local organising team (details in the [application form](](https://forms.gle/hUa1xpA38Ajahsrs8)), or email maria.doyle [at] ul.ie.
+
+<style>
+.call-to-action {
+  background-color: var(--neutral-n10);
+  border: 2px solid var(--primary);
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.call-to-action h2 {
+  margin-top: 1rem; /* Reduce space above */
+  margin-bottom: 0.5rem; /* Space below heading */
+  text-align: center; 
+  display: block; /* Ensures proper block-level alignment */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.call-to-action p {
+  margin-bottom: 1.5rem; /* Space before iframe */
+}
+
+</style>
+
+<div class="call-to-action">
+  <h2>🌍 Join the Bioconductor Africa Community</h2>
+  <p>Stay informed about course registration opening, news, projects, and events in Africa.</p>
+  <iframe src="biocafrica-mailing-list.html" width="100%" height="400" style="border:none;"></iframe>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 1200px; margin: 10px auto;">
+  <img src="images/logos/BETin-logo.png" alt="BETin Logo" style="height: 80px; margin: 0 20px;">
+  <img src="images/logos/IITA-Logo.png" alt="IITA Logo" style="height: 80px; margin: 0 20px;">
+  <img src="images/logos/ul-logo.jpg" alt="UL Logo" style="height: 80px; margin: 0 20px;">
+  <img src="../../images/bioconductor-logo.svg" alt="Bioconductor Logo" style="height: 80px; margin: 0 20px;">
+  <img src="images/logos/czi-logo.jpg" alt="CZI Logo" style="height: 80px; margin: 0 20px;">
+</div>
