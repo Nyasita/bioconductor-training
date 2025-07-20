@@ -6,7 +6,7 @@ description: |
 
 # Bioconductor Course | Addis Ababa, Ethiopia | August 2025
 
-![](images/pexels-christian-alemu-127251395-30177512.jpg){style="width:100%; height:60vh; object-fit:cover; object-position:50% 0%; display:block; margin:0 auto;"}
+![](images/pexels-christian-alemu-127251395-30177512.jpg){style="width:100%; height:calc(60vh + 50px); object-fit:cover; object-position:50% 5%; display:block; margin:0 auto;"}
 
 ## Event Details
 
