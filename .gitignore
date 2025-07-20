@@ -6,7 +6,6 @@
 
 # Quarto build cache
 /.quarto/
-**/_freeze/
 **/*_cache/
 docs/
 
