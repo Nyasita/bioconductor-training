@@ -26,6 +26,8 @@ This intensive week-long Bioconductor course is designed to build bioinformatics
 - **August 27-29:** RNA-seq Data Analysis and Interpretation  
   Dive into RNA-seq workflows, from preprocessing to differential expression analysis, and gain practical experience with real-world datasets.
 
+> 📝 **Curious about what to expect?**  
+> Take a look at the [recap of our March 2025 Nairobi workshop](https://blog.bioconductor.org/posts/2025-05-21-kenya-course/) for highlights, photos, and participant feedback from a recent Bioconductor course in Africa.
 
 ## 🎓 Instructors
 
