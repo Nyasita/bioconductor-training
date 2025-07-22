@@ -100,7 +100,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 - **Cost:** Free (participants are responsible for their own travel and accommodation)
 - **Application Deadline:** Rolling admissions starting August 8, 2025
 
-➡️ [Apply for a place using the application formm](https://forms.gle/hUa1xpA38Ajahsrs8). 
+➡️ [Apply for a place using the application form](https://forms.gle/hUa1xpA38Ajahsrs8). 
 
 We welcome applications from individuals who are eager to build their bioinformatics skills in RNA-seq data analysis using R and Bioconductor.
 
