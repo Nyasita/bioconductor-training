@@ -18,6 +18,8 @@ description: |
 
 This intensive week-long Bioconductor course is designed to build bioinformatics capacity in Africa, focusing on practical skills in genomic data analysis and RNA-seq. Participants will gain hands-on experience with R and Bioconductor, guided by expert instructors from both local and international bioinformatics communities.
 
+[Download the workshop flyer (PDF)](Bioconductor Poster - Addis.pdf).  
+
 ## Course Structure
 
 - **August 25-26:** Introduction to R/Bioconductor for Genomic Data Analysis  
@@ -25,6 +27,7 @@ This intensive week-long Bioconductor course is designed to build bioinformatics
 
 - **August 27-29:** RNA-seq Data Analysis and Interpretation  
   Dive into RNA-seq workflows, from preprocessing to differential expression analysis, and gain practical experience with real-world datasets.
+  
 
 > 📝 **Curious about what to expect?**  
 > Take a look at the [recap of our March 2025 Nairobi workshop](https://blog.bioconductor.org/posts/2025-05-21-kenya-course/) for highlights, photos, and participant feedback from a recent Bioconductor course in Africa.
@@ -92,16 +95,18 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 :::
 
 
-## Registration
+## Application
 
-A single registration covers the full week of sessions.  
+- **Cost:** Free (participants are responsible for their own travel and accommodation)
+- **Application Deadline:** Rolling admissions starting August 8, 2025
 
-➡️ [**Register in the application form**](https://forms.gle/hUa1xpA38Ajahsrs8).    
+➡️ [Apply for a place using the application formm](https://forms.gle/hUa1xpA38Ajahsrs8). 
 
-[Download the workshop flyer (PDF)](Bioconductor Poster - Addis.pdf).
+We welcome applications from individuals who are eager to build their bioinformatics skills in RNA-seq data analysis using R and Bioconductor.
 
+Applications will be reviewed based on motivation, background, and potential to apply the training.
 
-We welcome participants who are keen to develop their bioinformatics skills with a focus on genomic data analysis.
+Please apply only if you are committed to attending all sessions in person and can cover your travel and accommodation costs.
 
 ## Funding and Support
 
@@ -113,7 +118,7 @@ Zewdu Edea (Bio & Emerging Technology Institute), Yohannes Gedamu (Bio & Emergin
 
 ## Contact
 
-For questions, please contact the local organising team (details in the [application form](](https://forms.gle/hUa1xpA38Ajahsrs8)), or email maria.doyle [at] ul.ie.
+For questions, please contact the local organising team (details in the [application form](https://forms.gle/hUa1xpA38Ajahsrs8)), or email maria.doyle [at] ul.ie.
 
 <style>
 .call-to-action {
