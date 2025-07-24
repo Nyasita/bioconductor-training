@@ -35,5 +35,5 @@ external-opportunity	Physalia	R/Bioconductor for Mass Spectrometry and Proteomic
 external-opportunity	Physalia	Network Analysis in Systems Biology with R/Bioconductor	TBD (May/June 2026)	Online					Fabricio Almeida-Silva	https://www.physalia-courses.org/courses-workshops/network-in-systems-biology/
 external-opportunity	Physalia	Single-cell proteomics with R and Bioconductor	TBD	Online					Prof. Laurent Gatto	
 community-run	Carpentries	bioc-rnaseq	15-16 September 2025	EuroBioC2025	https://eurobioc2025.bioconductor.org/	Barcelona	Spain	https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html	"Estefania Mancini, Vasileios Panagoitis Lenis and Jacques Serizay"
-	
 community-run	Carpentries	bioc-scrnaseq	15-16 September 2025	EuroBioC2025	https://eurobioc2025.bioconductor.org/	Barcelona	Spain	https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html	"Robert Ivánek, Mireia Ramos and Kevin Rue-Albrecht"
+community-run	Carpentries	bioc-intro,bioc-rnaseq	25-29 August 2025	BETin	https://www.betin.gov.et/	Addis Ababa	Ethiopia	https://training.bioconductor.org/workshops/2025-08-Addis-Ababa/index.html	"Yohannes Gedamu, Niguse Kelile, Trushar Shah, Maria Doyle"
