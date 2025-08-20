@@ -3,6 +3,7 @@ title: "Workshops"
 execute:
   message: false
   warning: false
+  freeze: false
 ---
 
 This page lists Bioconductor workshops, including community-run workshops and external training opportunities.
@@ -138,6 +139,7 @@ upcoming_workshops_data <- workshops %>%
 
 past_workshops_data <- workshops %>%
   filter(display_status == "Past") %>%
+  arrange(desc(sort_date)) %>%
   select(date, title_html, initiative_html, location_name_html, city, country, region, instructors)
 
 # Create Upcoming Workshops table
