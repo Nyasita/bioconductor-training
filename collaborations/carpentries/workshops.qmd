@@ -8,6 +8,7 @@ execute:
   warning: false
   echo: false
   cache: false
+  freeze: false
 ---
 
 # Workshops
