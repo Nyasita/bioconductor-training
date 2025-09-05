@@ -1,49 +1,76 @@
 # EuroBioC2025 Carpentry Workshop: Bulk RNA-seq
 
-## Workshop Description
+## Description
 Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This course shows how to use Bioconductor packages to analyse bulk RNA-seq data including how to import and annotate quantified data into R, exploratory analysis and quality control, differential expression analysis and gene set enrichment analysis.
 
 **Pre-requisites:** Familiarity with R and Bioconductor.
 
 **Instructors:** Estefania Mancini, Vasileios Panagiotis Lenis, Jacques Serizay
 
+[Conference Website Page](https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html)
+
 ## Dates and Venue
 **Dates:** Monday and Tuesday, 15–16 September 2025  
 **Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona  
-[Conference Workshop Info](https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html)
 
-## Schedule
+## Schedule {#schedule}
 
-| Time       | Session                                              | Instructor(s) |
-|------------|--------------------------------------------------- --|---------------|
-| 08:30–09:00 | Setup Help                                          | All           |
-| 09:00–10:30 | Introduction to RNA-seq and RStudio Project         | TBD           |
-| 10:30–11:00 | Coffee Break                                        |               |
-| 11:00–13:00 | Importing and Annotating Quantified Data            | TBD           |
-| 13:00–14:00 | Lunch                                               |               |
-| 14:00–16:00 | Exploratory Analysis and Quality Control            | TBD           |
-| 16:00–16:30 | Coffee Break                                        |               |
-| 16:30–17:30 | Wrap-up and Q&A                                     | All           |
+::: {layout-ncol=2}
 
-| Time       | Session                                              | Instructor(s) |
-|------------|--------------------------------------------------- --|---------------|
-| 08:30–09:00 | Helpdesk                                            | All           |
-| 09:00–10:30 | Exploratory Analysis (continued)                    | TBD           |
-| 10:30–11:00 | Coffee Break                                        |               |
-| 11:00–13:00 | DE Analysis                                         | TBD           |
-| 13:00–14:00 | Lunch                                               |               |
-| 14:00–16:00 | Gene Set Enrichment Analysis                        | All           |
-| 16:00–16:30 | Coffee Break                                        |               |
-| 16:30–17:30 | Wrap-up and Feedback                                | All           |
+#### Day 1 — Monday, 15 September
+
+| Time        | Session                                      | Instructor(s) |
+|:-----------:|:---------------------------------------------|:--------------|
+| 08:30–09:00 | Setup help                                   | All           |
+| 09:00–10:30 | Introduction to RNA-seq and RStudio Project  | TBD           |
+| 10:30–11:00 | Coffee break                                 |               |
+| 11:00–13:00 | Importing and annotating quantified data     | TBD           |
+| 13:00–14:00 | Lunch                                        |               |
+| 14:00–15:30 | Exploratory analysis and quality control     | TBD           |
+| 15:30–16:00 | Coffee break                                 |               |
+| 16:00–17:00 | Wrap-up and Q&A                              | All           |
+
+#### Day 2 — Tuesday, 16 September
+
+| Time        | Session                                      | Instructor(s) |
+|:-----------:|:---------------------------------------------|:--------------|
+| 08:30–09:00 | Helpdesk                                     | All           |
+| 09:00–10:30 | Exploratory analysis (continued)             | TBD           |
+| 10:30–11:00 | Coffee break                                 |               |
+| 11:00–13:00 | Differential expression analysis             | TBD           |
+| 13:00–14:00 | Lunch                                        |               |
+| 14:00–15:30 | Gene set enrichment analysis                 | All           |
+| 15:30–16:00 | Coffee break                                 |               |
+| 16:00–17:00 | Wrap-up and feedback                         | All           |
+
+:::
+
+```{=html}
+<style>
+/* Schedule tweaks */
+#schedule .quarto-layout-panel { gap: 1.25rem; }
+#schedule table { width: 100%; font-size: 0.95rem; }
+#schedule th, #schedule td { vertical-align: middle; }
+#schedule th { text-align: center; }
+#schedule td:first-child, #schedule th:first-child { text-align: center; white-space: nowrap; }
+#schedule tbody tr:nth-child(even) { background: rgba(0,0,0,.03); }
+/* Tighten headings inside columns */
+#schedule h4 { margin-top: 0; margin-bottom: .5rem; }
+@media (max-width: 991.98px) {
+  #schedule table { font-size: 0.95rem; }
+}
+</style>
+```
 
 ## Setup Instructions
 Please ensure you have the following installed:
+
 - R (version ≥ 4.5)
 - RStudio
 - Bioconductor packages: Listed in the Lesson [Summary and Setup](https://carpentries-incubator.github.io/bioc-rnaseq/)
 
 ## Collaborative Notes
-Etherpad: https://pad.carpentries.org/eurobioc2025-rnaseq  
+- [Etherpad](https://pad.carpentries.org/eurobioc2025-rnaseq)
 
 ## Lesson Materials
 - [Bulk RNA-seq Carpentries Lesson](https://carpentries-incubator.github.io/bioc-rnaseq/)  
