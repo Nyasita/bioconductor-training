@@ -1,0 +1,52 @@
+# EuroBioC2025 Carpentry Workshop: Single-cell RNA-seq
+
+## Workshop Description
+Analysis and interpretation of single-cell RNA sequencing data with Bioconductor: This course shows how to use Bioconductor packages for essential single-cell analysis steps including quality control, cell type annotation, multi-sample analysis, working with large data, and integration with public data.
+
+**Pre-requisites:** Familiarity with R and Bioconductor. Familiarity with bulk RNA-seq data analysis is beneficial, but not strictly required.
+
+**Instructors:** Robert Ivánek, Mireia Ramos, Kevin Rue-Albrecht
+
+## Dates and Venue
+**Dates:** Monday and Tuesday, 15–16 September 2025  
+**Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona  
+[Conference Workshop Info](https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html)
+
+## Schedule
+
+Subject to change.
+
+| Time       | Session                                                  | Instructor(s) |
+|------------|----------------------------------------------------------|---------------|
+| 08:30–09:00 | Setup Helpdesk                                              | All           |
+| 09:00–10:30 | Introduction to Bioconductor and SingleCellExperiment   | TBD           |
+| 10:30–11:00 | Coffee Break                                            |               |
+| 11:00–13:00 | Exploratory data analysis and quality control           | TBD           |
+| 13:00–14:00 | Lunch                                                   |               |
+| 14:00–16:00 | Cell type annotation                                    | TBD           |
+| 16:00–16:30 | Coffee Break                                            |               |
+| 16:30–17:00 | Wrap-up and Q&A                                         | All           |
+
+| Time       | Session                                                  | Instructor(s) |
+|------------|----------------------------------------------------------|---------------|
+| 08:30–09:00 | Helpdesk                                                | All           |
+| 09:00–10:30 | Multi-sample analyses                                   | TBD           |
+| 10:30–11:00 | Coffee Break                                            |               |
+| 11:00–13:00 | Working with large data                                 | TBD           |
+| 13:00–14:00 | Lunch                                                   |               |
+| 14:00–16:00 | Accessing data from the Human Cell Atlas (HCA)          | All           |
+| 16:00–16:30 | Coffee Break                                            |               |
+| 16:30–17:00 | Wrap-up and Feedback                                    | All           |
+
+
+## Setup Instructions
+Please ensure you have the following installed:
+- R (version ≥ 4.5)
+- RStudio
+- Bioconductor packages: Listed in the Lesson [Summary and Setup](https://carpentries-incubator.github.io/bioc-scrnaseq/)
+
+## Collaborative Notes
+Etherpad: https://pad.carpentries.org/eurobioc2025-scrnaseq
+
+## Lesson Materials
+- [Single-cell RNA-seq Carpentries Lesson](https://carpentries-incubator.github.io/bioc-scrnaseq/)  )  
