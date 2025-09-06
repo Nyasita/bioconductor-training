@@ -1,74 +1,59 @@
-# EuroBioC2025 Carpentry Workshop: Single-cell RNA-seq
+# EuroBioC2025 Carpentry Workshop: Single-cell RNA-seq {.workshop}
 
-## Description
-Analysis and interpretation of single-cell RNA sequencing data with Bioconductor: This course shows how to use Bioconductor packages for essential single-cell analysis steps including quality control, cell type annotation, multi-sample analysis, working with large data, and integration with public data.
+## Workshop Description
+Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: quality control, normalisation, dimensionality reduction, clustering, cell-type annotation, and working at scale. We’ll combine short talks with hands-on exercises using reproducible RStudio Projects and the SingleCellExperiment ecosystem.
 
-**Pre-requisites:** Familiarity with R and Bioconductor. Familiarity with bulk RNA-seq data analysis is beneficial, but not strictly required.
-
+**Pre-requisites:** Familiarity with R and Bioconductor. Familiarity with bulk RNA-seq concepts is helpful but not required.  
 **Instructors:** Robert Ivánek, Mireia Ramos, Kevin Rue-Albrecht
 
-[Conference Website Page](https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html)
+[Conference workshop page](https://eurobioc2025.bioconductor.org/pages/carpentryworkshops.html)
 
 ## Dates and Venue
 **Dates:** Monday and Tuesday, 15–16 September 2025  
-**Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona  
+**Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona
 
-
-## Schedule {#schedule}
-
+::: {.schedule}
+## Schedule {.schedule #schedule}
 *Subject to change.*
 
 ::: {layout-ncol=2}
 
 #### Day 1 — Monday, 15 September
-
-| Time       | Session                                                  | Instructor(s) |
-|------------|----------------------------------------------------------|---------------|
-| 08:30–09:00 | Setup Helpdesk                                              | All           |
-| 09:00–10:30 | Introduction to Bioconductor and SingleCellExperiment   | TBD           |
-| 10:30–11:00 | Coffee Break                                            |               |
-| 11:00–13:00 | Exploratory data analysis and quality control           | TBD           |
-| 13:00–14:00 | Lunch                                                   |               |
-| 14:00–15:30 | Cell type annotation                                    | TBD           |
-| 15:30–16:00 | Coffee Break                                            |               |
-| 16:00–17:00 | Wrap-up and Q&A                                         | All           |
+| Time        | Session                                      | Instructor(s) |
+|:-----------:|:---------------------------------------------|:--------------|
+| 08:30–09:00 | Setup helpdesk                               | All           |
+| 09:00–10:30 | Introduction to Bioconductor & SingleCellExperiment | TBD     |
+| 10:30–11:00 | Coffee break                                 |               |
+| 11:00–13:00 | Exploratory data analysis & quality control  | TBD           |
+| 13:00–14:00 | Lunch                                        |               |
+| 14:00–15:30 | Cell-type annotation                         | TBD           |
+| 15:30–16:00 | Coffee break                                 |               |
+| 16:00–17:00 | Wrap-up and Q&A                              | All           |
 
 #### Day 2 — Tuesday, 16 September
-
-| Time       | Session                                                  | Instructor(s) |
-|------------|----------------------------------------------------------|---------------|
-| 08:30–09:00 | Helpdesk                                                | All           |
-| 09:00–10:30 | Multi-sample analyses                                   | TBD           |
-| 10:30–11:00 | Coffee Break                                            |               |
-| 11:00–13:00 | Working with large data                                 | TBD           |
-| 13:00–14:00 | Lunch                                                   |               |
-| 14:00–15:30 | Accessing data from the Human Cell Atlas (HCA)          | All           |
-| 15:30–16:00 | Coffee Break                                            |               |
-| 16:00–17:00 | Wrap-up and Feedback                                    | All           |
+| Time        | Session                                      | Instructor(s) |
+|:-----------:|:---------------------------------------------|:--------------|
+| 08:30–09:00 | Helpdesk                                     | All           |
+| 09:00–10:30 | Multi-sample analyses                        | TBD           |
+| 10:30–11:00 | Coffee break                                 |               |
+| 11:00–13:00 | Working with large data                      | TBD           |
+| 13:00–14:00 | Lunch                                        |               |
+| 14:00–15:30 | Accessing Human Cell Atlas data              | TBD           |
+| 15:30–16:00 | Coffee break                                 |               |
+| 16:00–17:00 | Wrap-up and feedback                         | All           |
 
 :::
-
-```{=html}
-<style>
-#schedule .quarto-layout-panel { gap: 1.25rem; }
-#schedule table { width: 100%; font-size: 0.95rem; }
-#schedule th, #schedule td { vertical-align: middle; }
-#schedule th { text-align: center; }
-#schedule td:first-child, #schedule th:first-child { text-align: center; white-space: nowrap; }
-#schedule tbody tr:nth-child(even) { background: rgba(0,0,0,.03); }
-#schedule h4 { margin-top: 0; margin-bottom: .5rem; }
-@media (max-width: 991.98px) { #schedule table { font-size: 0.95rem; } }
-</style>
-```
+:::
 
 ## Setup Instructions
 Please ensure you have the following installed:
-- R (version ≥ 4.5)
-- RStudio
-- Bioconductor packages: Listed in the Lesson [Summary and Setup](https://carpentries-incubator.github.io/bioc-scrnaseq/)
+
+- R (version ≥ 4.5)  
+- RStudio  
+- Bioconductor packages: see [Summary and Setup](https://carpentries-incubator.github.io/bioc-scrnaseq/) in the lesson. 
 
 ## Collaborative Notes
-Etherpad: https://pad.carpentries.org/eurobioc2025-scrnaseq
+[Etherpad](https://pad.carpentries.org/eurobioc2025-scrnaseq)
 
 ## Lesson Materials
-- [Single-cell RNA-seq Carpentries Lesson](https://carpentries-incubator.github.io/bioc-scrnaseq/)  )  
+[Single-cell RNA-seq Carpentries lesson](https://carpentries-incubator.github.io/bioc-scrnaseq/)

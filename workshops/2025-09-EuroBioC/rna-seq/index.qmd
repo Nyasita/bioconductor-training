@@ -1,4 +1,4 @@
-# EuroBioC2025 Carpentry Workshop: Bulk RNA-seq
+# EuroBioC2025 Carpentry Workshop: Bulk RNA-seq {.workshop}
 
 ## Description
 Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This course shows how to use Bioconductor packages to analyse bulk RNA-seq data including how to import and annotate quantified data into R, exploratory analysis and quality control, differential expression analysis and gene set enrichment analysis.
@@ -12,8 +12,11 @@ Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This 
 ## Dates and Venue
 **Dates:** Monday and Tuesday, 15–16 September 2025  
 **Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona  
+**Room:** 228
 
-## Schedule {#schedule}
+::: {.schedule}
+## Schedule {.schedule #schedule}
+*Subject to change.*
 
 ::: {layout-ncol=2}
 
@@ -39,28 +42,12 @@ Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This 
 | 10:30–11:00 | Coffee break                                 |               |
 | 11:00–13:00 | Differential expression analysis             | TBD           |
 | 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Gene set enrichment analysis                 | All           |
+| 14:00–15:30 | Gene set enrichment analysis                 | TBD           |
 | 15:30–16:00 | Coffee break                                 |               |
 | 16:00–17:00 | Wrap-up and feedback                         | All           |
 
 :::
-
-```{=html}
-<style>
-/* Schedule tweaks */
-#schedule .quarto-layout-panel { gap: 1.25rem; }
-#schedule table { width: 100%; font-size: 0.95rem; }
-#schedule th, #schedule td { vertical-align: middle; }
-#schedule th { text-align: center; }
-#schedule td:first-child, #schedule th:first-child { text-align: center; white-space: nowrap; }
-#schedule tbody tr:nth-child(even) { background: rgba(0,0,0,.03); }
-/* Tighten headings inside columns */
-#schedule h4 { margin-top: 0; margin-bottom: .5rem; }
-@media (max-width: 991.98px) {
-  #schedule table { font-size: 0.95rem; }
-}
-</style>
-```
+:::
 
 ## Setup Instructions
 Please ensure you have the following installed:

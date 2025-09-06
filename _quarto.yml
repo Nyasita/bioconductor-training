@@ -36,3 +36,5 @@ format:
       - "style/sections/header.css"
       - "style/sections/footer.css"
       - "style/sections/sidebar.css"
+      - "style/components/workshop.css"
+
