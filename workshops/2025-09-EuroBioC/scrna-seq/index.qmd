@@ -10,7 +10,8 @@ Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: qu
 
 ## Dates and Venue
 **Dates:** Monday and Tuesday, 15–16 September 2025  
-**Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona
+**Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona.  
+**Room:** 232 (except for Day 1 setup and welcome, which are in Room 228)
 
 ::: {.schedule}
 ## Schedule {.schedule #schedule}
@@ -21,27 +22,30 @@ Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: qu
 #### Day 1 — Monday, 15 September
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
-| 08:30–09:00 | Setup helpdesk                               | All           |
-| 09:00–10:30 | Introduction to Bioconductor & SingleCellExperiment | TBD     |
+| 08:30–09:00 | Setup help (Room 228)                        | All           |
+| 09:00–09:15 | Welcome (Room 228)                           | All           |
+| 09:15–10:30 | Introduction to Bioconductor & SCE           | TBD           |
 | 10:30–11:00 | Coffee break                                 |               |
 | 11:00–13:00 | Exploratory data analysis & quality control  | TBD           |
 | 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Cell-type annotation                         | TBD           |
-| 15:30–16:00 | Coffee break                                 |               |
-| 16:00–17:00 | Wrap-up and Q&A                              | All           |
+| 14:00–15:30 | Exploratory data analysis (continued)        | TBD           |
+| 15:30–15:45 | Comfort break                                |               |
+| 15:45–16:45 | Cell-type annotation                         | TBD           |
+| 16:45–17:00 | Wrap-up and Q&A                              | TBD           |
 
 #### Day 2 — Tuesday, 16 September
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
 | 08:30–09:00 | Helpdesk                                     | All           |
-| 09:00–10:30 | Multi-sample analyses                        | TBD           |
+| 09:00–09:15 | Recap and Q&A                                | TBD           |
+| 09:15–10:30 | Multi-sample analyses                        | TBD           |
 | 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | Working with large data                      | TBD           |
+| 11:00–13:00 | Multi-sample analyses (continued)            | TBD           |
 | 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Accessing Human Cell Atlas data              | TBD           |
-| 15:30–16:00 | Coffee break                                 |               |
-| 16:00–17:00 | Wrap-up and feedback                         | All           |
-
+| 14:00–15:30 | Working with large data                      | TBD           |
+| 15:30–15:45 | Comfort break                                |               |
+| 15:45–16:45 | Accessing Human Cell Atlas data              | TBD           |
+| 16:45–17:00 | Wrap-up and feedback                         | TBD           |
 :::
 :::
 

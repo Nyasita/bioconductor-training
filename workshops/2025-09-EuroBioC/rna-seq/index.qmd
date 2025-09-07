@@ -25,26 +25,30 @@ Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This 
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
 | 08:30–09:00 | Setup help                                   | All           |
-| 09:00–10:30 | Introduction to RNA-seq and RStudio Project  | TBD           |
+| 09:00–09:15 | Welcome                                      | All           |
+| 09:15–10:30 | Introduction to RNA-seq                      | TBD           |
 | 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | Importing and annotating quantified data     | TBD           |
+| 11:00–13:00 | RStudio Project and Experimental Data.       | TBD           |
 | 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Exploratory analysis and quality control     | TBD           |
-| 15:30–16:00 | Coffee break                                 |               |
-| 16:00–17:00 | Wrap-up and Q&A                              | All           |
+| 14:00–15:30 | Importing and annotating quantified data     | TBD           |
+| 15:30–15:45 | Comfort break                                |               |
+| 15:45–16:45 | Exploratory analysis and quality control     | TBD           |
+| 16:45–17:00 | Wrap-up and Q&A                              | TBD           |
 
 #### Day 2 — Tuesday, 16 September
 
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
 | 08:30–09:00 | Helpdesk                                     | All           |
-| 09:00–10:30 | Exploratory analysis (continued)             | TBD           |
+| 09:00–09:15 | Recap and Q&A                                | TBD           |
+| 09:15–10:30 | Exploratory analysis (continued)             | TBD           |
 | 10:30–11:00 | Coffee break                                 |               |
 | 11:00–13:00 | Differential expression analysis             | TBD           |
 | 13:00–14:00 | Lunch                                        |               |
 | 14:00–15:30 | Gene set enrichment analysis                 | TBD           |
-| 15:30–16:00 | Coffee break                                 |               |
-| 16:00–17:00 | Wrap-up and feedback                         | All           |
+| 15:30–15:45 | Comfort break                                |               |
+| 15:45–16:45 | Gene set enrichment analysis (continued)     | TBD           |
+| 16:45–17:00 | Wrap-up and feedback                         | TBD           |
 
 :::
 :::
