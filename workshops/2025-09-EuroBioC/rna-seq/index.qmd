@@ -12,7 +12,7 @@ Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This 
 ## Dates and Venue
 **Dates:** Monday and Tuesday, 15–16 September 2025  
 **Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona  
-**Room:** 228
+**Room:** 228 (except for Day 1 setup and welcome, which are in Room 232)
 
 ::: {.schedule}
 ## Schedule {.schedule #schedule}
@@ -24,8 +24,8 @@ Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This 
 
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
-| 08:30–09:00 | Setup help                                   | All           |
-| 09:00–09:15 | Welcome                                      | All           |
+| 08:30–09:00 | Setup help (Room 232)                        | All           |
+| 09:00–09:15 | Welcome (Room 232)                           | All           |
 | 09:15–10:30 | Introduction to RNA-seq                      | TBD           |
 | 10:30–11:00 | Coffee break                                 |               |
 | 11:00–13:00 | RStudio Project and Experimental Data.       | TBD           |

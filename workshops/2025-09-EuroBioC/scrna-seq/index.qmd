@@ -11,7 +11,7 @@ Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: qu
 ## Dates and Venue
 **Dates:** Monday and Tuesday, 15–16 September 2025  
 **Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona.  
-**Room:** 232 (except for Day 1 setup and welcome, which are in Room 228)
+**Room:** 232
 
 ::: {.schedule}
 ## Schedule {.schedule #schedule}
@@ -22,8 +22,8 @@ Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: qu
 #### Day 1 — Monday, 15 September
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
-| 08:30–09:00 | Setup help (Room 228)                        | All           |
-| 09:00–09:15 | Welcome (Room 228)                           | All           |
+| 08:30–09:00 | Setup help                                   | All           |
+| 09:00–09:15 | Welcome                                      | All           |
 | 09:15–10:30 | Introduction to Bioconductor & SCE           | TBD           |
 | 10:30–11:00 | Coffee break                                 |               |
 | 11:00–13:00 | Exploratory data analysis & quality control  | TBD           |
