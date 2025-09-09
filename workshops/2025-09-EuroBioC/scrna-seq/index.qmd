@@ -24,28 +24,28 @@ Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: qu
 |:-----------:|:---------------------------------------------|:--------------|
 | 08:30–09:00 | Setup help                                   | All           |
 | 09:00–09:15 | Welcome                                      | All           |
-| 09:15–10:30 | Introduction to Bioconductor & SCE           | TBD           |
+| 09:15–10:30 | Introduction to Bioconductor & SCE           | Kevin         |
 | 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | Exploratory data analysis & quality control  | TBD           |
+| 11:00–13:00 | Exploratory data analysis & quality control  | Kevin         |
 | 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Exploratory data analysis (continued)        | TBD           |
+| 14:00–15:30 | Exploratory data analysis (continued)        | Kevin         |
 | 15:30–15:45 | Comfort break                                |               |
-| 15:45–16:45 | Cell-type annotation                         | TBD           |
-| 16:45–17:00 | Wrap-up and Q&A                              | TBD           |
+| 15:45–16:45 | Cell-type annotation                         | Robert        |
+| 16:45–17:00 | Wrap-up and Q&A                              | All           |
 
 #### Day 2 — Tuesday, 16 September
 | Time        | Session                                      | Instructor(s) |
 |:-----------:|:---------------------------------------------|:--------------|
 | 08:30–09:00 | Helpdesk                                     | All           |
-| 09:00–09:15 | Recap and Q&A                                | TBD           |
-| 09:15–10:30 | Multi-sample analyses                        | TBD           |
+| 09:00–09:15 | Recap and Q&A                                | Robert & Kevin|
+| 09:15–10:30 | Multi-sample analyses                        | Robert        |
 | 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | Multi-sample analyses (continued)            | TBD           |
+| 11:00–13:00 | Multi-sample analyses (continued)            | Robert        |
 | 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Working with large data                      | TBD           |
+| 14:00–15:30 | Working with large data                      | Kevin         |
 | 15:30–15:45 | Comfort break                                |               |
-| 15:45–16:45 | Accessing Human Cell Atlas data              | TBD           |
-| 16:45–17:00 | Wrap-up and feedback                         | TBD           |
+| 15:45–16:45 | Accessing Human Cell Atlas data              | Mireia        |
+| 16:45–17:00 | Wrap-up and feedback                         | All           |
 :::
 :::
 
