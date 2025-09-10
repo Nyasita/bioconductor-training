@@ -13,6 +13,13 @@ Analyse and interpret single-cell RNA-seq (scRNA-seq) data with Bioconductor: qu
 **Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona.  
 **Room:** 232
 
+**Coffee Break and Lunch:**  
+- Day 1 (Monday): Served on **floor -1**  
+- Day 2 (Tuesday): Served in the **lobby in front of the cafeteria**  
+
+## Code of Conduct
+All participants are expected to follow the [Bioconductor Code of Conduct.](https://bioconductor.org/about/code-of-conduct/)
+
 ::: {.schedule}
 ## Schedule {.schedule #schedule}
 *Subject to change.*

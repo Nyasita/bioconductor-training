@@ -14,6 +14,13 @@ Analysis and interpretation of bulk RNA sequencing data with Bioconductor: This 
 **Venue:** School of Medicine and Life Sciences, Universitat Pompeu Fabra (UPF), Barcelona  
 **Room:** 228 (except for Day 1 setup and welcome, which are in Room 232)
 
+**Coffee Break and Lunch:**  
+- Day 1 (Monday): Served on **floor -1**  
+- Day 2 (Tuesday): Served in the **lobby in front of the cafeteria**  
+
+## Code of Conduct
+All participants are expected to follow the [Bioconductor Code of Conduct.](https://bioconductor.org/about/code-of-conduct/)
+
 ::: {.schedule}
 ## Schedule {.schedule #schedule}
 *Subject to change.*
