@@ -27,18 +27,18 @@ All participants are expected to follow the [Bioconductor Code of Conduct.](http
 ::: {layout-ncol=2}
 
 #### Day 1 — Monday, 15 September
-| Time        | Session                                      | Instructor(s) |
-|:-----------:|:---------------------------------------------|:--------------|
-| 08:30–09:00 | Setup help                                   | All           |
-| 09:00–09:15 | Welcome                                      | All           |
-| 09:15–10:30 | Introduction to Bioconductor & SCE           | Kevin         |
-| 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | Exploratory data analysis & quality control  | Kevin         |
-| 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Exploratory data analysis (continued)        | Kevin         |
-| 15:30–15:45 | Comfort break                                |               |
-| 15:45–16:45 | Cell-type annotation                         | Robert        |
-| 16:45–17:00 | Wrap-up and Q&A                              | All           |
+| Time        | Session                                      | Instructor(s)    |
+|:-----------:|:---------------------------------------------|:-----------------|
+| 08:30–09:00 | Setup help                                   | All              |
+| 09:00–09:15 | Welcome                                      | Robert C & Maria |
+| 09:15–10:30 | Introduction to Bioconductor & SCE           | Kevin            |
+| 10:30–11:00 | Coffee break                                 |                  |
+| 11:00–13:00 | Exploratory data analysis & quality control  | Kevin            |
+| 13:00–14:00 | Lunch                                        |                  |
+| 14:00–15:30 | Exploratory data analysis (continued)        | Kevin            |
+| 15:30–15:45 | Comfort break                                |                  |
+| 15:45–16:45 | Cell-type annotation                         | Robert           |
+| 16:45–17:00 | Wrap-up and Q&A                              | All              |
 
 #### Day 2 — Tuesday, 16 September
 | Time        | Session                                      | Instructor(s) |

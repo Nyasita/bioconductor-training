@@ -32,7 +32,7 @@ All participants are expected to follow the [Bioconductor Code of Conduct.](http
 | Time        | Session                                      | Instructor(s)     |
 |:-----------:|:---------------------------------------------|:------------------|
 | 08:30–09:00 | Setup help (Room 232)                        | All               |
-| 09:00–09:15 | Welcome (Room 232)                           | All               |
+| 09:00–09:15 | Welcome (Room 232)                           | Robert C & Maria  |
 | 09:15–10:30 | Introduction to RNA-seq                      | Vasilis           |
 | 10:30–11:00 | Coffee break                                 |                   |
 | 11:00–13:00 | RStudio Project and Experimental Data.       | Estefania         |
