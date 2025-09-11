@@ -29,33 +29,33 @@ All participants are expected to follow the [Bioconductor Code of Conduct.](http
 
 #### Day 1 — Monday, 15 September
 
-| Time        | Session                                      | Instructor(s) |
-|:-----------:|:---------------------------------------------|:--------------|
-| 08:30–09:00 | Setup help (Room 232)                        | All           |
-| 09:00–09:15 | Welcome (Room 232)                           | All           |
-| 09:15–10:30 | Introduction to RNA-seq                      | TBD           |
-| 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | RStudio Project and Experimental Data.       | TBD           |
-| 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Importing and annotating quantified data     | TBD           |
-| 15:30–15:45 | Comfort break                                |               |
-| 15:45–16:45 | Exploratory analysis and quality control     | TBD           |
-| 16:45–17:00 | Wrap-up and Q&A                              | TBD           |
+| Time        | Session                                      | Instructor(s)     |
+|:-----------:|:---------------------------------------------|:------------------|
+| 08:30–09:00 | Setup help (Room 232)                        | All               |
+| 09:00–09:15 | Welcome (Room 232)                           | All               |
+| 09:15–10:30 | Introduction to RNA-seq                      | Vasilis           |
+| 10:30–11:00 | Coffee break                                 |                   |
+| 11:00–13:00 | RStudio Project and Experimental Data.       | Estefania         |
+| 13:00–14:00 | Lunch                                        |                   |
+| 14:00–15:30 | Importing and annotating quantified data     | Jacques           |
+| 15:30–15:45 | Comfort break                                |                   |
+| 15:45–16:45 | Exploratory analysis and quality control     | Vasilis           |
+| 16:45–17:00 | Wrap-up and Q&A                              | TBD               |
 
 #### Day 2 — Tuesday, 16 September
 
-| Time        | Session                                      | Instructor(s) |
-|:-----------:|:---------------------------------------------|:--------------|
-| 08:30–09:00 | Helpdesk                                     | All           |
-| 09:00–09:15 | Recap and Q&A                                | TBD           |
-| 09:15–10:30 | Exploratory analysis (continued)             | TBD           |
-| 10:30–11:00 | Coffee break                                 |               |
-| 11:00–13:00 | Differential expression analysis             | TBD           |
-| 13:00–14:00 | Lunch                                        |               |
-| 14:00–15:30 | Gene set enrichment analysis                 | TBD           |
-| 15:30–15:45 | Comfort break                                |               |
-| 15:45–16:45 | Gene set enrichment analysis (continued)     | TBD           |
-| 16:45–17:00 | Wrap-up and feedback                         | TBD           |
+| Time        | Session                                      | Instructor(s)     |
+|:-----------:|:---------------------------------------------|:------------------|
+| 08:30–09:00 | Helpdesk                                     | All               |
+| 09:00–09:15 | Recap and Q&A                                | Jacques/Vasilis   |
+| 09:15–10:30 | Exploratory analysis (continued)             | Jacques           |
+| 10:30–11:00 | Coffee break                                 |                   |
+| 11:00–13:00 | Differential expression analysis             | Estefania/Jacques |
+| 13:00–14:00 | Lunch                                        |                   |
+| 14:00–15:30 | Gene set enrichment analysis                 | Jacques           |
+| 15:30–15:45 | Comfort break                                |                   |
+| 15:45–16:45 | Gene set enrichment analysis (continued)     | Jacques           |
+| 16:45–17:00 | Wrap-up and feedback                         | All               |
 
 :::
 :::
