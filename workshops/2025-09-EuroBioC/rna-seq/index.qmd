@@ -50,7 +50,7 @@ All participants are expected to follow the [Bioconductor Code of Conduct.](http
 | 09:00–09:15 | Recap and Q&A                                | Jacques/Vasilis   |
 | 09:15–10:30 | Exploratory analysis (continued)             | Jacques           |
 | 10:30–11:00 | Coffee break                                 |                   |
-| 11:00–13:00 | Differential expression analysis             | Estefania/Jacques |
+| 11:00–13:00 | Differential expression analysis             | Estefania/Vasilis |
 | 13:00–14:00 | Lunch                                        |                   |
 | 14:00–15:30 | Gene set enrichment analysis                 | Jacques           |
 | 15:30–15:45 | Comfort break                                |                   |
