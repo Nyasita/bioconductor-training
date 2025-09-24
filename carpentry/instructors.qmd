@@ -1,4 +1,5 @@
 ---
 title: "Redirecting..."
-redirect: /collaborations/carpentries/instructors/
+aliases: 
+  - "/collaborations/carpentries/instructors.html"
 ---
