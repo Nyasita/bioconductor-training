@@ -1,4 +1,0 @@
----
-title: "Redirecting..."
-redirect: /collaborations/carpentries/
----

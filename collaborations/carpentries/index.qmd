@@ -1,5 +1,7 @@
 ---
 title: ""
+aliases: 
+  - "/carpentry/index.html"
 format: html
 editor: visual
 ---

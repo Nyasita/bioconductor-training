@@ -1,5 +1,0 @@
----
-title: "Redirecting..."
-aliases: 
-  - "/collaborations/carpentries/workshops.html"
----
