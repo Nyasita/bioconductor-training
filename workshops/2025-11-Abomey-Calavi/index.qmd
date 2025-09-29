@@ -48,7 +48,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ![](images/instructors/amal_boukteb.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Amal Boukteb**  
-  <em style="font-size: 14px; color: #555;">TSL, UK 🇬🇧</em>
+  <em style="font-size: 14px; color: #555;">The Sainsbury Laboratory<br><br>UK 🇬🇧</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/amal-boukteb-29a27691/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
@@ -61,7 +61,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ![](images/instructors/laurent_gatto.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Laurent Gatto**  
-  <em style="font-size: 14px; color: #555;">UCL, Belgium 🇧🇪</em>
+  <em style="font-size: 14px; color: #555;">UCLouvain<br><br>Belgium 🇧🇪</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://lgatto.github.io/about/" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
@@ -74,7 +74,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ![](images/instructors/marie_hidjo.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Marie Hidjo**  
-  <em style="font-size: 14px; color: #555;">URMAPha and SANTHE, Benin 🇧🇯</em>
+  <em style="font-size: 14px; color: #555;">URMAPha, University of Abomey-Calavi and SANTHE<br>Benin 🇧🇯</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/marie-madeleine-hidjo-03943720b/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
@@ -87,7 +87,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ![](images/instructors/kevin_sintondji.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Kevin Mael Sintondji**  
-  <em style="font-size: 14px; color: #555;">URMAPha, Benin 🇧🇯</em>
+  <em style="font-size: 14px; color: #555;">URMAPha, University of Abomey-Calavi<br>Benin 🇧🇯</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/kevin-mael-sintondji-708a31159/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
@@ -101,7 +101,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ![](images/instructors/dedeou_tchokponhoue.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Dedeou A. Tchokponhoue**  
-  <em style="font-size: 14px; color: #555;">GBioS, Benin 🇧🇯</em>
+  <em style="font-size: 14px; color: #555;">GBioS, University of Abomey-Calavi<br>Benin 🇧🇯</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center; ">
   <a href="https://www.linkedin.com/in/dedeou-a-tchokponhoue-52720a1b4/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
