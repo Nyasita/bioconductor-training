@@ -131,7 +131,8 @@ Researchers, MSc/PhD students, and analysts who work with high-throughput genomi
 
 ### What you’ll learn
 By the end of the course, you will be able to:
-- Handle and visualise genomic data in R/Bioconductor using reproducible workflows.
+
+- Handle and visualise genomic data in R/Bioconductor using reproducible workflows.  
 - Perform bulk RNA-seq analysis from a provided (quantified) counts table: import and annotation, QC/exploration, normalisation, differential expression, and result visualisation (using Bioconductor classes like SummarizedExperiment and packages such as DESeq2).
 
 ### Technical requirements
