@@ -1,7 +1,10 @@
 ---
-title: "Bioconductor Course | Cotonou, Benin | November 2025"
+title: "Bioconductor Course | Abomey-Calavi, Benin | November 2025"
+aliases: 
+  - "/workshops/2025-11-Cotonou/index.html"
 description: | 
   Join us for a comprehensive week-long Bioconductor in-person course covering genomic data analysis and RNA-seq using R and Bioconductor.
+
 ---
 
 ![](images/cotonou.png){fig-alt="Aerial view of Cotonou, Benin, where the city meets the sandy coastline of the Gulf of Guinea" width="100%" height="500" style="object-fit:cover; object-position:50% 40%; display:block; margin:0 auto;"}
@@ -11,7 +14,7 @@ description: |
 ## Event Details
 
 - 📅 **Dates:** November 17 - 21, 2025
-- 📍 **Location:** GBioS, University of Abomey-Calavi, Cotonou, Benin
+- 📍 **Location:** GBioS, University of Abomey-Calavi, Abomey-Calavi, Benin
 - 📘 **Format:** Week-long course (single registration covering all sessions)
 
 ## Overview
@@ -71,7 +74,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ![](images/instructors/marie_hidjo.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Marie Hidjo**  
-  <em style="font-size: 14px; color: #555;">SANTHE, Benin 🇧🇯</em>
+  <em style="font-size: 14px; color: #555;">URMAPha and SANTHE, Benin 🇧🇯</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/marie-madeleine-hidjo-03943720b/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
@@ -95,7 +98,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 :::
 
 ::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
-![](images/instructors/dedeou_tchokponhoue.jpg){width=120 height=120 style="border-radius:50%;"} 
+![](images/instructors/dedeou_tchokponhoue.jpeg){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Dedeou A. Tchokponhoue**  
   <em style="font-size: 14px; color: #555;">GBioS, Benin 🇧🇯</em>
@@ -148,7 +151,7 @@ This workshop is part of Bioconductor’s expanded global training program, supp
 
 ## Organisers
 
-Abdou Mouizz Salaou (GBioS, University of Abomey-Calavi), Prof. Enoch G. Achigan-Dako (GBioS, University of Abomey-Calavi), Prof. Victorien Dougnon (URMAPha, University of Abomey-Calavi), Trushar Shah (International Institute of Tropical Agriculture), Maria Doyle (University of Limerick / Bioconductor).
+Abdou Mouizz Salaou (GBioS, University of Abomey-Calavi), Aristide Carlos Houdegbe (GBioS, University of Abomey-Calavi), Prof. Enoch G. Achigan-Dako (GBioS, University of Abomey-Calavi), Prof. Victorien Dougnon (URMAPha, University of Abomey-Calavi), Trushar Shah (International Institute of Tropical Agriculture), Maria Doyle (University of Limerick / Bioconductor).
 
 ## Contact
 
