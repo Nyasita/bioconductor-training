@@ -5,14 +5,15 @@ on:
     branches: [devel]
   push:
     branches: 
-    - devel
-    - add-physalia-collab # allow while sharing preview
+      - devel
+  schedule:
+    - cron: '0 1 * * 0'  # every Sunday at 01:00 UTC
 
 env:
   cache-version: v1
 
 jobs:
-  # Job to build and check PRs
+  # Build job for pull requests to check rendering
   build:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
@@ -23,37 +24,32 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # Install system dependencies
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev
 
-      # Set up caching for R packages
       - name: Cache R packages
         uses: actions/cache@v3
         with:
           path: ~/.R
-          key: ${{ env.cache-version }}-${{ runner.os }}-R
+          key: ${{ env.cache-version }}-${{ runner.os }}-${{ hashFiles('DESCRIPTION') }}
           restore-keys: |
-            ${{ env.cache-version }}-${{ runner.os }}-R-
+            ${{ env.cache-version }}-${{ runner.os }}-
 
-      # Add R environment setup step
       - uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
 
-      # Install R dependencies from DESCRIPTION
       - name: Install R dependencies
         run: Rscript -e 'install.packages("remotes"); remotes::install_deps(dependencies = TRUE)'
 
-      # Run Quarto render to check for PRs
       - name: Render Quarto Project
         run: quarto render
 
-  # Job to deploy only when merging to devel
+  # Deploy job for pushes to devel and scheduled builds
   deploy:
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/devel' || github.repository == 'mblue9/bioconductor-training' && github.ref == 'refs/heads/add-physalia-collab')
+    if: github.ref == 'refs/heads/devel' && (github.event_name == 'push' || github.event_name == 'schedule')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -64,26 +60,29 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # Install system dependencies for deployment
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev
 
-      # Add R environment setup step
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.R
+          key: ${{ env.cache-version }}-${{ runner.os }}-${{ hashFiles('DESCRIPTION') }}
+          restore-keys: |
+            ${{ env.cache-version }}-${{ runner.os }}-
+
       - uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
 
-      # Install R dependencies from DESCRIPTION
       - name: Install R dependencies
         run: Rscript -e 'install.packages("remotes"); remotes::install_deps(dependencies = TRUE)'
-        
-      # Add the CNAME file for the custom domain
+
       - name: Add CNAME for custom domain
         run: echo "training.bioconductor.org" > CNAME  
 
-      # Deploy to GitHub Pages
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
