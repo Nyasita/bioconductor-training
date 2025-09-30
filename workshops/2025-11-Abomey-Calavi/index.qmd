@@ -7,7 +7,7 @@ description: |
 
 ---
 
-![](images/cotonou.png){fig-alt="Aerial view of Cotonou, Benin, where the city meets the sandy coastline of the Gulf of Guinea" width="100%" height="500" style="object-fit:cover; object-position:50% 40%; display:block; margin:0 auto;"}
+![](images/cotonou.png){fig-alt="Aerial view of coastal Cotonou along the Gulf of Guinea; the course takes place in Abomey-Calavi (Cotonou area)" width="100%" height="500" style="object-fit:cover; object-position:50% 40%; display:block; margin:0 auto;"}
 
 
 
@@ -45,7 +45,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ::: {.grid style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; max-width: 1000px; margin: auto;"}
 
 ::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
-![](images/instructors/amal_boukteb.jpeg){width=120 height=120 style="border-radius:50%;"} 
+![](images/instructors/amal_boukteb.png){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
   **Amal Boukteb**  
   <em style="font-size: 14px; color: #555;">The Sainsbury Laboratory<br><br>UK 🇬🇧</em>
