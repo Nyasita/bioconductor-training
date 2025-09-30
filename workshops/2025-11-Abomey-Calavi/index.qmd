@@ -19,7 +19,7 @@ description: |
 
 ## Overview
 
-This intensive, week-long Bioconductor course is designed to build bioinformatics capacity in Africa, focusing on practical skills in genomic data analysis and RNA-seq. Participants will gain hands-on experience with R and Bioconductor, guided by expert instructors from both local and international bioinformatics communities. The course is organised in collaboration with the University of Abomey-Calavi ([GBioS](https://gbios-uac.org/) and [URMAPha](https://urmapha-epacuac.bj/)), the University of Limerick, and the International Institute of Tropical Agriculture (IITA), and is supported by a Chan Zuckerberg Initiative (CZI) EOSS grant.
+The University of Abomey-Calavi ([GBioS](https://gbios-uac.org/) and [URMAPha](https://urmapha-epacuac.bj/)), in collaboration with Bioconductor, the University of Limerick, and the International Institute of Tropical Agriculture (IITA), is offering a week-long hands-on training course on Bioconductor for researchers starting out in bioinformatics and computational biology. The course will cover R and RStudio basics, good coding practices, and progress to Bioconductor workflows for bulk RNA-seq analysis. The workshop will be taught in English, with bilingual instructors (English-French) available to provide support if needed.
 
 ## Course Structure
 
@@ -52,7 +52,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/amal-boukteb-29a27691/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+    <img src="images/icons/linkedin.svg" width="18px"> LinkedIn
   </a>
 </div>
 :::
@@ -78,7 +78,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/marie-madeleine-hidjo-03943720b/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+    <img src="images/icons/linkedin.svg" width="18px"> LinkedIn
   </a>
 </div>
 :::
@@ -91,7 +91,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
   <a href="https://www.linkedin.com/in/kevin-mael-sintondji-708a31159/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+    <img src="images/icons/linkedin.svg" width="18px"> LinkedIn
   </a>
 </div>
 
@@ -104,8 +104,8 @@ The workshop will be led by a team of instructors from the Bioconductor communit
   <em style="font-size: 14px; color: #555;">GBioS, University of Abomey-Calavi<br>Benin 🇧🇯</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center; ">
-  <a href="https://www.linkedin.com/in/dedeou-a-tchokponhoue-52720a1b4/" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="18px"> LinkedIn
+  <a href="https://orcid.org/0000-0002-1285-245X" target="_blank" style="display: flex; align-items: center; gap: 5px; text-decoration: none; color: inherit;">
+    <img src="images/icons/orcid.svg" width="18px"> ORCID
   </a>
 </div>
 :::
@@ -136,7 +136,7 @@ Researchers, MSc/PhD students, and analysts who work with high-throughput genomi
 By the end of the course, you will be able to:
 
 - Handle and visualise genomic data in R/Bioconductor using reproducible workflows.  
-- Perform bulk RNA-seq analysis from a provided (quantified) counts table: import and annotation, QC/exploration, normalisation, differential expression, and result visualisation (using Bioconductor classes like SummarizedExperiment and packages such as DESeq2).
+- Perform bulk RNA-seq analysis from a provided quantified counts table: import and annotation, QC/exploration, normalisation, differential expression, and result visualisation (using Bioconductor classes like SummarizedExperiment and packages such as DESeq2).
 
 ### Technical requirements
 A laptop you can install software on. We’ll provide setup steps (R, RStudio, required packages) in advance.
