@@ -190,9 +190,9 @@ For questions, please email maria.doyle [at] ul.ie.
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 1200px; margin: 2px auto;">
-  <img src="images/logos/uac-logo.jpg" alt="University of Abomey-Calavi Logo" style="height: 100px; margin: 0 10px;">
-  <img src="images/logos/gbios-logo.jpg" alt="GBioS Logo" style="height: 100px; margin: 0 10px;">
-  <img src="images/logos/urmapha-logo.jpg" alt="URMAPha Logo" style="height: 100px; margin: 0 10px;">
+  <img src="images/logos/uac-logo.jpg" alt="University of Abomey-Calavi Logo" style="height: 80px; margin: 0 5px;">
+  <img src="images/logos/gbios-logo.jpg" alt="GBioS Logo" style="height: 80px; margin: 0 5px;">
+  <img src="images/logos/urmapha-logo.jpg" alt="URMAPha Logo" style="height: 80px; margin: 0 5px;">
   <img src="images/logos/czi-logo.jpg" alt="CZI Logo" style="height: 80px; margin: 0 2px;">
   <img src="../../images/bioconductor-logo.svg" alt="Bioconductor Logo" style="height: 80px; margin: 0 2px;">
   <img src="images/logos/ul-logo.jpg" alt="UL Logo" style="height: 80px; margin: 0 2px;">
