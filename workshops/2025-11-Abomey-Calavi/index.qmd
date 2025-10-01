@@ -4,11 +4,23 @@ aliases:
   - "/workshops/2025-11-Cotonou/index.html"
 description: | 
   Join us for a comprehensive week-long Bioconductor in-person course covering genomic data analysis and RNA-seq using R and Bioconductor.
-
+image: images/gbios-hero.jpg 
 ---
 
-![](images/cotonou.png){fig-alt="Aerial view of coastal Cotonou along the Gulf of Guinea; the course takes place in Abomey-Calavi (Cotonou area)" width="100%" height="500" style="object-fit:cover; object-position:50% 40%; display:block; margin:0 auto;"}
+<style>
+.hero{ position: relative; }
+.hero img {
+  width: 100%;
+  max-height: 600px; 
+  object-fit: cover;
+  object-position: 50% 25%;
+  border-radius: 6px;
+}
+</style>
 
+::: {.hero}
+![](images/gbios-hero.jpg){fig-alt="Front view of the GBioS building at the University of Abomey-Calavi, lined with palm trees." fig-align="center" loading="lazy"}
+:::
 
 
 ## Event Details
@@ -152,6 +164,12 @@ This workshop is part of Bioconductor’s expanded global training program, supp
 ## Organisers
 
 Abdou Mouizz Salaou (GBioS, University of Abomey-Calavi), Aristide Carlos Houdegbe (GBioS, University of Abomey-Calavi), Prof. Enoch G. Achigan-Dako (GBioS, University of Abomey-Calavi), Prof. Victorien Dougnon (URMAPha, University of Abomey-Calavi), Trushar Shah (International Institute of Tropical Agriculture), Maria Doyle (University of Limerick / Bioconductor).
+
+![](images/urmapha-courtyard.jpg){fig-alt="URMAPha courtyard at the University of Abomey-Calavi" fig-align="center" width="75%"}
+
+::: {style="text-align: center; margin-top:-1.75em;"}
+*URMAPha, University of Abomey-Calavi - local co-organiser with GBioS*
+:::
 
 ## Contact
 
