@@ -15,8 +15,7 @@ image: images/gbios-hero.jpeg
 
 - 📅 **Dates:** November 17 - 21, 2025
 - 📍 **Location:** GBioS, University of Abomey-Calavi, Abomey-Calavi, Benin
-- 📘 **Format:** Week-long course (single registration covering all sessions)
-
+- 📘 **Format:** In-person, week-long course (single registration covering all sessions)
 
 ## Overview
 
