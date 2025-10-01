@@ -4,7 +4,7 @@ aliases:
   - "/workshops/2025-11-Cotonou/index.html"
 description: | 
   Join us for a comprehensive week-long Bioconductor in-person course covering genomic data analysis and RNA-seq using R and Bioconductor.
-image: images/gbios-hero.jpg 
+image: images/gbios-hero.jpeg 
 ---
 
 <style>
@@ -19,7 +19,7 @@ image: images/gbios-hero.jpg
 </style>
 
 ::: {.hero}
-![](images/gbios-hero.jpg){fig-alt="Front view of the GBioS building at the University of Abomey-Calavi, lined with palm trees." fig-align="center" loading="lazy"}
+![](images/gbios-hero.jpeg){fig-alt="Front view of the GBioS building at the University of Abomey-Calavi, lined with palm trees." fig-align="center" loading="lazy"}
 :::
 
 
