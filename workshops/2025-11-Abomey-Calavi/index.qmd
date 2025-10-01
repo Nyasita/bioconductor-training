@@ -17,6 +17,28 @@ image: images/gbios-hero.jpeg
 - 📍 **Location:** GBioS, University of Abomey-Calavi, Abomey-Calavi, Benin
 - 📘 **Format:** Week-long course (single registration covering all sessions)
 
+<style>
+
+/* Full-image variant */
+.hero--full img{
+  max-height:none;             /* allow full height */
+  height:auto;
+  object-fit:contain;          /* no cropping; entire photo visible */
+}
+
+
+/* Optional: limit the max size so it doesn't dominate on large screens */
+@media (min-width: 992px){
+  .hero--full img{ max-height: 720px; }   /* tweak 640–800px to taste */
+}
+
+</style>
+
+::: {.hero hero--full}
+
+![](images/gbios-hero-full.jpeg){fig-alt="Full front view of GBioS showing the Welcome sign" fig-align="center" loading="lazy"}
+:::
+
 ## Overview
 
 The University of Abomey-Calavi ([GBioS](https://gbios-uac.org/) and [URMAPha](https://urmapha-epacuac.bj/)), in collaboration with Bioconductor, the University of Limerick, and the International Institute of Tropical Agriculture (IITA), is offering a week-long hands-on training course on Bioconductor for researchers starting out in bioinformatics and computational biology. The course will cover R and RStudio basics, good coding practices, and progress to Bioconductor workflows for bulk RNA-seq analysis. The workshop will be taught in English, with bilingual instructors (English-French) available to provide support if needed.
@@ -117,7 +139,7 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 ## ➡️ Apply for a place
 - **Cost:** Free (participants cover travel and accommodation)
 - **Application deadline:** 15 October 2025  
-- **Application form:** TODO: Add link when ready
+- **Application form:** https://forms.gle/d32F6xJJbsFaxZNo7
 - **Please note**:
   - We welcome applications from individuals who are eager to build their bioinformatics skills in RNA-seq data analysis using R and Bioconductor.
   - Applications will be reviewed based on motivation, background, and potential to apply the training.
