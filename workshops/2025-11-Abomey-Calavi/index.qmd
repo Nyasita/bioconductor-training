@@ -7,20 +7,8 @@ description: |
 image: images/gbios-hero.jpeg 
 ---
 
-<style>
-.hero{ position: relative; }
-.hero img {
-  width: 100%;
-  max-height: 600px; 
-  object-fit: cover;
-  object-position: 50% 25%;
-  border-radius: 6px;
-}
-</style>
+![](images/gbios-hero.jpeg){fig-alt="Front view of the GBioS building at the University of Abomey-Calavi, lined with palm trees" style="width:100%; max-height:600px; object-fit:cover; object-position:50% 25%; display:block; margin:0 auto;"}
 
-::: {.hero}
-![](images/gbios-hero.jpeg){fig-alt="Front view of the GBioS building at the University of Abomey-Calavi, lined with palm trees." fig-align="center" loading="lazy"}
-:::
 
 
 ## Event Details
