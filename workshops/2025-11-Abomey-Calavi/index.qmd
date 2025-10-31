@@ -58,13 +58,13 @@ The workshop will be led by a team of instructors from the Bioconductor communit
 :::
 
 ::: {.text-center style="display: flex; flex-direction: column; align-items: center; text-align: center;"}
-![](images/instructors/laurent_gatto.jpeg){width=120 height=120 style="border-radius:50%;"} 
+![](images/instructors/axelle_loriot.webp){width=120 height=120 style="border-radius:50%;"} 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 5px;">
-  **Laurent Gatto**  
+  **Axelle Loriot**  
   <em style="font-size: 14px; color: #555;">UCLouvain<br><br>Belgium 🇧🇪</em>
 </div>
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <a href="https://lgatto.github.io/about/" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+  <a href="https://www.deduveinstitute.be/nl/onderzoeksplatform/bioinfo-core#team" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
     🌐 Website
   </a>
 </div>
