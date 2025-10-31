@@ -153,7 +153,7 @@ This workshop is part of Bioconductor’s expanded global training program, supp
 
 ## Organisers
 
-Abdou Mouizz Salaou (GBioS, University of Abomey-Calavi), Aristide Carlos Houdegbe (GBioS, University of Abomey-Calavi), Prof. Enoch G. Achigan-Dako (GBioS, University of Abomey-Calavi), Prof. Victorien Dougnon (URMAPha, University of Abomey-Calavi), Trushar Shah (International Institute of Tropical Agriculture), Maria Doyle (University of Limerick / Bioconductor).
+Abdou Mouizz Salaou (GBioS, University of Abomey-Calavi), Aristide Carlos Houdegbe (GBioS, University of Abomey-Calavi), Prof. Enoch G. Achigan-Dako (GBioS, University of Abomey-Calavi), Prof. Victorien Dougnon (URMAPha, University of Abomey-Calavi), Trushar Shah (International Institute of Tropical Agriculture), Laurah Ondari (International Institute of Tropical Agriculture), Maria Doyle (University of Limerick / Bioconductor).
 
 ![](images/urmapha-courtyard.jpg){fig-alt="URMAPha courtyard at the University of Abomey-Calavi" fig-align="center" width="75%"}
 
