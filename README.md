@@ -110,6 +110,7 @@ welcome to join the discussion.
 
 ## Notes and meetings
 
+- [Governance document](resources/bioc-training-governance-v1.0.0.pdf)
 - Collaborative [Google
   doc](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#).
 
