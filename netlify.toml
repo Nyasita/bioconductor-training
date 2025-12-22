@@ -1,2 +1,8 @@
-[[plugins]]
-package = "@quarto/netlify-plugin-quarto"
+[build]
+# We are NOT using the Quarto Netlify plugin because this site includes pages
+# that require R execution and can't be added to _freeze (e.g., instructors.qmd reading updated CSV). Netlify's
+# build environment does not include R, so the plugin fails with "Rscript not found".
+# Instead, we render the site in GitHub Actions (where R is available) and deploy
+# the pre-rendered HTML to Netlify for previews and production.
+command = ""
+publish = "docs"
