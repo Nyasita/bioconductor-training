@@ -5,4 +5,3 @@
 # Instead, we render the site in GitHub Actions (where R is available) and deploy
 # the pre-rendered HTML to Netlify for previews and production.
 command = ""
-publish = "docs"
