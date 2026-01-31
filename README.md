@@ -1,18 +1,16 @@
-# The Bioconductor training committee
+# The Bioconductor Training Committee
 
-The Bioconductor training committee is a collaborative effort to
-consolidate Bioconductor-focused training material and establish
-a community of Bioconductor trainers. We define a curriculum and
-implement online lessons for beginner and more advanced R users
-who want to learn to analyse their data with Bioconductor packages.
+The Bioconductor Training Committee is a collaborative effort to consolidate Bioconductor-focused training material and build a global community of instructors. We define curricula and develop lessons for both beginner and more advanced R users who want to analyse their data with Bioconductor packages.
 
-The Bioconductor training committee reports to the Bioconductor
-[Community Advisory Board](http://bioconductor.org/about/community-advisory-board/).
-It is currently chaired by Charlotte Soneson and Laurent Gatto.
-There’s no formal joining process or minimum commitment required — simply attend one of the monthly meetings (announced on the Google group, see below) or engage in our discussions to become a part of our community.
+The committee reports to the Bioconductor
+[Community Advisory Board](https://bioconductor.org/about/community-advisory-board/) and is currently chaired by [Charlotte Soneson](https://csoneson.github.io/) and [Laurent Gatto](https://lgatto.codeberg.page/).
 
-This meta-repository is used for general discussions. The respective
-lessons are developed as modules in their own repositories.
+There's no formal joining process and no minimum commitment required - simply attend one of our monthly meetings (announced on the Google group below) or join the conversation to become part of the community.
+
+- [Monthly meeting link](https://meet.jit.si/BioconductorTeaching)
+- [Rolling agenda & notes (Google Doc)](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#)
+- [Google group](https://groups.google.com/g/bioconductor-teaching/) (announcements & reminders)
+- [Bioconductor Chat](https://chat.bioconductor.org): `#education-and-training` channel
 
 ## Publications
 
@@ -22,110 +20,50 @@ Published in *PLOS Computational Biology*
 
 👉 [Read the full paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925)
 
-## Modules
+
+## Training Modules
+
+Bioconductor Carpentry lessons developed by the training committee are organised into modules, each designed for specific audiences and skill levels.
 
 - [bioc-intro](https://carpentries-incubator.github.io/bioc-intro/)
-  The **Data science** lesson is based on the [Carpentries Ecology
-  Curriculum](https://datacarpentry.org/lessons/#ecology-workshop). There
-  are no pre-requisites for this module, and the materials assume no
-  prior knowledge about R and Bioconductor. It introduces R, RStudio,
-  teaches data cleaning, management, analysis, and visualisation and
-  introduces some Bioconductor concepts. Notes are collated in
-  `bioc-intro.md` in this repo.
-
+An introduction to R, RStudio, data cleaning, management, analysis, and visualisation, based on the Carpentries Ecology curriculum.
+No prior experience required. Includes introductory Bioconductor concepts. 
 - [bioc-rnaseq](https://carpentries-incubator.github.io/bioc-rnaseq/)
- **Analysis and interpretation of bulk RNA sequencing data with
-  Bioconductor** shows how to use Bioconductor packages to analyse
-  bulk RNA-seq data. It expects good familiarity with R and the
-  Bioconductor project.
+Bulk RNA-seq analysis and interpretation with Bioconductor packages.
+Requires good familiarity with R and Bioconductor.
 
 - [bioc-scrnaseq](https://carpentries-incubator.github.io/bioc-scrnaseq/)
-  **Analysis and interpretation of single-cell RNA sequencing data with
-  Bioconductor** shows how to use Bioconductor packages for essential single-cell
-  analysis steps including quality control, cell type annotation, multi-sample
-  analysis, working with large data, and integration with public data.
-  Pre-requisites include familiarity with R and Bioconductor. Familiarity with
-  bulk RNA-seq data analysis is beneficial, but not strictly required.    
+Single-cell RNA-seq analysis with Bioconductor, covering QC, cell type annotation, multi-sample workflows, large datasets, and integration with public data.
+Requires R/Bioconductor familiarity; bulk RNA-seq experience helpful but optional.
 
 - [bioc-project](https://carpentries-incubator.github.io/bioc-project/)
-  The **Bioconductor project** lesson provides an introduction to the
-  Bioconductor project such as the Bioconductor home page, packages,
-  package landing pages, and package vignettes, where to find help,
-  Bioconductor workflows, Bioconductor release schedule and versions,
-  some core infrastructure, ... It is meant to be use in combination
-  with other modules as part of a wider workshop.
+An overview of the Bioconductor project: website, packages, landing pages, vignettes, workflows, release cycles, and infrastructure.
+Designed to be combined with other modules during workshops.
+
 
 ### New lessons
 
-If you are interested in contributing new lessons or Carpentry modules,
-feel free to get in touch with the teaching committee via Zulip or the
-google group (see below). We would be happy to discuss and/or contribute
-to anything related to the lesson design, general help with the long-term
-maintenance, dissemination of the lesson, or any help/topic you can think of.
+Interested in contributing a new lesson or adapting a Carpentry-style module?
+We’d be happy to discuss ideas, lesson design, long-term maintenance, dissemination, or any support you may need.
 
-## Material design and maintenance
-
-### Lesson design
-
-- Use RStudio for teaching.
-- If possible, finish lessons with a *Next steps* section to highlight
-  other relevant Bioconductor lessons. Similarly, in the Summary and
-  Setup section, refer to other Bioconductor lessons that cover the
-  pre-requisites.
-- Whenever relevant, use Bioconductor recommended/maintained classes.
-- Package installation: favour `BiocManager::install()` for all
-  packages.
-- The bioc-intro lesson, which is based on the Ecology lesson, focuses
-  on the tidyverse.
-
-### Maintenance
-
-**Maintenance team** Each Bioconductor lesson has at least one
-maintainer, and more generally a team of instructors that built and
-adviser on the maintenance of the lesson collaboratively. The
-maintainer is the person that takes responsibility for merging the PRs
-and fixing build issues if/when they happen. The Carpentries
-Curriculum Advisory Committee Consultation Rubric provides a template
-as to how to address changes to the lessons.
-
-**Contributing and handling minor changes** For minor changes such as
-typos or simple rephrasing can be submitted directly through a Github
-pull request. The lesson maintainer can assess the PR, ask for
-clarifications or amendments and eventually merge the pull request.
-
-**Contributing and handling big changes** For more substantial changes,
-we advise to first open an issue to discuss these changes with the
-maintainer, the team that created the lesson, and other instructors
-that have experience teaching the episode. A pull request for such a
-more substantial change (and here, we deliberately don’t define them
-explicitly and leave it to the lesson maintainer to assess the
-importance), would be discussed in (1) the Github pull request and/or
-(2) on the bioconductor-teaching google group and/or, if necessary (3)
-during a Bioconductor teaching monthly meeting. For the latter, it
-would be recommended that at least 2 to 3 people that were part in the
-design of the lesson and/or that have teaching experience would be
-present in addition to the lesson maintainer. The PR submitter is also
-welcome to join the discussion.
-
+- Contact us via [Bioconductor Chat](https://chat.bioconductor.org/)
+- View our contributor documentation: [Lesson Design & Maintenance Guidelines](collaborations/carpentries/lesson-guidelines.qmd)
 
 ## Notes and meetings
 
 - [Governance document](resources/bioc-training-governance-v1.0.0.pdf)
-- Collaborative [Google
-  doc](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#).
-
-## Discussions
-
-- The `education-and-training` channel on the [Bioconductor community
-  chat](https://chat.bioconductor.org/).
-- The [Google group](https://groups.google.com/g/bioconductor-teaching/) (low-traffic, mainly used to send a reminder for the monthly meeting).  
+- Community discussions: education-and-training channel on [Bioconductor Chat](https://chat.bioconductor.org/).
+- [Google group](https://groups.google.com/g/bioconductor-teaching/): low-traffic, used for monthly meeting reminders
 
 ## Events
 
-Explore upcoming opportunities and past Bioconductor workshops and training sessions on our [events page](https://www.bioconductor.org/help/events/). Interested in sharing your own Bioconductor training event with the community? Learn how to add your event directly through this page.  
+Explore upcoming and past Bioconductor workshops on our [workshops](https://training.bioconductor.org/workshops/index.html) and [events](https://www.bioconductor.org/help/events/) pages. 
 
 ## Contact
 
-If you are interested in this project and want to get in touch or
-participate, please contact the group via the Google group or
-individual members on [Bioconductor Chat](https://chat.bioconductor.org) or by email.
+If you’re interested in joining, contributing, or simply learning more, please contact us via:
+
+- The `#education-and-training` channel, or committee co-chairs on [Bioconductor Chat](https://chat.bioconductor.org) or by email
+- Or drop into one of our monthly meetings
+
+We look forward to welcoming you into the Bioconductor training community!
