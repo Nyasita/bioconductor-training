@@ -3,7 +3,7 @@
 The Bioconductor Training Committee is a collaborative effort to consolidate Bioconductor-focused training material and build a global community of instructors. We define curricula and develop lessons for both beginner and more advanced R users who want to analyse their data with Bioconductor packages.
 
 The committee reports to the Bioconductor
-[Community Advisory Board](https://bioconductor.org/about/community-advisory-board/) and is currently chaired by [Charlotte Soneson](https://csoneson.github.io/) and [Laurent Gatto](https://lgatto.codeberg.page/).
+[Community Advisory Board](https://bioconductor.org/about/community-advisory-board/) and is currently chaired by [Charlotte Soneson](https://csoneson.github.io/) and [Jenny Drnevich](https://www.psych.uic.edu/profile/jenny-drnevich-zadeh).
 
 There's no formal joining process and no minimum commitment required - simply attend one of our monthly meetings (announced on the Google group below) or join the conversation to become part of the community.
 
@@ -11,6 +11,10 @@ There's no formal joining process and no minimum commitment required - simply at
 - [Rolling agenda & notes (Google Doc)](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#)
 - [Google group](https://groups.google.com/g/bioconductor-teaching/) (announcements & reminders)
 - [Bioconductor Chat](https://chat.bioconductor.org): `#education-and-training` channel
+
+### Previous co-chairs
+
+- [Laurent Gatto](https://lgatto.codeberg.page/), 2020-2026
 
 ## Publications
 
