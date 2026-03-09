@@ -13,6 +13,7 @@ Packages	[Vignettes](https://bioconductor.org/help/package-vignettes/)	X	X	X
 Packages	[Workflows](https://www.bioconductor.org/packages/release/workflows)		X	X			
 Packages	Datasets		X			X	X
 Packages	GitHub Issues			X			X
+Packages	[How-tos](https://carpentries-incubator.github.io/bioc-scrnaseq/)			X			 
 Books	[R for Data Science](https://r4ds.hadley.nz)	X				X	
 Books	[Bioconductor Books](https://bioconductor.org/help/bioconductor-books)			X		X	
 Books	[R packages/Advanced R](https://adv-r.hadley.nz/)		X				X
