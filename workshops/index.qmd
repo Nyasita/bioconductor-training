@@ -3,7 +3,6 @@ title: "Workshops"
 execute:
   message: false
   warning: false
-  freeze: false
 ---
 
 This page lists Bioconductor workshops, including community-run workshops and external training opportunities.

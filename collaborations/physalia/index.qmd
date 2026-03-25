@@ -9,17 +9,50 @@ execute:
 
 Bioconductor has partnered with [Physalia Courses](https://www.physalia-courses.org/) to offer co-branded training in bioinformatics and computational biology. These courses are taught by experienced instructors from the Bioconductor community and hosted by Physalia. Only the courses listed below are part of the Bioconductor–Physalia collaboration and eligible for free seats.
 
-## Upcoming Courses
-
 ```{r}
 #| echo: false
 library(tidyverse)
 library(reactable)
 library(htmltools)
+library(lubridate)
+library(stringr)
+
 workshops <- read_tsv("../../data/workshops.tsv")
-workshops %>%
-  filter(initiative == "Physalia") %>%
+
+# ---- Date parsing (same as main Workshops page) ----
+determine_status_and_date <- function(date_str) {
+  parsed_date <- NA_real_
+
+  if (grepl("TBD|Early|Late", date_str, ignore.case = TRUE)) {
+    parsed_date <- as.Date("2099-12-31")
+  } else {
+    if (grepl("-\\s*\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}", date_str)) {
+      # For ranges such as "24–28 March 2025"
+      end_date_str <- str_extract(date_str, "\\d{1,2}\\s+[A-Za-z]+\\s+\\d{4}$")
+      parsed_date <- dmy(end_date_str, quiet = TRUE)
+    }
+    if (is.na(parsed_date)) parsed_date <- dmy(date_str, quiet = TRUE)
+    if (is.na(parsed_date)) parsed_date <- my(date_str, quiet = TRUE)
+    if (is.na(parsed_date)) parsed_date <- as.Date("2099-12-31")
+  }
+
+  status <- if (parsed_date >= today()) "upcoming" else "past"
+
+  return(list(status = status, parsed_date = parsed_date))
+}
+
+# ---- Filter Physalia first (important!) ----
+physalia_raw <- workshops %>%
+  filter(initiative == "Physalia")
+
+# Parse only Physalia rows → prevents length mismatch
+parsed <- mapply(determine_status_and_date, physalia_raw$date, SIMPLIFY = FALSE)
+
+# Build Physalia table
+physalia <- physalia_raw %>%
   mutate(
+    status = map_chr(parsed, "status"),
+    sort_date = map(parsed, "parsed_date") |> unlist() |> as.Date(),
     link_html = case_when(
       !is.na(workshop_url) & workshop_url != "" ~
         sprintf('<a href="%s" target="_blank">View Course</a>', workshop_url),
@@ -27,16 +60,43 @@ workshops %>%
         sprintf('<a href="%s" target="_blank">View Previous Edition</a>', previous_edition_url),
       TRUE ~ "New Course"
     )
-  ) %>%
-  select(date, title, instructors, link_html) %>%
-  reactable(
-    compact = TRUE,
-    striped = TRUE,
-    bordered = TRUE,
-    columns = list(
-      link_html = colDef(name = "Workshop Link", html = TRUE)
-    )
   )
+
+# Split into Upcoming / Past
+upcoming <- physalia %>%
+  filter(status == "upcoming") %>%
+  arrange(sort_date) %>%
+  select(date, title, instructors, link_html)
+
+past <- physalia %>%
+  filter(status == "past") %>%
+  arrange(desc(sort_date)) %>%
+  select(date, title, instructors, link_html)
+
+# Build tables
+upcoming_table <- reactable(
+  upcoming,
+  compact = TRUE,
+  striped = TRUE,
+  bordered = TRUE,
+  columns = list(link_html = colDef(name = "Workshop Link", html = TRUE))
+)
+
+past_table <- reactable(
+  past,
+  compact = TRUE,
+  striped = TRUE,
+  bordered = TRUE,
+  columns = list(link_html = colDef(name = "Workshop Link", html = TRUE))
+)
+
+# ---- Combine like the main Workshops page ----
+htmltools::tagList(
+  htmltools::h2("Upcoming"),
+  upcoming_table,
+  htmltools::h2("Past"),
+  past_table
+)
 ```
 
 ## Free Seats for Underrepresented Countries
