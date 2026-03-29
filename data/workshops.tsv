@@ -1,5 +1,5 @@
-category	initiative	title	date	location_name	location_url	city	country	workshop_url	instructors
-community-run	Carpentries	"bioc-intro,bioc-rnaseq"	24-28 March 2025	International Institute of Tropical Agriculture	https://www.iita.org/iita-countries/kenya/	Nairobi	Kenya	https://training.bioconductor.org/workshops/2025-03-Nairobi/index.html	"Fabricio Almeida-Silva, Laurah Ondari, Laurent Gatto, Michael Landi, Zedias Chikwambi"
+category	initiative	title	date	location_name	location_url	city	country	workshop_url	instructors	previous_edition_url
+community-run	Carpentries	"bioc-intro,bioc-rnaseq"	24-28 March 2025		International Institute of Tropical Agriculture	https://www.iita.org/iita-countries/kenya/	Nairobi	Kenya	https://training.bioconductor.org/workshops/2025-03-Nairobi/index.html	"Fabricio Almeida-Silva, Laurah Ondari, Laurent Gatto, Michael Landi, Zedias Chikwambi"
 community-run	Carpentries	bioc-rnaseq	21-Mar-25	Universidade Federal de Minas Gerais	https://ufmg.br/international-visitors	Belo Horizonte	Brazil	https://iza-mcac.github.io/2025-04-21-biocrnaseq-cfbioinfo/	"Izabela Mamede, João Paulo P. de Almeida"
 community-run	Carpentries	bioc-intro	30-31 October 2024	INRAT	https://www.inrat.agrinet.tn/index.php/fr/	Tunis	Tunisia	https://tunisrusergroup.github.io/2024-10-30-INRAT/	"Amal Boukteb, Hédia Tnani, Malek Chaouch"
 community-run	Carpentries	bioc-intro	2-3 September 2024	EuroBioC2024	https://eurobioc2024.bioconductor.org/	Oxford	United Kingdom	https://bioconductor.github.io/2024-09-02-BiocIntro-EuroBioc/	"Oliver Crook, Marcel Ramos-Perez"
