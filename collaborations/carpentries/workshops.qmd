@@ -9,8 +9,6 @@ execute:
   message: false
   warning: false
   echo: false
-  cache: false
-  freeze: false
 ---
 
 # Workshops
@@ -131,6 +129,21 @@ lat_limits <- c(-60, 90)
 world_map <- map_data("world") %>%
   filter(region != "Antarctica")
 
+# Create readable labels for the legend / tooltip
+workshops_geocoded <- workshops_geocoded %>%
+  mutate(
+    workshop_label = case_when(
+      title == "bioc-intro" ~ "Intro to Bioconductor",
+      title == "bioc-rnaseq" ~ "RNA-seq",
+      title == "bioc-scrnaseq" ~ "Single-cell RNA-seq",
+      title == "bioc-project" ~ "Bioconductor project",
+      title == "bioc-microbiome" ~ "Microbiome",
+      title == "bioc-intro,bioc-rnaseq" ~ "Intro + RNA-seq",
+      title == "bioc-intro,bioc-project" ~ "Intro + project",
+      TRUE ~ title
+    )
+  )
+
 # Create the ggplot object for the map
 gg <- ggplot() +
   geom_polygon(
@@ -148,21 +161,20 @@ gg <- ggplot() +
         "<b>Date:</b> ", date, "<br>",
         "<b>Hosted By:</b> ", location_name, "<br>",
         "<b>Location:</b> ", Location, "<br>",
-        "<b>Workshop:</b> ", title, "<br>",
+        "<b>Workshop:</b> ", workshop_label, "<br>",
         "<b>Instructors:</b> ", instructors
       ),
-      colour = title,
-      fill = title,
-      shape = title,
-      size = title
+      colour = workshop_label,
+      fill = workshop_label
     ),
+    shape = 21,
+    size = 2.8,
+    stroke = 0.5,
     width = 0.5,
     height = 0.5
   ) +
   scale_colour_brewer(palette = "Set2") +
   scale_fill_brewer(palette = "Set2") +
-  scale_shape_manual(values = 21:25) +  # Adjust number of shapes as needed
-  scale_size_manual(values = rep(2, length(unique(workshops_geocoded$title)))) +
   coord_fixed(
     ratio = 1.3,
     xlim = lon_limits,
@@ -176,7 +188,7 @@ gg <- ggplot() +
     legend.title = element_blank(),
     legend.text = element_text(size = 8),
     legend.key.size = unit(0.5, "lines"),
-    legend.margin = margin(t = 0, b = 0, unit = 'pt')
+    legend.margin = margin(t = 0, b = 0, unit = "pt")
   )
 
 # Convert ggplot to interactive plotly plot

@@ -9,8 +9,6 @@ execute:
   message: false
   warning: false
   echo: false
-  cache: true
-  freeze: false
 ---
 
 # Instructors
