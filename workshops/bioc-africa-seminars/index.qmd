@@ -14,25 +14,25 @@ The series includes introductory and thematic sessions led by members of the Bio
 **Series coordination:** Laurah Nyasita Ondari (IITA, Kenya)
 
 <div class="call-to-action">
-  <h2>🌍 Join the Bioconductor Africa Community</h2>
-  <p>Sign up to receive seminar links, reminders, and announcements about future Bioc Africa activities.
-.</p>
+  <h2>Join the Bioconductor Africa Community</h2>
+  <p>Sign up to receive seminar links, reminders, and announcements about future Bioc Africa activities.</p>
   <iframe src="../2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="400" style="border:none;"></iframe>
 </div>
 
 
 ## Upcoming seminars
 
-### Introductory session
+### Featured seminar
 
 **Introduction to Bioconductor**
 
-![](images/intro-kevin.png){width="50%" fig-alt="Bioconductor Africa introductory session poster"}
+![](images/intro-kevin.png){width="75%" fig-alt="Bioconductor Africa introductory session poster"}
 
-- *Date:* 15 April 2026
-- *Time:* 4 PM EAT / 3 PM CAT / 2 PM WAT
-- *Presenter:* Kevin Rue-Albrecht (University of Oxford, UK)
-- *Description:* An overview of Bioconductor, and ways to get involved.
+
+- Date: 15 April 2026
+- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT
+- Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
+- Description: An overview of Bioconductor, and ways to get involved.
 
 
 ### Microbiome analysis series 
@@ -41,11 +41,11 @@ A three‑part series led by Tuomas Borman (University of Turku, Finland).
 
 **Orchestrating Microbiome Analysis with Bioconductor**
 
-- *Dates:*
+- Dates:
   - May 6, 2026
   - May 13, 2026 
   - May 20, 2026
-- *Time:* 4 PM EAT / 3 PM CAT / 2 PM WAT
+- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT
 
 Each session will walk through practical examples demonstrating how to analyse, manage, and reproducibly report microbiome data using R and Bioconductor.
 
@@ -53,8 +53,8 @@ Each session will walk through practical examples demonstrating how to analyse, 
 
 **CRISPR amplicon data analysis using Bioconductor**
 
-- *Date:* June 2026
-- *Details:* To be announced
+- Date: June 2026
+- Details: To be announced
 
 
 ## Past seminars
@@ -77,14 +77,14 @@ If you are interested in:
 - suggesting topics, or 
 - contributing to Bioconductor Africa activities,
 
-please get in touch via the Bioconductor Zulip #bioc_africa channel or by direct message.
+please get in touch via the [Bioconductor Zulip](https://chat.bioconductor.org) #bioc_africa channel or by direct message.
 
 
 ## Support and funding
 
-The Bioconductor Africa Seminar Series is supported by the Bioconductor community and is funded in part by the Chan Zuckerberg Initiative through the **Essential Open Source Software for Science (EOSS) Cycle 6** programme.
+The Bioconductor Africa Seminar Series is supported by the Bioconductor community and funded in part by the Chan Zuckerberg Initiative through the Essential Open Source Software for Science (EOSS) Cycle 6 programme.
 
-This work is part of Bioconductor’s broader efforts to expand global training, community engagement, and capacity building.
+This work forma part of Bioconductor’s broader efforts to expand global training, community engagement, and capacity building.
 
 For more details on the funded projects, see:
 - [Bioconductor projects funded by CZI EOSS Cycle 6](https://blog.bioconductor.org/posts/2024-07-12-czi-eoss6-grants/)
