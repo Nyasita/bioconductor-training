@@ -13,33 +13,14 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 **Series coordination:** Laurah Nyasita Ondari (IITA, Kenya)
 
-<div class="call-to-action">
-  <h2>Join the Bioconductor Africa Community</h2>
-  <p>Sign up to receive seminar links, reminders, and announcements about future Bioc Africa activities.</p>
-  <iframe src="../2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="400" style="border:none;"></iframe>
-</div>
-
 
 ## Upcoming seminars
 
 ### Featured seminar
 
-**Introduction to Bioconductor**
-
-![](images/intro-kevin.png){width="75%" fig-alt="Bioconductor Africa introductory session poster"}
-
-
-- Date: 15 April 2026
-- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT
-- Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
-- Description: An overview of Bioconductor, and ways to get involved.
-
-
-### Microbiome analysis series 
+![](images/microbiome-tuomas.jpeg){width="85%" fig-alt="Microbiome analysis seminar series poster"}
 
 A three‑part series led by Tuomas Borman (University of Turku, Finland).
-
-**Orchestrating Microbiome Analysis with Bioconductor**
 
 - Dates:
   - May 6, 2026
@@ -49,6 +30,7 @@ A three‑part series led by Tuomas Borman (University of Turku, Finland).
 
 Each session will walk through practical examples demonstrating how to analyse, manage, and reproducibly report microbiome data using R and Bioconductor.
 
+
 ### Additional upcoming seminar
 
 **CRISPR amplicon data analysis using Bioconductor**
@@ -57,9 +39,36 @@ Each session will walk through practical examples demonstrating how to analyse, 
 - Details: To be announced
 
 
+<div class="call-to-action">
+  <h2>Stay connected with Bioconductor Africa</h2>
+  <p>Sign up to receive seminar links, reminders, and announcements about future Bioc Africa activities.</p>
+  <iframe src="../2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="350" style="border:none;"></iframe>
+</div>
+
+
 ## Past seminars
 
-To be populated as sessions are completed.
+Curious what the Bioconductor Africa seminars are like?  
+Recordings from previous sessions are available below.
+
+### Introduction to Bioconductor
+
+- Date: 15 April 2026
+- Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/ZbwOvgVTWF8"
+    title="Introduction to Bioconductor – Bioconductor Africa Seminar Series"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This introductory session provides an overview of the Bioconductor project and
+ways to get involved in the community.
 
 
 ## Format and recordings
