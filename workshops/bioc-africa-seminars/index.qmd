@@ -93,7 +93,7 @@ please get in touch via the [Bioconductor Zulip](https://chat.bioconductor.org) 
 
 The Bioconductor Africa Seminar Series is supported by the Bioconductor community and funded in part by the Chan Zuckerberg Initiative through the Essential Open Source Software for Science (EOSS) Cycle 6 programme.
 
-This work forma part of Bioconductor’s broader efforts to expand global training, community engagement, and capacity building.
+This work forms part of Bioconductor’s broader efforts to expand global training, community engagement, and capacity building.
 
 For more details on the funded projects, see:
 - [Bioconductor projects funded by CZI EOSS Cycle 6](https://blog.bioconductor.org/posts/2024-07-12-czi-eoss6-grants/)
