@@ -49,7 +49,9 @@ Each session will walk through practical examples demonstrating how to analyse, 
 ## Past seminars
 
 Curious what the Bioconductor Africa seminars are like?  
-Recordings from previous sessions are available below.
+Recordings from previous sessions are available below.  
+If you're new to Bioconductor, you may want to start with the introductory session.
+
 
 ### Introduction to Bioconductor
 
@@ -70,6 +72,24 @@ Recordings from previous sessions are available below.
 This introductory session provides an overview of the Bioconductor project and
 ways to get involved in the community.
 
+
+### Orchestrating Microbiome Analysis with Bioconductor (Part 1)
+
+- Date: 6 May 2026
+- Presenter: Tuomas Borman (University of Turku, Finland)
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/7Y6E7g_Xx3U"
+    title="Orchestrating Microbiome Analysis with Bioconductor (Part 1)"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+This session introduces the microbiome analysis ecosystem and data containers.
 
 ## Format and recordings
 
