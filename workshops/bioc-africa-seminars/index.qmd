@@ -58,6 +58,9 @@ If you're new to Bioconductor, you may want to start with the introductory sessi
 - Date: 15 April 2026
 - Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
 
+This introductory session provides an overview of the Bioconductor project and
+ways to get involved in the community.
+
 <div style="max-width: 900px;">
   <iframe
     width="100%"
@@ -69,11 +72,14 @@ If you're new to Bioconductor, you may want to start with the introductory sessi
   </iframe>
 </div>
 
-This introductory session provides an overview of the Bioconductor project and
-ways to get involved in the community.
 
+### Microbiome analysis series
 
-### Orchestrating Microbiome Analysis with Bioconductor (Part 1)
+A three-part series exploring microbiome data analysis workflows in Bioconductor.
+
+#### Orchestrating Microbiome Analysis with Bioconductor (Part 1)
+
+This session introduces microbiome analysis ecosystems and data containers.
 
 - Date: 6 May 2026
 - Presenter: Tuomas Borman (University of Turku, Finland)
@@ -89,7 +95,24 @@ ways to get involved in the community.
   </iframe>
 </div>
 
-This session introduces the microbiome analysis ecosystem and data containers.
+#### Orchestrating Microbiome Analysis with Bioconductor (Part 2)
+
+- Date: 13 May 2026
+- Presenter: Tuomas Borman (University of Turku, Finland)
+
+This session demonstrates an end‑to‑end microbiome analysis workflow starting from abundance counts.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/HxCjozr0DZ0"
+    title="Orchestrating Microbiome Analysis with Bioconductor (Part 2)"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
 ## Format and recordings
 
