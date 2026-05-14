@@ -79,10 +79,10 @@ A three-part series exploring microbiome data analysis workflows in Bioconductor
 
 #### Orchestrating Microbiome Analysis with Bioconductor (Part 1)
 
-This session introduces microbiome analysis ecosystems and data containers.
-
 - Date: 6 May 2026
 - Presenter: Tuomas Borman (University of Turku, Finland)
+
+This session introduces microbiome analysis ecosystems and data containers.
 
 <div style="max-width: 900px;">
   <iframe
