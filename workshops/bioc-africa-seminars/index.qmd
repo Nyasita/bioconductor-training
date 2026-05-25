@@ -18,25 +18,17 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 ### Featured seminar
 
-![](images/microbiome-tuomas.jpeg){width="85%" fig-alt="Microbiome analysis seminar series poster"}
-
-A three‑part series led by Tuomas Borman (University of Turku, Finland).
-
-- Dates:
-  - May 6, 2026
-  - May 13, 2026 
-  - May 20, 2026
-- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT
-
-Each session will walk through practical examples demonstrating how to analyse, manage, and reproducibly report microbiome data using R and Bioconductor.
+![](images/crispr-kornel.png){width="85%" fig-alt="CRISPR amplicon analysis seminar poster"}
 
 
-### Additional upcoming seminar
+- Date: 17 June 2026  
+- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT  
+- Presenter: Kornel Labun (University of Warsaw)
 
-**CRISPR amplicon data analysis using Bioconductor**
+This session explores how Bioconductor supports CRISPR amplicon sequencing analysis using the ampliCan package. It will cover practical workflows for analysing genome editing outcomes, generating automated reports, and estimating homology-directed repair (HDR).
 
-- Date: June 2026
-- Details: To be announced
+
+Additional advanced training sessions (including topics such as GWAS analysis) are being planned for later in 2026.
 
 
 <div class="call-to-action">
@@ -58,8 +50,7 @@ If you're new to Bioconductor, you may want to start with the introductory sessi
 - Date: 15 April 2026
 - Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
 
-This introductory session provides an overview of the Bioconductor project and
-ways to get involved in the community.
+This introductory session provides an overview of the Bioconductor project and ways to get involved in the community.
 
 <div style="max-width: 900px;">
   <iframe
@@ -82,7 +73,7 @@ A three-part series exploring microbiome data analysis workflows in Bioconductor
 - Date: 6 May 2026
 - Presenter: Tuomas Borman (University of Turku, Finland)
 
-This session introduces microbiome analysis ecosystems and data containers.
+This session introduces the microbiome analysis ecosystem and data containers.
 
 <div style="max-width: 900px;">
   <iframe
@@ -108,6 +99,25 @@ This session demonstrates an end‑to‑end microbiome analysis workflow startin
     style="aspect-ratio: 16 / 9;"
     src="https://www.youtube.com/embed/HxCjozr0DZ0"
     title="Orchestrating Microbiome Analysis with Bioconductor (Part 2)"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+#### Orchestrating Microbiome Analysis with Bioconductor (Part 3)
+
+- Date: 20 May 2026  
+- Presenter: Tuomas Borman (University of Turku, Finland)
+
+This session focuses on reproducible reporting and workflow integration for microbiome analysis using Bioconductor.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/OFDn8dTg0LY"
+    title="Orchestrating Microbiome Analysis with Bioconductor (Part 3)"
     frameborder="0"
     allowfullscreen>
   </iframe>
