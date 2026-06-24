@@ -44,66 +44,9 @@ Curious what the Bioconductor Africa seminars are like?
 Recordings from previous sessions are available below.  
 If you're new to Bioconductor, you may want to start with the introductory session.
 
-
-### Introduction to Bioconductor
-
-- Date: 15 April 2026
-- Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
-
-This introductory session provides an overview of the Bioconductor project and ways to get involved in the community.
-
-<div style="max-width: 900px;">
-  <iframe
-    width="100%"
-    style="aspect-ratio: 16 / 9;"
-    src="https://www.youtube.com/embed/ZbwOvgVTWF8"
-    title="Introduction to Bioconductor – Bioconductor Africa Seminar Series"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
-
-
 ### Microbiome analysis series
 
 A three-part series exploring microbiome data analysis workflows in Bioconductor.
-
-#### Orchestrating Microbiome Analysis with Bioconductor (Part 1)
-
-- Date: 6 May 2026
-- Presenter: Tuomas Borman (University of Turku, Finland)
-
-This session introduces the microbiome analysis ecosystem and data containers.
-
-<div style="max-width: 900px;">
-  <iframe
-    width="100%"
-    style="aspect-ratio: 16 / 9;"
-    src="https://www.youtube.com/embed/7Y6E7g_Xx3U"
-    title="Orchestrating Microbiome Analysis with Bioconductor (Part 1)"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
-
-#### Orchestrating Microbiome Analysis with Bioconductor (Part 2)
-
-- Date: 13 May 2026
-- Presenter: Tuomas Borman (University of Turku, Finland)
-
-This session demonstrates an end‑to‑end microbiome analysis workflow starting from abundance counts.
-
-<div style="max-width: 900px;">
-  <iframe
-    width="100%"
-    style="aspect-ratio: 16 / 9;"
-    src="https://www.youtube.com/embed/HxCjozr0DZ0"
-    title="Orchestrating Microbiome Analysis with Bioconductor (Part 2)"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
-
 
 #### Orchestrating Microbiome Analysis with Bioconductor (Part 3)
 
@@ -123,6 +66,67 @@ This session focuses on reproducible reporting and workflow integration for micr
   </iframe>
 </div>
 
+Session notes: [OMA part 3 notes](https://annuel2.framapad.org/p/bioc-africa-mia-analysis)
+
+#### Orchestrating Microbiome Analysis with Bioconductor (Part 2)
+
+- Date: 13 May 2026
+- Presenter: Tuomas Borman (University of Turku, Finland)
+
+This session demonstrates an end‑to‑end microbiome analysis workflow starting from abundance counts.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/HxCjozr0DZ0"
+    title="Orchestrating Microbiome Analysis with Bioconductor (Part 2)"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+Session notes: [OMA part 2 notes](https://annuel2.framapad.org/p/bioc-africa-mia-analysis)
+
+#### Orchestrating Microbiome Analysis with Bioconductor (Part 1)
+
+- Date: 6 May 2026
+- Presenter: Tuomas Borman (University of Turku, Finland)
+
+This session introduces the microbiome analysis ecosystem and data containers.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/7Y6E7g_Xx3U"
+    title="Orchestrating Microbiome Analysis with Bioconductor (Part 1)"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+Session notes: [OMA part 1 notes](https://annuel2.framapad.org/p/bioc-africa-mia-analysis)
+
+### Introduction to Bioconductor
+
+- Date: 15 April 2026
+- Presenter: Kevin Rue-Albrecht (University of Oxford, UK)
+
+This introductory session provides an overview of the Bioconductor project and ways to get involved in the community.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/ZbwOvgVTWF8"
+    title="Introduction to Bioconductor – Bioconductor Africa Seminar Series"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+Session notes: [Introduction to Bioconductor notes](https://annuel2.framapad.org/p/intro-to-bioconductor-15-april-2026)
 
 ## Format and recordings
 
