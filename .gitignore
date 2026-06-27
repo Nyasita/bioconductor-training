@@ -19,3 +19,4 @@ docs/
 
 # Others
 README_files/
+**/*.quarto_ipynb

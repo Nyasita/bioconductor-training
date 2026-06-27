@@ -23,12 +23,12 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 - Date: 22 and 29 July 2026  
 - Time: 5 PM EAT / 4 PM CAT / 3 PM WAT  
-- Presenter: Stephanie Gogarten (PRIMED and GregGoR)
+- Presenter: Stephanie Gogarten (PRIMED and GREGoR)
 
 This session explores how Bioconductor supports the analysis of large-scale genomic data for genome-wide association studies (GWAS).
 
 
-Additional advanced training sessions (including topics such as GWAS analysis) are being planned for later in 2026.
+Additional advanced training sessions (including topics such as single-cell RNAseq analysis) are being planned for later in 2026.
 
 
 <div class="call-to-action">
