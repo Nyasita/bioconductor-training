@@ -18,14 +18,14 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 ### Featured seminar
 
-![](images/crispr-kornel.png){width="85%" fig-alt="CRISPR amplicon analysis seminar poster"}
+![](images/gwas-stephanie.png){width="85%" fig-alt="GWAS data analysis using the GENESIS package seminar poster"}
 
 
-- Date: 17 June 2026  
-- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT  
-- Presenter: Kornel Labun (University of Warsaw)
+- Date: 22 and 29 July 2026  
+- Time: 5 PM EAT / 4 PM CAT / 3 PM WAT  
+- Presenter: Stephanie Gogarten (PRIMED and GregGoR)
 
-This session explores how Bioconductor supports CRISPR amplicon sequencing analysis using the ampliCan package. It will cover practical workflows for analysing genome editing outcomes, generating automated reports, and estimating homology-directed repair (HDR).
+This session explores how Bioconductor supports the analysis of large-scale genomic data for genome-wide association studies (GWAS).
 
 
 Additional advanced training sessions (including topics such as GWAS analysis) are being planned for later in 2026.
@@ -43,6 +43,28 @@ Additional advanced training sessions (including topics such as GWAS analysis) a
 Curious what the Bioconductor Africa seminars are like?  
 Recordings from previous sessions are available below.  
 If you're new to Bioconductor, you may want to start with the introductory session.
+
+
+### CRISPR amplicon sequencing analysis using the ampliCan package
+
+- Date: 17 June 2026
+- Presenter: Kornel Labun (University of Warsaw)
+
+This session explored how Bioconductor supports CRISPR amplicon sequencing analysis using the ampliCan package. It covered practical workflows for analysing genome editing outcomes, generating automated reports, and estimating homology-directed repair (HDR).
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/rPRgX_2ezCA" 
+    title="CRISPR Amplicon Sequencing Analysis with ampliCan"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+Session notes: [Crispr analysis with amplican notes](https://annuel2.framapad.org/p/CRISPR_Amplicon_Analysis_with_ampliCan)
+
 
 ### Microbiome analysis series
 
