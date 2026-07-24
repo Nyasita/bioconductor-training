@@ -1,31 +1,53 @@
 # The Bioconductor Training Committee
 
-The Bioconductor Training Committee is a collaborative effort to consolidate Bioconductor-focused training material and build a global community of instructors. We define curricula and develop lessons for both beginner and more advanced R users who want to analyse their data with Bioconductor packages.
+The Bioconductor Training Committee is a collaborative effort to consolidate Bioconductor-focused training materials and build a global community of instructors. We define curricula and develop lessons for beginner and more advanced R users who want to analyse their data with Bioconductor packages.
 
-The committee reports to the Bioconductor
-[Community Advisory Board](https://bioconductor.org/about/community-advisory-board/) and is currently chaired by [Charlotte Soneson](https://csoneson.github.io/) and [Jenny Drnevich](https://biotech.illinois.edu/hpcbio-core/the-hpcbio-team/).
+The committee reports to the Bioconductor [Community Advisory Board](https://bioconductor.org/about/community-advisory-board/) and is currently chaired by [Charlotte Soneson](https://csoneson.github.io/) and [Jenny Drnevich](https://biotech.illinois.edu/hpcbio-core/the-hpcbio-team/).
 
-There's no formal joining process and no minimum commitment required - simply attend one of our monthly meetings (announced on the Google group below) or join the conversation to become part of the community.
+There is no formal joining process or minimum commitment. Simply attend one of our monthly meetings or join the conversation to become part of the community.
 
 - [Monthly meeting link](https://meet.jit.si/BioconductorTeaching)
-- [Rolling agenda & notes (Google Doc)](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#)
-- [Google group](https://groups.google.com/g/bioconductor-teaching/) (announcements & reminders)
-- [Bioconductor Chat](https://chat.bioconductor.org): `#education-and-training` channel
+- [Rolling agenda and notes](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#)
+- [Google group](https://groups.google.com/g/bioconductor-teaching/) for announcements and meeting reminders
+- The `#education-and-training` channel on [Bioconductor Chat](https://chat.bioconductor.org)
 
-### Previous co-chairs
+## Seminar series
 
-- [Laurent Gatto](https://lgatto.codeberg.page/), 2020-2026
+Bioconductor community seminar series bring together researchers, software developers and educators to share practical approaches to biological data analysis with Bioconductor.
 
-## Publications
+<div class="seminar-feature">
+<div class="seminar-feature-image">
+<a href="seminars/bioc-africa/">
+<img src="seminars/bioc-africa/images/BiocAfrica.png" alt="Bioconductor Africa">
+</a>
+</div>
+<div class="seminar-feature-text">
+<h3>Bioconductor Africa Seminar Series</h3>
+<p>
+An online seminar series highlighting the use of Bioconductor for biological
+data analysis, with a focus on topics relevant to researchers across Africa
+and beyond.
+</p>
+<p>
+The series includes introductory and thematic sessions led by members of the
+Bioconductor community and is open to anyone interested in Bioconductor and
+related workflows.
+</p>
+<p>
+<a href="seminars/bioc-africa/">
+Explore the Bioconductor Africa Seminar Series
+</a>
+</p>
+</div>
+</div>
 
-**Learning and teaching biological data science in the Bioconductor community**  
-Drnevich, Tan et al. (2025)  
-Published in *PLOS Computational Biology*
+[View all seminar series](seminars/)
 
-👉 [Read the full paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925)
+## Events
 
+Explore upcoming and past Bioconductor [workshops](workshops/), [seminars](seminars/) and other activities on the [Bioconductor events page](https://www.bioconductor.org/help/events/).
 
-## Training Modules
+## Training modules
 
 Bioconductor Carpentry lessons developed by the training committee are organised into modules, each designed for specific audiences and skill levels.
 
@@ -44,30 +66,33 @@ Requires R/Bioconductor familiarity; bulk RNA-seq experience helpful but optiona
 An overview of the Bioconductor project: website, packages, landing pages, vignettes, workflows, release cycles, and infrastructure.
 Designed to be combined with other modules during workshops.
 
+## Contribute a lesson
 
-### New lessons
+Interested in developing a new lesson or adapting a Carpentry-style module? We would be happy to discuss lesson design, long-term maintenance, dissemination and other support you may need.
 
-Interested in contributing a new lesson or adapting a Carpentry-style module?
-We’d be happy to discuss ideas, lesson design, long-term maintenance, dissemination, or any support you may need.
+- Contact us through the `#education-and-training` channel on [Bioconductor Chat](https://chat.bioconductor.org/)
+- Read the [Lesson Design and Maintenance Guidelines](collaborations/carpentries/lesson-guidelines.qmd)
 
-- Contact us via [Bioconductor Chat](https://chat.bioconductor.org/)
-- View our contributor documentation: [Lesson Design & Maintenance Guidelines](collaborations/carpentries/lesson-guidelines.qmd)
+## Publications
 
-## Notes and meetings
+**Learning and teaching biological data science in the Bioconductor community**  
+Drnevich, Tan et al. (2025)  
+Published in *PLOS Computational Biology*
 
-- [Governance document](resources/bioc-training-governance-v1.0.0.pdf)
-- Community discussions: education-and-training channel on [Bioconductor Chat](https://chat.bioconductor.org/).
-- [Google group](https://groups.google.com/g/bioconductor-teaching/): low-traffic, used for monthly meeting reminders
+[Read the full paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012925)
 
-## Events
+## Committee history
 
-Explore upcoming and past Bioconductor workshops on our [workshops](https://training.bioconductor.org/workshops/index.html) and [events](https://www.bioconductor.org/help/events/) pages. 
+### Previous co-chairs
+
+- [Laurent Gatto](https://lgatto.codeberg.page/), 2020–2026
 
 ## Contact
 
-If you’re interested in joining, contributing, or simply learning more, please contact us via:
+To join the committee, contribute to its work or learn more:
 
-- The `#education-and-training` channel, or committee co-chairs on [Bioconductor Chat](https://chat.bioconductor.org) or by email
-- Or drop into one of our monthly meetings
+- Join the `#education-and-training` channel on [Bioconductor Chat](https://chat.bioconductor.org/)
+- Contact one of the committee co-chairs
+- Attend one of our monthly meetings
 
-We look forward to welcoming you into the Bioconductor training community!
+We look forward to welcoming you to the Bioconductor training community.
