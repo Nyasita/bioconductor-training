@@ -2,6 +2,19 @@
 title: "Bioconductor Seminar Series"
 ---
 
+<style>
+.seminar-button {
+  display: inline-flex;
+  width: auto;
+  margin-top: 1rem;
+}
+
+.seminar-button .span-brand {
+  width: auto;
+  padding: 0.75rem 1rem;
+}
+</style>
+
 Bioconductor community seminar series provide opportunities to learn about biological data analysis, software and research from speakers across our regional communities.
 
 ## Seminar series
@@ -13,12 +26,3 @@ An online seminar series highlighting the use of Bioconductor for biological dat
 <a class="brand-border-button seminar-button" href="bioc-africa/">
   <span class="span-brand">Explore Bioconductor Africa</span>
 </a>
-
-.seminar-button {
-  width: fit-content;
-  margin-top: 1rem;
-}
-
-.seminar-button .span-brand {
-  padding: 0.75rem 1rem;
-}
