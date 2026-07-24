@@ -36,41 +36,57 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const run = context.payload.workflow_run;
-            let pullRequest;
+            let pullRequest = null;
 
+            // This may be populated for PRs originating in the main repository.
             const payloadPullRequests = run.pull_requests || [];
 
             pullRequest =
               payloadPullRequests.find(
                 candidate => candidate.base?.ref === "devel"
-              ) || payloadPullRequests[0];
+              ) || payloadPullRequests[0] || null;
 
+            // For fork PRs, find the PR using the fork owner and branch.
             if (!pullRequest) {
-              const response =
-                await github.rest.repos.listPullRequestsAssociatedWithCommit({
+              const headOwner =
+                run.head_repository?.owner?.login ||
+                run.head_repository?.owner?.name;
+
+              const headBranch = run.head_branch;
+
+              if (headOwner && headBranch) {
+                const response = await github.rest.pulls.list({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  commit_sha: run.head_sha
+                  state: "open",
+                  base: "devel",
+                  head: `${headOwner}:${headBranch}`,
+                  per_page: 10
                 });
 
-              pullRequest =
-                response.data.find(
-                  candidate =>
-                    candidate.state === "open" &&
-                    candidate.base.ref === "devel"
-                ) || response.data[0];
+                pullRequest =
+                  response.data.find(
+                    candidate => candidate.head.sha === run.head_sha
+                  ) || null;
+              }
             }
 
-            if (
-              !pullRequest ||
-              !Number.isInteger(Number(pullRequest.number))
-            ) {
+            if (!pullRequest) {
               core.setFailed(
                 `Could not determine the pull request for workflow run ${run.id}`
               );
               return;
             }
 
+            // Do not deploy an artifact unless it matches the current PR commit.
+            if (pullRequest.head.sha !== run.head_sha) {
+              core.setFailed(
+                `Workflow SHA ${run.head_sha} does not match PR #${pullRequest.number} SHA ${pullRequest.head.sha}`
+              );
+              return;
+            }
+
+            core.info(`Resolved pull request #${pullRequest.number}`);
             core.setOutput("number", String(pullRequest.number));
 
       - name: Download rendered site
