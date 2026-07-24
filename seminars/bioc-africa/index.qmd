@@ -89,7 +89,7 @@ Additional advanced training sessions (including topics such as single-cell RNAs
 <div class="call-to-action">
   <h2>Stay connected with Bioconductor Africa</h2>
   <p>Sign up to receive seminar links, reminders, and announcements about future Bioc Africa activities.</p>
-  <iframe src="../2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="350" style="border:none;"></iframe>
+  <iframe src="/workshops/2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="350" style="border:none;"></iframe>
 </div>
 
 
