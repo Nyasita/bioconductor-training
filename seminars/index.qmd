@@ -10,4 +10,15 @@ Bioconductor community seminar series provide opportunities to learn about biolo
 
 An online seminar series highlighting the use of Bioconductor for biological data analysis, with a focus on topics relevant to researchers across Africa and beyond.
 
-[View the Bioconductor Africa Seminar Series](bioc-africa/){.button}
+<a class="brand-border-button seminar-button" href="bioc-africa/">
+  <span class="span-brand">Explore Bioconductor Africa</span>
+</a>
+
+.seminar-button {
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.seminar-button .span-brand {
+  padding: 0.75rem 1rem;
+}
