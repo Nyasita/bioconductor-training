@@ -12,8 +12,9 @@ execute:
   display: grid;
   grid-template-columns: minmax(0, 1fr) 220px;
   column-gap: 2.5rem;
-  align-items: center;
+  align-items: start;
   width: 85%;
+  margin-top: 1rem;
 }
 
 .bioc-africa-overview-text {
