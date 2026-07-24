@@ -1,0 +1,186 @@
+# This workflow is privileged because it can access the Netlify secrets.
+#
+# Security requirements:
+# - Do not check out the pull-request branch here.
+# - Do not run Quarto, R, npm scripts or contributor-supplied commands here.
+# - Only download and deploy the pre-rendered static-site artifact.
+
+name: Deploy PR preview
+
+on:
+  workflow_run:
+    workflows: ["CI/CD"]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  deploy-preview:
+    if: >-
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Usually workflow_run.pull_requests contains the associated PR.
+      # The API lookup provides a fallback for unusual payloads.
+      - name: Resolve pull-request number
+        id: pr
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const run = context.payload.workflow_run;
+            let pullRequest;
+
+            const payloadPullRequests = run.pull_requests || [];
+
+            pullRequest =
+              payloadPullRequests.find(
+                candidate => candidate.base?.ref === "devel"
+              ) || payloadPullRequests[0];
+
+            if (!pullRequest) {
+              const response =
+                await github.rest.repos.listPullRequestsAssociatedWithCommit({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  commit_sha: run.head_sha
+                });
+
+              pullRequest =
+                response.data.find(
+                  candidate =>
+                    candidate.state === "open" &&
+                    candidate.base.ref === "devel"
+                ) || response.data[0];
+            }
+
+            if (
+              !pullRequest ||
+              !Number.isInteger(Number(pullRequest.number))
+            ) {
+              core.setFailed(
+                `Could not determine the pull request for workflow run ${run.id}`
+              );
+              return;
+            }
+
+            core.setOutput("number", String(pullRequest.number));
+
+      - name: Download rendered site
+        uses: actions/download-artifact@v5
+        with:
+          name: netlify-preview-site
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/netlify-preview-site
+
+      - name: Check downloaded site
+        run: |
+          test -f "${{ runner.temp }}/netlify-preview-site/index.html"
+
+      - name: Deploy preview to Netlify
+        id: deploy
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          PREVIEW_DIR: ${{ runner.temp }}/netlify-preview-site
+        run: |
+          case "$PR_NUMBER" in
+            ''|*[!0-9]*)
+              echo "Invalid pull-request number: $PR_NUMBER"
+              exit 1
+              ;;
+          esac
+
+          DEPLOY_JSON="$(
+            npx --yes netlify-cli deploy \
+              --no-build \
+              --auth "$NETLIFY_AUTH_TOKEN" \
+              --site "$NETLIFY_SITE_ID" \
+              --dir "$PREVIEW_DIR" \
+              --alias "pr-$PR_NUMBER" \
+              --message "PR #$PR_NUMBER - $HEAD_SHA" \
+              --json
+          )"
+
+          printf '%s\n' "$DEPLOY_JSON" \
+            > "${{ runner.temp }}/netlify-deploy.json"
+
+          PREVIEW_URL="$(
+            printf '%s\n' "$DEPLOY_JSON" |
+              jq -r '.deploy_url // .deploy_ssl_url // .url // empty'
+          )"
+
+          if [ -z "$PREVIEW_URL" ]; then
+            echo "Netlify did not return a preview URL."
+            cat "${{ runner.temp }}/netlify-deploy.json"
+            exit 1
+          fi
+
+          echo "url=$PREVIEW_URL" >> "$GITHUB_OUTPUT"
+          echo "### Netlify preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "$PREVIEW_URL" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Add preview link to pull request
+        uses: actions/github-script@v8
+        env:
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+          PREVIEW_URL: ${{ steps.deploy.outputs.url }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueNumber = Number(process.env.PR_NUMBER);
+
+            if (!Number.isInteger(issueNumber)) {
+              core.setFailed(
+                `Invalid pull-request number: ${process.env.PR_NUMBER}`
+              );
+              return;
+            }
+
+            const marker = "<!-- netlify-pr-preview -->";
+            const body = `${marker}
+            **Netlify preview:** ${process.env.PREVIEW_URL}
+
+            This preview is updated whenever the pull request build succeeds.`;
+
+            const comments = await github.paginate(
+              github.rest.issues.listComments,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                per_page: 100
+              }
+            );
+
+            const existingComment = comments.find(
+              comment =>
+                comment.user?.login === "github-actions[bot]" &&
+                comment.body?.includes(marker)
+            );
+
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body
+              });
+            }
