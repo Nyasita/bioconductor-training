@@ -1,5 +1,7 @@
 ---
 title: "Bioconductor Africa Seminar Series"
+aliases:
+  - "/workshops/bioc-africa-seminars/index.html"
 execute:
   message: false
   warning: false
