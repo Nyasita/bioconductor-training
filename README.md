@@ -18,7 +18,8 @@ Bioconductor community seminar series bring together researchers, software devel
 <div class="seminar-feature">
 <div class="seminar-feature-image">
 <a href="seminars/bioc-africa/">
-<img src="seminars/bioc-africa/images/BiocAfrica.png" alt="Bioconductor Africa">
+<img src="seminars/bioc-africa/images/BiocAfrica.png" alt="Bioconductor Africa"
+width="180">
 </a>
 </div>
 <div class="seminar-feature-text">
