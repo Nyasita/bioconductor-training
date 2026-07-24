@@ -1,43 +1,36 @@
-<script src="{{ "js/header.js" | relURL }}" defer></script>
-
 <header id="site-masthead" class="site-masthead">
   <div class="header-size">
 
-    <!-- Logo -->
     <div class="header-logo">
       <a href="https://bioconductor.org">
         <img
-          src="{{ "images/bioconductor-logo.svg" | relURL }}"
+          src="/images/bioconductor-logo.svg"
           class="masthead-logo"
           alt="Bioconductor home"
         />
       </a>
     </div>
 
-    <!-- Main navigation -->
     <nav
       id="site-navigation"
       class="header-nav"
       aria-label="Main navigation"
     >
       <div class="nav-links">
-        <a
-          class="format-bold mobile-link"
-          href="{{ "/" | relURL }}"
-        >
+        <a class="format-bold mobile-link" href="/">
           Home
         </a>
 
         <a
           class="format-bold mobile-link"
-          href="{{ "resources/resources.html" | relURL }}"
+          href="/resources/resources.html"
         >
           Resources
         </a>
 
         <a
           class="format-bold mobile-link"
-          href="{{ "workshops/index.html" | relURL }}"
+          href="/workshops/index.html"
         >
           Workshops
         </a>
@@ -45,7 +38,7 @@
         <div class="dropdown">
           <a
             class="format-bold mobile-link"
-            href="{{ "collaborations/index.html" | relURL }}"
+            href="/collaborations/index.html"
           >
             Collaborations
           </a>
@@ -53,14 +46,14 @@
           <div class="dropdown-content">
             <a
               class="mobile-link"
-              href="{{ "collaborations/carpentries/index.html" | relURL }}"
+              href="/collaborations/carpentries/index.html"
             >
               Carpentries
             </a>
 
             <a
               class="mobile-link"
-              href="{{ "collaborations/physalia/index.html" | relURL }}"
+              href="/collaborations/physalia/index.html"
             >
               Physalia
             </a>
@@ -69,14 +62,13 @@
       </div>
     </nav>
 
-    <!-- Mobile menu control -->
     <div class="nav-mobile">
       <span class="format-bold menu-label">Menu</span>
 
       <button
         class="hamburger"
         type="button"
-        aria-label="Open navigation menu"
+        aria-label="Toggle navigation"
         aria-controls="site-navigation"
         aria-expanded="false"
       >
