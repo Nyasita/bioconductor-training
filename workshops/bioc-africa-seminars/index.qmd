@@ -18,7 +18,7 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 ### Featured seminar
 
-![](images/gwas-stephanie.png){width="85%" fig-alt="GWAS data analysis using the GENESIS package seminar poster"}
+![](images/gwas-stephanie-updated.png){width="85%" fig-alt="GWAS data analysis using the GENESIS package seminar poster"}
 
 
 - Date: 29 July 2026  
@@ -26,6 +26,8 @@ The series includes introductory and thematic sessions led by members of the Bio
 - Presenter: Stephanie Gogarten (PRIMED and GREGoR)
 
 This session explores how Bioconductor supports the analysis of large-scale genomic data for genome-wide association studies (GWAS).
+
+[Register to attend](https://us06web.zoom.us/meeting/register/0EWUEvPpTLuvZkgdCaMgAQ#/registration) 
 
 
 Additional advanced training sessions (including topics such as single-cell RNAseq analysis) are being planned for later in 2026.
@@ -67,7 +69,7 @@ In this first session, Stephanie covered foundations of GWAS analysis in Biocond
   </iframe>
 </div>
 
-Session notes: [Crispr analysis with amplican notes](https://annuel2.framapad.org/p/CRISPR_Amplicon_Analysis_with_ampliCan)
+Session notes: [Gwas data analysis part 1](https://annuel2.framapad.org/p/gwas-data-analysis-using-genesis)
 
 
 ### CRISPR amplicon sequencing analysis using the ampliCan package
