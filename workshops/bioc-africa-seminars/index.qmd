@@ -18,7 +18,7 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 ### Featured seminar
 
-![](images/gwas-stephanie-updated.png){width="85%" fig-alt="GWAS data analysis using the GENESIS package seminar poster"}
+![](images/gwas-stephanie-updated_2.png){width="85%" fig-alt="GWAS data analysis using the GENESIS package seminar poster"}
 
 
 - Date: 29 July 2026  
