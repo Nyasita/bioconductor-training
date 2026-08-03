@@ -18,16 +18,16 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 ### Featured seminar
 
-![](images/gwas-stephanie-updated_2.png){width="85%" fig-alt="GWAS data analysis using the GENESIS package seminar poster"}
+![](images/himel-arora-multiomics.png){width="85%" fig-alt="Multiomics data integration with Bioconductor poster"}
 
 
-- Date: 29 July 2026  
-- Time: 6 PM EAT / 5 PM CAT / 4 PM WAT  
-- Presenter: Stephanie Gogarten (PRIMED and GREGoR)
+- Date: 12 August 2026  
+- Time: 4 PM EAT / 3 PM CAT / 2 PM WAT  
+- Presenters: Dr Himel Mallick and Nalin Arora (Cornell University)
 
-This session explores how Bioconductor supports the analysis of large-scale genomic data for genome-wide association studies (GWAS).
+This session explores how Bioconductor supports multi-omics data integration.
 
-[Register to attend](https://us06web.zoom.us/meeting/register/0EWUEvPpTLuvZkgdCaMgAQ#/registration) 
+[Register to attend](https://us06web.zoom.us/meeting/register/oZdSAf30RHKZa4sBpGywcg#/registration) 
 
 
 Additional advanced training sessions (including topics such as single-cell RNAseq analysis) are being planned for later in 2026.
@@ -50,6 +50,26 @@ If you're new to Bioconductor, you may want to start with the introductory sessi
 ### GWAS datya analysis series
 
 A two-part series exploring GWAS data analysis with the GENESIS package.
+
+#### GWAS data analysis with GENESIS (Part 2)
+
+- Date: 29 July 2026  
+- Presenter: Stephanie Gorgaten (PRIMED and GREGoR)
+
+In this second session, Stephanie focused on population structure, relatedness, and advanced association analyses in Bioconductor. Topics included computing genomic relationship matrices (GRMs), estimating relatedness with PC-Relate, fitting mixed-model null models, performing single-variant association tests, annotating and filtering variants, and conducting aggregate association tests.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/r6yJOwcSMm0?si=Dudcgv1DSifACY7b" 
+    title="GWAS data analysis with GENESIS"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+Session notes: [Gwas data analysis part 2](https://annuel2.framapad.org/p/gwas_data_analysis_using_genesis_part_2)
 
 #### GWAS data analysis with GENESIS (Part 1)
 
