@@ -1,17 +1,79 @@
 ---
 title: "Bioconductor Africa Seminar Series"
+aliases:
+  - "/workshops/bioc-africa-seminars/index.html"
 execute:
   message: false
   warning: false
 ---
 
+<style>
+.bioc-africa-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  column-gap: 2.5rem;
+  align-items: start;
+  width: 85%;
+  margin-top: 1rem;
+}
+
+.bioc-africa-overview-text {
+  max-width: 92ch;
+}
+
+.bioc-africa-overview-logo {
+  justify-self: end;
+  align-self: start;
+  margin-top: -0.5rem;
+}
+
+.bioc-africa-overview-logo p,
+.bioc-africa-overview-logo figure {
+  margin: 0;
+}
+
+.bioc-africa-overview-logo img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bioc-africa-overview {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .bioc-africa-overview-logo {
+    justify-self: center;
+    margin-top: 0;
+  }
+
+  .bioc-africa-overview-logo img {
+    max-width: 160px;
+  }
+}
+</style>
+
 ## Overview
 
+::: {.bioc-africa-overview}
+
+::: {.bioc-africa-overview-text}
 The Bioconductor Africa Seminar Series is an online seminar series highlighting the use of Bioconductor for biological data analysis, with a focus on topics relevant to researchers across Africa and beyond.
 
 The series includes introductory and thematic sessions led by members of the Bioconductor community, and is open to anyone interested in Bioconductor and related workflows.
 
 **Series coordination:** Laurah Nyasita Ondari (IITA, Kenya)
+:::
+
+::: {.bioc-africa-overview-logo}
+![](images/BiocAfrica.png){fig-alt="Bioconductor Africa logo"}
+:::
+
+:::
 
 
 ## Upcoming seminars
@@ -36,7 +98,7 @@ Additional advanced training sessions (including topics such as single-cell RNAs
 <div class="call-to-action">
   <h2>Stay connected with Bioconductor Africa</h2>
   <p>Sign up to receive seminar links, reminders, and announcements about future Bioc Africa activities.</p>
-  <iframe src="../2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="350" style="border:none;"></iframe>
+  <iframe src="/workshops/2025-03-Nairobi/biocafrica-mailing-list.html" width="100%" height="350" style="border:none;"></iframe>
 </div>
 
 
@@ -47,7 +109,7 @@ Recordings from previous sessions are available below.
 If you're new to Bioconductor, you may want to start with the introductory session.
 
 
-### GWAS datya analysis series
+### GWAS data analysis series
 
 A two-part series exploring GWAS data analysis with the GENESIS package.
 

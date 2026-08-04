@@ -1,33 +1,39 @@
-# NOTE:
-# We render the site in GitHub Actions because some pages (e.g. instructors.qmd)
-# require R to dynamically load data from CSV files.
+# We render the site in GitHub Actions because some pages require R.
 #
-# Netlify does not provide an R environment, so we cannot use the Quarto Netlify plugin.
+# Pull-request builds do not use deployment secrets. They render the site and
+# upload the resulting docs directory as an artifact.
 #
-# Instead, CI installs R + Quarto, renders the site, and deploys the
-# pre-rendered HTML to Netlify for both PR previews and production.
+# A separate workflow_run workflow downloads that artifact and deploys it to
+# Netlify. This allows previews for pull requests from forks without exposing
+# Netlify credentials while contributor code is being executed.
 
 name: CI/CD
 
 on:
   pull_request:
     branches: [devel]
+
   push:
     branches: [devel]
+
   schedule:
-    - cron: '0 1 * * 0'  # every Sunday at 01:00 UTC
+    - cron: "0 1 * * 0" # Every Sunday at 01:00 UTC
+
+permissions:
+  contents: read
 
 jobs:
-
-  # -----------------------------
-  # PR preview build + deploy
-  # -----------------------------
+  # ---------------------------------------------------------------------------
+  # Pull-request build
+  #
+  # This job runs contributor code, so it deliberately has no Netlify secrets.
+  # ---------------------------------------------------------------------------
   build-preview:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository
+      - name: Check out pull request
         uses: actions/checkout@v4
 
       - name: Set up Quarto
@@ -38,7 +44,7 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install R dependencies (cached)
+      - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           cache: true
@@ -46,27 +52,30 @@ jobs:
             DESCRIPTION
             renv.lock
 
-      - name: Render Quarto Project
+      - name: Render Quarto project
         run: quarto render
 
-      - name: Deploy Preview to Netlify
-        run: |
-          npx netlify-cli deploy \
-            --auth "$NETLIFY_AUTH_TOKEN" \
-            --site "$NETLIFY_SITE_ID" \
-            --dir docs \
-            --message "PR #${{ github.event.number }} - ${{ github.sha }}" \
-            --alias "pr-${{ github.event.number }}"
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      - name: Check rendered site
+        run: test -f docs/index.html
 
-  # -----------------------------
-  # Production deploy
-  # -----------------------------
+      - name: Upload rendered site
+        uses: actions/upload-artifact@v4
+        with:
+          name: netlify-preview-site
+          path: docs/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: true
+
+  # ---------------------------------------------------------------------------
+  # Production deployment
+  # ---------------------------------------------------------------------------
   deploy-prod:
     if: github.ref == 'refs/heads/devel'
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - name: Check out repository
@@ -80,7 +89,7 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install R dependencies (cached)
+      - name: Install R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           cache: true
@@ -88,28 +97,31 @@ jobs:
             DESCRIPTION
             renv.lock
 
-      - name: Render Quarto Project
+      - name: Render Quarto project
         run: quarto render
+
+      - name: Check rendered site
+        run: test -f docs/index.html
 
       - name: Add CNAME for GitHub Pages
         run: echo "training.bioconductor.org" > docs/CNAME
 
-      - name: Publish to GitHub Pages (optional)
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy Production to Netlify
+      - name: Deploy production to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
-          npx netlify-cli deploy \
+          npx --yes netlify-cli deploy \
+            --no-build \
             --auth "$NETLIFY_AUTH_TOKEN" \
             --site "$NETLIFY_SITE_ID" \
             --dir docs \
             --prod \
             --message "devel @ ${{ github.sha }}"
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          

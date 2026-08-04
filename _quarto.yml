@@ -2,21 +2,31 @@ project:
   type: website
   output-dir: docs
   render:
-    - "*.qmd"
-    
+  - "*.qmd"
+  resources:
+    - "js/header.js"
+    - "images/bioconductor-logo.svg"
+
 format:
   html:
     embed-resources: false
     theme: none
     page-layout: custom
+
+    include-in-header:
+      text: |
+        <script src="/js/header.js" defer></script>
+
     include-before-body:
       - layouts/components/announcement.html
       - layouts/components/header.html
       - layouts/components/container-start.html
+
     include-after-body:
       - layouts/components/container-end.html
       - layouts/components/footer.html
-    css: 
+
+    css:
       - "style/base/colors.css"
       - "style/base/fonts.css"
       - "style/base/layout.css"
@@ -34,4 +44,3 @@ format:
       - "style/sections/footer.css"
       - "style/sections/sidebar.css"
       - "style/components/workshop.css"
-
