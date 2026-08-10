@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -36,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../js/header.js" defer=""></script>
 
 
@@ -62,122 +65,64 @@ ul.task-list li input[type="checkbox"] {
 <body>
 
 <div class="announcement announcement-brand">
-
 </div>
-
 <header id="site-masthead" class="site-masthead">
-
   <div class="header-size">
 
-
-
     <div class="header-logo">
-
       <a href="https://bioconductor.org">
-
         <img src="../../images/bioconductor-logo.svg" class="masthead-logo" alt="Bioconductor home">
-
       </a>
-
     </div>
-
-
 
     <nav id="site-navigation" class="header-nav" aria-label="Main navigation">
-
       <div class="nav-links">
-
         <a class="format-bold mobile-link" href="../../">
-
           Home
-
         </a>
-
-
 
         <a class="format-bold mobile-link" href="../../resources/resources.html">
-
           Resources
-
         </a>
-
-
 
         <a class="format-bold mobile-link" href="../../workshops/index.html">
-
           Workshops
-
         </a>
-
         <a class="format-bold mobile-link" href="../../seminars/index.html">
-
           Seminars
-
         </a>
-
-
 
         <div class="dropdown">
-
           <a class="format-bold mobile-link" href="../../collaborations/index.html">
-
             Collaborations
-
           </a>
 
-
-
           <div class="dropdown-content">
-
             <a class="mobile-link" href="../../collaborations/carpentries/index.html">
-
               Carpentries
-
             </a>
-
-
 
             <a class="mobile-link" href="../../collaborations/physalia/index.html">
-
               Physalia
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </nav>
 
-
-
     <div class="nav-mobile">
-
       <span class="format-bold menu-label">Menu</span>
 
-
-
       <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">
-
         <span class="bar" aria-hidden="true"></span>
-
         <span class="bar" aria-hidden="true"></span>
-
         <span class="bar" aria-hidden="true"></span>
-
       </button>
-
     </div>
 
-
-
   </div>
-
 </header>
 <div class="container">
-
 
 
 
@@ -309,67 +254,36 @@ Stay informed about course registration opening, news, projects, and events in A
 
 
 </div>
-
 <footer class="dark-footer">
-
   <div class="footer-container">
-
     <div class="footer-content">
-
       <p>© 2003 - present Bioconductor | Join the Bioconductor Community</p>
-
       <div class="footer-socials">
-
         <a href="https://github.com/Bioconductor/bioconductor-training" target="_blank" rel="noopener noreferrer" title="Bioconductor Training on GitHub">
-
           <img alt="GitHub" src="../../images/icons/svgs/github-white.svg">
-
         </a>
-
         <a href="https://chat.bioconductor.org/" target="_blank" rel="noopener noreferrer" title="Join the Bioconductor Community Chat (powered by Zulip)">
-
           <img alt="Zulip" src="../../images/icons/svgs/zulip-white-icon.svg">
-
         </a>
-
         <a href="https://www.youtube.com/user/bioconductor" target="_blank" rel="noopener noreferrer" title="Bioconductor on YouTube">
-
           <img alt="YouTube Logo" src="../../images/icons/svgs/youtube.svg">
-
         </a>
-
         <a href="https://www.linkedin.com/company/bioconductor/" target="_blank" rel="noopener noreferrer" title="Bioconductor on LinkedIn">
-
           <img alt="LinkedIn Logo" src="../../images/icons/svgs/linkedin.svg">
-
         </a>
-
         <a href="https://bsky.app/profile/bioconductor.bsky.social" target="_blank" rel="noopener noreferrer" title="Bioconductor on Bluesky">
-
           <img alt="Bluesky Logo" src="../../images/icons/svgs/bluesky.svg">
-
         </a>
-
         <a href="https://genomic.social/@bioconductor" target="_blank" rel="noopener noreferrer" title="Bioconductor on Mastodon">
-
           <img alt="Mastodon Logo" src="../../images/icons/svgs/mastodon.svg">
-
         </a>
-
         <a href="https://blog.bioconductor.org/" target="_blank" rel="noopener noreferrer" title="Bioconductor Blog">
-
           <img alt="Blog Logo" src="../../images/icons/svgs/arrow-circle-right-white.svg">
-
         </a>
-
       </div>
-
     </div>
-
   </div>
-
 </footer>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -447,7 +361,7 @@ Stay informed about course registration opening, news, projects, and events in A
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Nyasita\.github\.io\/bioconductor-training\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

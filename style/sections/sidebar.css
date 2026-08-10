@@ -115,7 +115,7 @@
   align-items: center;
   gap: 8px;
   align-self: stretch;
-  background-image: url("..\..images/icons/svgs/chevron-right-sidebar.svg");
+  background-image: url("../..images/icons/svgs/chevron-right-sidebar.svg");
   background-repeat: no-repeat;
   background-position: right center;
 }

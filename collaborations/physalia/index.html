@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -35,23 +38,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/core-js-2.5.3/shim.min.js"></script>
-
 <script src="../../site_libs/react-18.2.0/react.min.js"></script>
-
 <script src="../../site_libs/react-18.2.0/react-dom.min.js"></script>
-
 <script src="../../site_libs/reactwidget-2.0.0/react-tools.js"></script>
-
 <link href="../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-
 <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-
 <link href="../../site_libs/reactable-0.4.5/reactable.css" rel="stylesheet">
-
 <script src="../../site_libs/reactable-binding-0.4.5/reactable.js"></script>
-
 <script src="../../js/header.js" defer=""></script>
 
 
@@ -77,122 +72,64 @@ ul.task-list li input[type="checkbox"] {
 <body>
 
 <div class="announcement announcement-brand">
-
 </div>
-
 <header id="site-masthead" class="site-masthead">
-
   <div class="header-size">
 
-
-
     <div class="header-logo">
-
       <a href="https://bioconductor.org">
-
         <img src="../../images/bioconductor-logo.svg" class="masthead-logo" alt="Bioconductor home">
-
       </a>
-
     </div>
-
-
 
     <nav id="site-navigation" class="header-nav" aria-label="Main navigation">
-
       <div class="nav-links">
-
         <a class="format-bold mobile-link" href="../../">
-
           Home
-
         </a>
-
-
 
         <a class="format-bold mobile-link" href="../../resources/resources.html">
-
           Resources
-
         </a>
-
-
 
         <a class="format-bold mobile-link" href="../../workshops/index.html">
-
           Workshops
-
         </a>
-
         <a class="format-bold mobile-link" href="../../seminars/index.html">
-
           Seminars
-
         </a>
-
-
 
         <div class="dropdown">
-
           <a class="format-bold mobile-link" href="../../collaborations/index.html">
-
             Collaborations
-
           </a>
 
-
-
           <div class="dropdown-content">
-
             <a class="mobile-link" href="../../collaborations/carpentries/index.html">
-
               Carpentries
-
             </a>
-
-
 
             <a class="mobile-link" href="../../collaborations/physalia/index.html">
-
               Physalia
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </nav>
 
-
-
     <div class="nav-mobile">
-
       <span class="format-bold menu-label">Menu</span>
 
-
-
       <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false">
-
         <span class="bar" aria-hidden="true"></span>
-
         <span class="bar" aria-hidden="true"></span>
-
         <span class="bar" aria-hidden="true"></span>
-
       </button>
-
     </div>
 
-
-
   </div>
-
 </header>
 <div class="container">
-
 
 <header id="title-block-header">
 <h1 class="title">Bioconductor-Physalia Courses</h1>
@@ -200,16 +137,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../..\images/collaborations/Physalia-Logo-1000x358.png" class="img-fluid" style="width:35.0%" alt="Physalia Courses logo"></p>
+<p><img src="../../images/collaborations/Physalia-Logo-1000x358.png" class="img-fluid" style="width:35.0%" alt="Physalia Courses logo"></p>
 <p>Bioconductor has partnered with <a href="https://www.physalia-courses.org/">Physalia Courses</a> to offer co-branded training in bioinformatics and computational biology. These courses are taught by experienced instructors from the Bioconductor community and hosted by Physalia. Only the courses listed below are part of the Bioconductor–Physalia collaboration and eligible for free seats.</p>
 <div class="cell">
 <div class="cell-output-display">
 <h2 class="anchored">Upcoming</h2>
-<div class="reactable html-widget html-fill-item" id="htmlwidget-c85b09b6b49560181eb5" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c85b09b6b49560181eb5">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"date":["5-8 October 2026","10-12 November 2026","9-18 November 2026","16-20 November 2026","25-26 November 2026","TBD"],"title":["Network Analysis in Systems Biology with R/Bioconductor","Spatial Proteomics Data Analysis in R/Bioconductor: From Mass Spectrometry to Subcellular Maps","Introduction to RNA sequencing data analysis with R/Bioconductor","Single-cell RNA-seq analysis with R/Bioconductor","Exploring and Visualizing Omics Data with iSEE","Single-cell proteomics with R and Bioconductor"],"instructors":["Dr. Fabricio Almeida-Silva","Dr. Lisa Breckels","Dr. Ludwig Geistlinger","Dr. Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg","Dr. Federico Marini","Prof. Laurent Gatto"],"link_html":["<a href=\"https://www.physalia-courses.org/courses-workshops/network-in-systems-biology/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/spatial-proteomics-in-r/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course19/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course18/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/isee/\" target=\"_blank\">View Course<\/a>","New Course"]},"columns":[{"id":"date","name":"date","type":"character"},{"id":"title","name":"title","type":"character"},{"id":"instructors","name":"instructors","type":"character"},{"id":"link_html","name":"Workshop Link","type":"character","html":true}],"bordered":true,"striped":true,"compact":true,"dataKey":"80af3e6b835f142cf9d654a39d102766"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-b99c94d7da531f959c10" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b99c94d7da531f959c10">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"date":["5-8 October 2026","10-12 November 2026","9-18 November 2026","16-20 November 2026","25-26 November 2026","TBD"],"title":["Network Analysis in Systems Biology with R/Bioconductor","Spatial Proteomics Data Analysis in R/Bioconductor: From Mass Spectrometry to Subcellular Maps","Introduction to RNA sequencing data analysis with R/Bioconductor","Single-cell RNA-seq analysis with R/Bioconductor","Exploring and Visualizing Omics Data with iSEE","Single-cell proteomics with R and Bioconductor"],"instructors":["Dr. Fabricio Almeida-Silva","Dr. Lisa Breckels","Dr. Ludwig Geistlinger","Dr. Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg","Dr. Federico Marini","Prof. Laurent Gatto"],"link_html":["<a href=\"https://www.physalia-courses.org/courses-workshops/network-in-systems-biology/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/spatial-proteomics-in-r/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course19/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course18/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/isee/\" target=\"_blank\">View Course<\/a>","New Course"]},"columns":[{"id":"date","name":"date","type":"character"},{"id":"title","name":"title","type":"character"},{"id":"instructors","name":"instructors","type":"character"},{"id":"link_html","name":"Workshop Link","type":"character","html":true}],"bordered":true,"striped":true,"compact":true,"dataKey":"80af3e6b835f142cf9d654a39d102766"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 <h2 class="anchored">Past</h2>
-<div class="reactable html-widget html-fill-item" id="htmlwidget-52fab5301b8efc885d2a" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-52fab5301b8efc885d2a">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"date":["27-31 July 2026","18-20 May 2026","4-7 May 2026","27-29 April 2026","13-17 April 2026","2-6 February 2026","17-21 November 2025","17-19 November 2025","3-14 November 2025"],"title":["Developing R/Bioconductor Packages For Genomics","Spatial Omics in R/Bioconductor","Network Analysis in R","Statistical Methods for Metatranscriptomics","Epigenomics Data Analysis","Orchestrating Microbiome Analysis with Bioconductor","Single-cell RNA-seq analysis with R/Bioconductor","R/Bioconductor for Mass Spectrometry and Proteomics","RNA-seq data analysis with R/Bioconductor"],"instructors":["Dr. Jacques Serizay","Dr. Stefano Mangiola","Dr. Fabricio Almeida-Silva","Dr. Himel Mallick","Dr. Jacques Serizay","Prof. Leo Lahti and Dr. Tuomas Borman","Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg","Prof. Laurent Gatto","Dr. Ludwig Geistlinger"],"link_html":["<a href=\"https://www.physalia-courses.org/courses-workshops/r-packages/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/spatial-omics-1/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/network-analysis-in-r/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/metatranscriptomics/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course59b/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/microbiomebioconductor/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course18/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course58/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course19/\" target=\"_blank\">View Course<\/a>"]},"columns":[{"id":"date","name":"date","type":"character"},{"id":"title","name":"title","type":"character"},{"id":"instructors","name":"instructors","type":"character"},{"id":"link_html","name":"Workshop Link","type":"character","html":true}],"bordered":true,"striped":true,"compact":true,"dataKey":"f17f663b2f105109204150750dcd8e08"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-d84a3a3cf0a1abdcc0aa" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d84a3a3cf0a1abdcc0aa">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"date":["27-31 July 2026","18-20 May 2026","4-7 May 2026","27-29 April 2026","13-17 April 2026","2-6 February 2026","17-21 November 2025","17-19 November 2025","3-14 November 2025"],"title":["Developing R/Bioconductor Packages For Genomics","Spatial Omics in R/Bioconductor","Network Analysis in R","Statistical Methods for Metatranscriptomics","Epigenomics Data Analysis","Orchestrating Microbiome Analysis with Bioconductor","Single-cell RNA-seq analysis with R/Bioconductor","R/Bioconductor for Mass Spectrometry and Proteomics","RNA-seq data analysis with R/Bioconductor"],"instructors":["Dr. Jacques Serizay","Dr. Stefano Mangiola","Dr. Fabricio Almeida-Silva","Dr. Himel Mallick","Dr. Jacques Serizay","Prof. Leo Lahti and Dr. Tuomas Borman","Fabricio Almeida-Silva, Dr. Jacques Serizay, and Dr. Orr Ashenberg","Prof. Laurent Gatto","Dr. Ludwig Geistlinger"],"link_html":["<a href=\"https://www.physalia-courses.org/courses-workshops/r-packages/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/spatial-omics-1/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/network-analysis-in-r/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/metatranscriptomics/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course59b/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/microbiomebioconductor/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course18/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course58/\" target=\"_blank\">View Course<\/a>","<a href=\"https://www.physalia-courses.org/courses-workshops/course19/\" target=\"_blank\">View Course<\/a>"]},"columns":[{"id":"date","name":"date","type":"character"},{"id":"title","name":"title","type":"character"},{"id":"instructors","name":"instructors","type":"character"},{"id":"link_html","name":"Workshop Link","type":"character","html":true}],"bordered":true,"striped":true,"compact":true,"dataKey":"f17f663b2f105109204150750dcd8e08"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <h2 id="free-seats-for-underrepresented-countries" class="anchored">Free Seats for Underrepresented Countries</h2>
@@ -220,67 +157,36 @@ ul.task-list li input[type="checkbox"] {
 
 
 </div>
-
 <footer class="dark-footer">
-
   <div class="footer-container">
-
     <div class="footer-content">
-
       <p>© 2003 - present Bioconductor | Join the Bioconductor Community</p>
-
       <div class="footer-socials">
-
         <a href="https://github.com/Bioconductor/bioconductor-training" target="_blank" rel="noopener noreferrer" title="Bioconductor Training on GitHub">
-
           <img alt="GitHub" src="../../images/icons/svgs/github-white.svg">
-
         </a>
-
         <a href="https://chat.bioconductor.org/" target="_blank" rel="noopener noreferrer" title="Join the Bioconductor Community Chat (powered by Zulip)">
-
           <img alt="Zulip" src="../../images/icons/svgs/zulip-white-icon.svg">
-
         </a>
-
         <a href="https://www.youtube.com/user/bioconductor" target="_blank" rel="noopener noreferrer" title="Bioconductor on YouTube">
-
           <img alt="YouTube Logo" src="../../images/icons/svgs/youtube.svg">
-
         </a>
-
         <a href="https://www.linkedin.com/company/bioconductor/" target="_blank" rel="noopener noreferrer" title="Bioconductor on LinkedIn">
-
           <img alt="LinkedIn Logo" src="../../images/icons/svgs/linkedin.svg">
-
         </a>
-
         <a href="https://bsky.app/profile/bioconductor.bsky.social" target="_blank" rel="noopener noreferrer" title="Bioconductor on Bluesky">
-
           <img alt="Bluesky Logo" src="../../images/icons/svgs/bluesky.svg">
-
         </a>
-
         <a href="https://genomic.social/@bioconductor" target="_blank" rel="noopener noreferrer" title="Bioconductor on Mastodon">
-
           <img alt="Mastodon Logo" src="../../images/icons/svgs/mastodon.svg">
-
         </a>
-
         <a href="https://blog.bioconductor.org/" target="_blank" rel="noopener noreferrer" title="Bioconductor Blog">
-
           <img alt="Blog Logo" src="../../images/icons/svgs/arrow-circle-right-white.svg">
-
         </a>
-
       </div>
-
     </div>
-
   </div>
-
 </footer>
-
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -358,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Nyasita\.github\.io\/bioconductor-training\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
