@@ -157,17 +157,20 @@ For questions, please contact the local organising team (details in the [applica
 </div>
 
 <div style="
-  display:flex;
-  flex-wrap:nowrap;
-  width:100%;
-  border:3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+    margin: 10px auto;
+    overflow-x: auto;
 ">
-  <img src="images/logos/BETin-logo.png" style="height:50px;">
-  <img src="images/logos/aauLogo.png" style="height:50px;">
-  <img src="images/logos/IITA-Logo.png" style="height:50px;">
-  <img src="images/logos/cgiar-logo.png" style="height:50px;">
-  <img src="images/logos/ul-logo.jpg" style="height:50px;">
-  <img src="images/logos/uniturku-logo.png" style="height:50px;">
-  <img src="../../images/bioconductor-logo.svg" style="height:50px;">
-  <img src="images/logos/czi-logo.jpg" style="height:50px;">
+  <img src="images/logos/BETin-logo.png" alt="BETin Logo" style="height:70px; width:auto;">
+  <img src="images/logos/aauLogo.png" alt="AAU Logo" style="height:70px; width:auto;">
+  <img src="images/logos/IITA-Logo.png" alt="IITA Logo" style="height:70px; width:auto;">
+  <img src="images/logos/ul-logo.jpg" alt="UL Logo" style="height:70px; width:auto;">
+  <img src="images/logos/uniturku-logo.png" alt="Uni Turku Logo" style="height:70px; width:auto;">
+  <img src="../../images/bioconductor-logo.svg" alt="Bioconductor Logo" style="height:70px; width:auto;">
+  <img src="images/logos/czi-logo.jpg" alt="CZI Logo" style="height:70px; width:auto;">
 </div>
