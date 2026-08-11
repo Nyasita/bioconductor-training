@@ -6,7 +6,7 @@ The committee reports to the Bioconductor [Community Advisory Board](https://bio
 
 There is no formal joining process or minimum commitment. Simply attend one of our monthly meetings or join the conversation to become part of the community.
 
-- [Monthly meeting link](https://meet.jit.si/BioconductorTeaching)
+- [Monthly meeting link](https://meet.jit.si/BioconductorTeaching) (generally 2nd Monday, 3-4 pm CEST)
 - [Rolling agenda and notes](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#)
 - [Google group](https://groups.google.com/g/bioconductor-teaching/) for announcements and meeting reminders
 - The `#education-and-training` channel on [Bioconductor Chat](https://chat.bioconductor.org)
