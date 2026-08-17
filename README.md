@@ -10,6 +10,7 @@ There is no formal joining process or minimum commitment. Simply attend one of o
 - [Rolling agenda and notes](https://docs.google.com/document/d/1s2QMk5XA-uhBVprAO3ZDk1Yfv1cnUWLp9zdvYq9Feu4/edit#)
 - [Google group](https://groups.google.com/g/bioconductor-teaching/) for announcements and meeting reminders
 - The `#education-and-training` channel on [Bioconductor Chat](https://chat.bioconductor.org)
+- [Governance document](resources/bioc-training-governance-v1.0.0.pdf)
 
 ## Seminar series
 
