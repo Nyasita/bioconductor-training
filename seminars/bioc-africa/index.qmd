@@ -80,19 +80,17 @@ The series includes introductory and thematic sessions led by members of the Bio
 
 ### Featured seminar
 
-![](images/himel-arora-multiomics.png){width="85%" fig-alt="Multiomics data integration with Bioconductor poster"}
+![](images/Jacques.png){width="85%" fig-alt="Multiomics data integration with Bioconductor poster"}
 
 
-- Date: 12 August 2026  
+- Date: 16 September and 23 September 2026  
 - Time: 4 PM EAT / 3 PM CAT / 2 PM WAT  
-- Presenters: Dr Himel Mallick and Nalin Arora (Cornell University)
+- Presenters: Dr Jacques Serizay (CNRS)
 
-This session explores how Bioconductor supports multi-omics data integration.
+This series of sessions explore how to analyse single-cell RNA sequencing data using Bioconductor.
 
-[Register to attend](https://us06web.zoom.us/meeting/register/oZdSAf30RHKZa4sBpGywcg#/registration) 
+[Register to attend](https://us06web.zoom.us/meeting/register/J8zlMhDfRuWCTBT0Fv7fNg) 
 
-
-Additional advanced training sessions (including topics such as single-cell RNAseq analysis) are being planned for later in 2026.
 
 
 <div class="call-to-action">
@@ -108,6 +106,26 @@ Curious what the Bioconductor Africa seminars are like?
 Recordings from previous sessions are available below.  
 If you're new to Bioconductor, you may want to start with the introductory session.
 
+
+### Multi-omics data integration with Bioconductor
+
+- Date: 12 August 2026
+- Presenters: Dr Himel Mallick and Nalin Arora (Cornell University)
+
+This session explored how multiple layers of biological data including genomics, transcriptomics, proteomics, metabolomics, and microbiome data can be integrated using statistical and machine learning approaches to uncover disease mechanisms, identify biomarkers, and improve biological discovery.
+
+<div style="max-width: 900px;">
+  <iframe
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    src="https://www.youtube.com/embed/N2W3jobpAqM?si=q6giZ6w-H14kEPjW" 
+    title="Multi-omics data integration with Bioconductor"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
+
+Session notes: [Multi-omics data integration notes](https://annuel2.framapad.org/p/multiomics-12-08-2026)
 
 ### GWAS data analysis series
 
