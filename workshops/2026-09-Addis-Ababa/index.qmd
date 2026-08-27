@@ -18,7 +18,7 @@ description: |
 
 This week-long workshop will explore how Bioconductor supports microbiome data science through modular and interoperable workflows. Participants will be guided through practical examples of how to analyse, manage, and reproducibly report complex microbiome data using R.
 
-[Download the workshop flyer (PDF)](Ethiopia course Workshop Flyer.pdf).  
+[Download the workshop flyer (PDF)](Ethiopia Workshop Flyer.png).  
 
 ## Course Structure
 
