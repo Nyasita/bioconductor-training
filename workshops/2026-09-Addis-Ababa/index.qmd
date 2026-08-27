@@ -10,7 +10,7 @@ description: |
 
 ## Event Details
 
-- 📅 **Dates:** September 21 - 25, 2026
+- 📅 **Dates:** November 23 - 27, 2026
 - 📍 **Location:** [Bio & Emerging Technology Institute (BETin)](https://www.betin.gov.et/), Addis Ababa, Ethiopia
 - 📘 **Format:** Week-long course (single registration covering all sessions)
 
@@ -18,7 +18,7 @@ description: |
 
 This week-long workshop will explore how Bioconductor supports microbiome data science through modular and interoperable workflows. Participants will be guided through practical examples of how to analyse, manage, and reproducibly report complex microbiome data using R.
 
-[Download the workshop flyer (PDF)](Ethiopia course Workshop Flyer.pdf).  
+[Download the workshop flyer (PDF)](Ethiopia Workshop Flyer.png).  
 
 ## Course Structure
 
