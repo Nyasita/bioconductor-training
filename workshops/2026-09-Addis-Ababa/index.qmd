@@ -10,7 +10,7 @@ description: |
 
 ## Event Details
 
-- 📅 **Dates:** September 21 - 25, 2026
+- 📅 **Dates:** November 23 - 27, 2026
 - 📍 **Location:** [Bio & Emerging Technology Institute (BETin)](https://www.betin.gov.et/), Addis Ababa, Ethiopia
 - 📘 **Format:** Week-long course (single registration covering all sessions)
 
